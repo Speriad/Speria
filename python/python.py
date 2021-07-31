@@ -77,3 +77,4 @@ print(subway)
 print(subway.pop())  #뒤에서부터 한명을 뺌
 print(subway)
 cabinet = {3:'유재석',100:'김태호'}
+기섭헐;;미;ㄴ알펌내ㅔㅑㅇ펴ㅗㅁ'ㅔㄴ애러매쟈;ㄷ룜;ㅈ대ㅔ로ㅓㅁㅈ디ㅏㅓ료먀
