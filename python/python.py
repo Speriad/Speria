@@ -43,7 +43,7 @@ print(python.replace('America','South Korea'))  #America를 South Korea로 대�
 print('나는 %d살입니다.' %20)
 print("아프리카계 미국인은 %s입니다." %'흑인')
 print('나는 {}색과 {}색을 좋아합니다.' .format('파란','빨강'))
-print('나는 {}과 {}하는것을 좋아합니다.' .format('코딩','대화'))
+print('나는 {}과 {}하는것을 좋아합니다.' .format('ㅁㅁ','ㅈㅈ'))
 print('나는 {age}살이고 {color}색을 좋아합니다.' .format(age=20, color='검정'))
 # =print('나는 {}살이고 {}색을 좋아합니다.' .format(20,'검정'))
 # = age=20
@@ -53,3 +53,26 @@ print('나는 {age}살이고 {color}색을 좋아합니다.' .format(age=20, col
 print('가는말이 고와야\n오는말이 곱다')  # \n=줄바꿈
 # print('저는 '김무겸' 입니다') 
 print('저는 \'김무겸\' 입니다')   #따옴표 탈출문자 
+
+url='http://naver.com'
+my_str=url.replace("http://","")
+my_str = my_str[0:my_str.index('.')]
+password=my_str[0:3] + str(len(my_str)) + str(my_str.count('e')) + '!'
+print('{0} 의 비밀번호는 {1} 입니다.'.format(url, password))
+
+# subway1=10
+# subway2=20
+# subway3=30
+
+subway=[10,20,30]
+print(subway)
+
+subway=['Tyler','Drake','Kendrick']
+print(subway.index('Drake')+1)
+print(subway)
+subway.append('Nas') #Nas를 Subway 뒤에 추가
+print(subway)
+subway.insert(1,'Tory') #Tory를 Subway 리스트의 1에 추가
+print(subway)
+print(subway.pop())  #뒤에서부터 한명을 뺌
+print(subway) 
