@@ -15,7 +15,6 @@ print(random()*99) #0~99.0 무작위 수
 print(int(random()*99)) #0~99 무작위 수
 print(int(random()*99)+1) #1~99 '이하' 의 무작위 수
 print(int(random()*25)+4)
-
 sentence='나는 소년입니다'
 print(sentence)
 sentence2='파이썬은 쉬워요'
