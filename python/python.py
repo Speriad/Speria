@@ -76,3 +76,4 @@ subway.insert(1,'Tory') #Tory를 Subway 리스트의 1에 추가
 print(subway)
 print(subway.pop())  #뒤에서부터 한명을 뺌
 print(subway)
+cabinet = {3:'유재석',100:'김태호'}
