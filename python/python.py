@@ -16,9 +16,9 @@ print(int(random()*99)) #0~99 무작위 수
 print(int(random()*99)+1) #1~99 '이하' 의 무작위 수
 print(int(random()*25)+4)
 
-sentence='나는 소년입니다'
+sentence='나는 남자이다'
 print(sentence)
-sentence2='파이썬은 쉬워요'
+sentence2='코딩 코딩 코딩'
 print(sentence2)
 sentence3='''
 어서오세요
@@ -41,7 +41,7 @@ print(len(python))  #python의 길이가 어떻게 되는가?
 print(python.replace('America','South Korea'))  #America를 South Korea로 대체
 
 print('나는 %d살입니다.' %20)
-print("박은수는 %s입니다." %'흑인')
+print("아프리카계 미국인은 %s입니다." %'흑인')
 print('나는 {}색과 {}색을 좋아합니다.' .format('파란','빨강'))
 print('나는 {}과 {}하는것을 좋아합니다.' .format('코딩','대화'))
 print('나는 {age}살이고 {color}색을 좋아합니다.' .format(age=20, color='검정'))
@@ -50,6 +50,6 @@ print('나는 {age}살이고 {color}색을 좋아합니다.' .format(age=20, col
 # color = '검정'
 # print(f'나는 {age}살이며, {color}색을 좋아한다.')
 
-print('가는말이 고와야\n오는말이 뭔상관이야')  # \n=줄바꿈
+print('가는말이 고와야\n오는말이 곱다')  # \n=줄바꿈
 # print('저는 '김무겸' 입니다') 
-print('저는 \'김무겸\' 입니다') #따옴표 탈출문자
+print('저는 \'김무겸\' 입니다')   #따옴표 탈출문자
