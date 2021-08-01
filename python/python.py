@@ -4,7 +4,7 @@ print(max(5,12))    #둘중 큰거
 print(min(5,12)) #둘중 작은거
 print(round(3.14)) #반올림
 
-from math import*    #파이썬에서 제공하는 매스 라이브러리
+from math import*  #파이썬에서 제공하는 매스 라이브러리
 print(floor(4.99)) #내림
 print(ceil(3.14)) #올림
 print(sqrt(16)) #제곱근
@@ -136,5 +136,26 @@ print(java.difference(python))  #차집합 (java에는 있으나 python 에는 �
 python.add('Tory')   #python에 Tory 추가
 print(python)
 
-python.remove('Drake')   #python에서 Drake 제거
+python.remove('Tyler')   #python에서 Tyler 제거
 print(python)
+
+#자료구조의 변경
+
+menu2={"커피","우유","주스"}
+print(menu2, type(menu2))
+
+menu2 = list(menu2)
+print(menu2, type(menu2))
+
+menu2 = tuple(menu2)
+print(menu2, type(menu))
+
+menu2 = set(menu2)
+print(menu2, type(menu2))
+
+#조 건 문
+
+a='Desiigner'
+if a=='Drake': print(a)
+elif a=='Soulja' : print(a)
+else : print(a+' is invalid')
