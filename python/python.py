@@ -16,17 +16,6 @@ print(int(random()*99)) #0~99 무작위 수
 print(int(random()*99)+1) #1~99 '이하' 의 무작위 수
 print(int(random()*25)+4)
 
-sentence='나는 남자이다'
-print(sentence)
-sentence2='코딩 코딩 코딩'
-print(sentence2)
-sentence3='''
-어서오세요
-어쩌고저쩌고
-안녕하세요
-'''
-print(sentence3)
-
 주민='070409-3333333'
 
 print('성별 : '+주민[7])
@@ -155,7 +144,16 @@ print(menu2, type(menu2))
 
 #조 건 문
 
-a='Desiigner'
-if a=='Drake': print(a)
-elif a=='Soulja' : print(a)
-else : print(a+' is invalid')
+a=input('Write Rapper\'s name   ')
+if a=='Drake': print(a+' is Rapper')
+elif a=='Soulja' : print(a+' is Rapper')
+elif a=='Desiigner' : print(a+' is Rapper')
+elif a=='Tyler' : print(a+' is Rapper')
+elif a=='Future' : print(a+' is Rapper')
+elif a=='Rocky' : print(a+' is Rapper')
+elif a=='Polo G' : print(a+' is Rapper')
+elif a=='Travis' : print(a+' is Rapper')
+elif a=='Tory' : print(a+' is Rapper')
+elif a=='Kendrick' : print(a+' is Rapper')
+elif a=='Juice' : print(a+' is Rapper')
+else : print('He is not rapper')
