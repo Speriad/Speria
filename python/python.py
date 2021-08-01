@@ -76,4 +76,65 @@ subway.insert(1,'Tory') #Tory를 Subway 리스트의 1에 추가
 print(subway)
 print(subway.pop())  #뒤에서부터 한명을 뺌
 print(subway)
+
+#사전
+
 cabinet = {3:'유재석',100:'김태호'}
+print(cabinet[3])    #=print(cabinet.get(3))
+print(cabinet[100])   #print(cabinet.get(100))
+#cabinet 에서 대괄호로 없는 값을 가져올때는 오류를 일으키고 프로그램 종료
+#cabinet 에서 .get()로 없는 값을 가져올때는 none 이라고 쓰고 프로그램 종료 하지 않음
+print(3 in cabinet)  #true  #3이 cabinet 안에 있는가?
+print (5 in cabinet)  #false
+
+cabinet2 = {'A':'유재석','B':'김태호'}
+print(cabinet2['A'])
+print(cabinet2['B'])
+
+cabinet2['C'] = '조세호'     #C 라는 조세호의 값이 추가됨
+cabinet2['A'] = 'Drake'     #A 에 유재석 대신 Drake 가 들어감
+print(cabinet2)
+
+del cabinet2['A']        #A 의 값을 삭제
+print(cabinet2)
+
+print(cabinet2.keys())   #key 들만 출력 
+print(cabinet2.values())   #값들만 출력
+print(cabinet2.items())   #key, 값 쌍으로 출력
+
+cabinet2.clear()   #cabinet2 클리어
+print(cabinet2)
+
+#튜플
+
+menu=('돈까스', '치킨')
+print(menu[0])
+print(menu[1])
+
+name = '김무겸'
+age = 15
+hobby = 'Drake'
+#= (name, age, hobby) = ('김무겸',15,'Drake')
+
+#세트
+
+my_set = {1,2,3,3,3}
+print(my_set)
+
+java = {'Drake','Tyler','Nas'}
+python = set(['Tyler','Future'])
+
+print(java&python)   #교집합(java 또는 python 을 모두 만족하는 값)
+print(java.intersection(python)) #교집합(java 또는 python 을 모두 만족하는 값)
+
+print(java | python)  #합집합 (java 또는 python 에 있는 값)
+print(java.union(python)) #합집합 (java 또는 python 에 있는 값)
+
+print(java-python)  #차집합 (java에는 있으나 python 에는 없는 것)
+print(java.difference(python))  #차집합 (java에는 있으나 python 에는 없는 것)
+
+python.add('Tory')   #python에 Tory 추가
+print(python)
+
+python.remove('Drake')   #python에서 Drake 제거
+print(python)
