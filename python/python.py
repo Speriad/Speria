@@ -253,3 +253,50 @@ def profile3(name, age, *language):   #*language를 적으면 넣고싶은만큼
 
 profile3('유재석',20,'Python','Java','C','C++','C#')
 profile3('솔자',25,'Javascript','CSS')
+
+#지 역 변 수 , 전 역 변 수
+
+gun = 10
+
+def checkpoint(soldiers): #경계근무
+    global gun  #전역 공간에 있는 gun을 사용하겠다.
+    gun = gun - soldiers
+    print('[함수 내] 남은 총 : {0}'.format(gun))
+
+def checkpoint_ret(gun, soldiers):
+    gun=gun-soldiers
+    print('[함수 내] 남은 총 : {0}'.format(gun))
+    return gun
+
+print('전체 총 : {0}'.format(gun))
+# checkpoint(2)   2명이 경계 근무를 나감
+gun = checkpoint_ret(gun,2)    #checkpoint_ret 이라는 함수에 대하여 2명의 군인이 근무를 나감
+print('남은 총 : {0}'.format(gun))
+
+#표준 입출력
+
+print('Hello','Hi', sep=' vs ', end='?')   #sep=',' 이 없었을땐 그냥 띄어 쓰기로 써졌으나 쓰면 사이에 sep이 생김 
+#end='?' 는 마지막에 ? 를 붙임 그리고 한줄로 보냄
+print('둘중 어느것이 더 좋을까요?')
+
+# import sys
+# print('Python','Java', file=sys.stdout)
+# print('Python','Java', file=sys.stderr)
+
+scores={'수학':0, '영어':50, '국어':33}
+for subject, score in scores.items():
+    print(subject.ljust(8), str(score).rjust(4), sep=':')      #ljust = 왼쪽 정렬 rjust = 오른쪽 정렬
+
+for num in range(1,21):
+    print('대기번호 : '+str(num).zfill(3))        #zfill = 0채우기
+
+answer = input('아무거나 입력 하셈 : ')
+print('님은 방금 '+answer+'이라고 말하셨음')
+
+#다양한 출력포멧
+
+print('{0:>10}'.format(500))    #빈자리는 빈공간으로 두고 오른쪽 정렬을 하고 10자리 확보
+print('{0:>+10}'.format(500))   #위와 똑같지만 부호를 나타낼수 있음
+print('{0:_<10}'.format(500))   #왼쪽 정렬을 하고 빈칸으로 _를 채움
+print('{0:,}'.format(100000000000))   #3자리마다 콤마를 찍음
+print('{0:+,}'.format(100000000000))   #3자리마다 콤마를 찍고 부호를 표시함
