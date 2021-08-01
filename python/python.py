@@ -157,3 +157,18 @@ elif a=='Tory' : print(a+' is Rapper')
 elif a=='Kendrick' : print(a+' is Rapper')
 elif a=='Juice' : print(a+' is Rapper')
 else : print('He is not rapper')
+
+#f o r 반 복 문
+#range(n) 0에서 n미만 range(n,n+a) n 에서 n+a미만
+
+for waiting_no in range(1,6): print("대기번호 : {0}".format(waiting_no))
+
+#W h i l e 반 복 문
+
+customer = '김무겸'
+index = 5
+while index >= 1:
+    print('{0}, 코딩중이다. {1}번 남음'.format(customer, index))
+    index-=1
+    if index ==0:
+        print('끝났다')
