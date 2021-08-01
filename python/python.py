@@ -172,3 +172,15 @@ while index >= 1:
     index-=1
     if index ==0:
         print('끝났다')
+
+#continue & break
+
+absent = [2,5]
+no_book = [7]
+for student in range(1,11):
+    if student in absent:
+        continue
+    elif student in no_book:
+        print('오늘은 그만함. {0}은 오셈'.format(student))
+        break
+    print('{0}, 책읽어보셈'.format(student))
