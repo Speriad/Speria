@@ -32,7 +32,7 @@ print(python.replace('America','South Korea'))  #America를 South Korea로 대�
 print('나는 %d살입니다.' %20)
 print("아프리카계 미국인은 %s입니다." %'흑인')
 print('나는 {}색과 {}색을 좋아합니다.' .format('파란','빨강'))
-print('나는 {}과 {}하는것을 좋아합니다.' .format('ㅁㅁ','ㅈㅈ'))
+print('나는 {}과 {}하는것을 좋아합니다.' .format('ㅇㅇㅇ','ㅇㅇ'))
 print('나는 {age}살이고 {color}색을 좋아합니다.' .format(age=20, color='검정'))
 # =print('나는 {}살이고 {}색을 좋아합니다.' .format(20,'검정'))
 # = age=20
@@ -144,18 +144,9 @@ print(menu2, type(menu2))
 
 #조 건 문
 
-a=input('Write Rapper\'s name   ')
+a='Drake'
 if a=='Drake': print(a+' is Rapper')
 elif a=='Soulja' : print(a+' is Rapper')
-elif a=='Desiigner' : print(a+' is Rapper')
-elif a=='Tyler' : print(a+' is Rapper')
-elif a=='Future' : print(a+' is Rapper')
-elif a=='Rocky' : print(a+' is Rapper')
-elif a=='Polo G' : print(a+' is Rapper')
-elif a=='Travis' : print(a+' is Rapper')
-elif a=='Tory' : print(a+' is Rapper')
-elif a=='Kendrick' : print(a+' is Rapper')
-elif a=='Juice' : print(a+' is Rapper')
 else : print('He is not rapper')
 
 #f o r 반 복 문
@@ -184,3 +175,16 @@ for student in range(1,11):
         print('오늘은 그만함. {0}은 오셈'.format(student))
         break
     print('{0}, 책읽어보셈'.format(student))
+
+#한줄로 하는 for 문
+
+students=[1,2,3,4,5]
+students= [i+100 for i in students]    #students 안에 있는 i를 하나씩 꺼내서 100을 더한다
+print(students)
+
+students2 = ['Drake','Tory','Tyler']     
+students2 = [len(i) for i in students2]  #students2 안에 있는 i의 길이를 하나씩
+print(students2)
+
+#F U N C T I O N
+
