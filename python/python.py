@@ -218,17 +218,17 @@ print('수수료는 {0} 원이며, 잔액은 {1} 원입니다.'.format(commissio
 #기본값
 
 # def profile(name, age, main_lang):
-#     print("dlfma : {0}\t나이 : {1}\t주 사용 언어 : {2}"\
+#     print("이름 : {0}\t나이 : {1}\t주 사용 언어 : {2}"\
 #         .format(name, age, main_lang))
 
-# profile('Drake',20,'파이썬')
+# profile('Drake',20,'파이썬')     각각 이름 나이 주 사용언어
 # profile('Rocky',25,'자바스크립트')
 
 def profile(name, age=17, main_lang='파이썬'):
     print('이름 : {0}\t나이 : {1}\t주 사용 언어 : {2}'\
         .format(name, age, main_lang))
 
-profile('유재석')
+profile('유재석')     #이름만 지정해놓고 나머지는 기본값
 profile('김태호')
 
 #키워드값
@@ -238,3 +238,18 @@ def profile2(name, age, main_lang):
 
 profile2(name='유재석',main_lang='파이썬',age=20)
 profile2(main_lang='자바',age=25,name='김태호')
+
+#가변 인자
+
+# def profile3(name, age, lang1, lang2, lang3, lang4, lang5):
+#     print('이름: {0}\t나이 : {1}\t'.format(name,age))
+#     print(lang1, lang2, lang3, lang4, lang5)
+
+def profile3(name, age, *language):   #*language를 적으면 넣고싶은만큼 값을 넣을수 있음
+    print('이름: {0}\t나이 : {1}\t'.format(name,age))
+    for 언어 in language:
+        print(언어)
+    print()
+
+profile3('유재석',20,'Python','Java','C','C++','C#')
+profile3('솔자',25,'Javascript','CSS')
