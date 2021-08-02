@@ -304,3 +304,46 @@ print('{0:^<+30,}'.format(100000000))#3자리마다 콤마를 찍어주고 부�
 #{0:빈칸 뭘로 채울지, 정렬방향, 부호구분할건가, 몇자리확보, 콤마찍을건가}
 print('{0:f}'.format(5/3))    #소수점 출력
 print('{0:.2f}'.format(5/3))    #소수점 둘째 자리까지 출력
+
+#파일 입출력
+
+# score2_file=open('score.txt','w',encoding='utf8')
+# print('수학 = 0', file=score2_file)
+# print('영어 = 50', file=score2_file)
+# score2_file.close()    w = 쓰기
+
+# score2_file=open('score.text','a',encoding='utf8')
+# score2_file.write('과학 : 70')
+# score2_file.write('\n국어 : 80')
+# score2_file.close()   a = 더 넣기
+
+# score2_file=open('score.txt','r',encoding='utf8')
+# print(score2_file.read())
+# score2_file.close()   r=읽기
+
+# score2_file=open('score.txt','r',encoding='utf8')
+# print(score2_file.readline())
+# print(score2_file.readline())
+# print(score2_file.readline())
+# print(score2_file.readline())
+# score2_file.close()    readline=한줄 읽고 커서를 밑으로
+
+# score2_file=open('score.txt','r',encoding='utf8')
+# while True:
+#     line = score2_file.readline()
+#     if not line:
+#         break
+#     print(line)
+# score2_file.close()
+#만약 몇줄인지 모를때, True 일때만 읽고 라인이 없으면 break
+
+
+# score2_file=open('score.txt','r',encoding='utf8')
+# lines= score2_file.readline()  list 형태로 저장
+# for line in lines:
+#     print(line, end="")
+# score2_file.close()
+#lines 에 리스트 형태로 저장하고 리스트에서 하나하나 출력
+
+#PICKLE
+
