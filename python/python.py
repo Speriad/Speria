@@ -361,3 +361,61 @@ print('{0:.2f}'.format(5/3))    #소수점 둘째 자리까지 출력
 
 #with
 
+# import pickle         pickle 을 사용했을떄
+
+# with open('profile5.pickle','rb')as profile5_file:   profile5 에 저장해놓은것
+#     print(pickle.load(profile5_file))
+
+# with open('study.txt','w',encoding='utf8') as study_file:  
+#     study_file.write('aaa 공부중')     study_file에 aaa공부중 을 작성
+
+# with open('study.txt','r',encoding='utf8') as study_file:
+#     print(study_file.read())          #study_file 을 읽음
+
+#C L A S S
+
+# name='마린'
+# hp=40
+# damage=5
+
+# print('{0} 유닛이 생성되었습니다.'.format(name))
+# print('체력 {0}, 공격력 {1}\n'.format(hp, damage))
+
+# tank_name='탱크'
+# tank_hp = 150
+# tank_damage=35
+
+# tank2_name='탱크'
+# tank2_hp = 150
+# tank2_damage=35
+
+# print('{0} 유닛이 생성되었습니다.'.format(tank_name))
+# print('체력 {0}, 공격력 {1}\n'.format(tank_hp, tank_damage))
+
+# def attack(name, location, damage):
+#     print('{0} : {1} 방향으로 적군을 공격 합니다. [공격력 {2}]'.format(name, location, damage))
+
+# attack(name,'1시',damage)
+# attack(tank_name,'1시',tank_damage)
+# attack(tank2_name,'1시',tank2_damage)
+
+class Unit:
+    def __init__(self, name, hp, damage):
+        self.name = name   #멤버 변수
+        self.hp = hp       #멤버 변수
+        self.damage = damage  #멤버 변수
+        print('{0} 유닛이 생성 되었습니다'.format(self.name))
+        print('체력 {0}, 공격력 {1}'.format(self.hp, self.damage))
+
+marine1 = Unit('마린',40,5)
+marine2 = Unit('마린',40,5)
+tank = Unit('탱크',150,35)
+
+wraith1 = Unit('레이스',80,5)
+print('유닛 이름 : {0}, 공격력 : {1}'.format(wraith1.name, wraith1.damage))
+
+wraith2 = Unit('레이스',80,5)
+wraith2.clocking = True
+
+if wraith2.clocking == True:
+    print('{0} 는 현재 클로킹 상태입니다.'.format(wraith2.name))
