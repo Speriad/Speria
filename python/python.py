@@ -347,3 +347,17 @@ print('{0:.2f}'.format(5/3))    #소수점 둘째 자리까지 출력
 
 #PICKLE
 
+# import pickle
+# profile4_file = open('profile4.pickle','wb')
+# profile4={'이름' : '김무겸','나이':15,'취미':{'dd','ss','코딩'}}
+# print(profile4)
+# pickle.dump(profile4, profile4_file)  profile4 에 있는 정보를 파일로 저장
+# profile4_file.close()
+
+# profile4_file=open('profile4.pickle','rb')
+# profile4 = pickle.load(profile4_file) file에 있는정보를 profile4에 불러오기
+# print(profile4)
+# profile4_file.close()
+
+#with
+
