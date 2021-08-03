@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width">
+	<title>타자 미니게임</title>
+	<link href="https://i.ibb.co/ckzkb3G/image.jpg" rel="shortcut icon" type="image/x-icon">
+    <style>
+      body{
+      font-family: Comic sans MS;
+      background-color: #A8E66C
+    }
+.highlight {
+	background-color: yellow;
+}
+
+.error {
+	background-color: lightcoral;
+	border-color: red;
+}
+input[type='submit']:hover{
+      background: #F45555;
+	letter-spacing: 1px;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
+    }
+    input[type='button']:hover{
+      background: #F45555;
+	letter-spacing: 1px;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
+    }
+    </style>
+    </head>
+    <body>
+      <h1>타자 미니 게임 (한글)</h1>
+		<div>시작 버튼을 눌러 아래에 있는 문장에 있는 단어를 하나하나 입력 하고 스페이스바를 누르셈 (부호까지 써야함)</div>
+
+		<p id="quote"></p>
+		<p id="message"></p>
+		<div>
+			<input type="text" aria-label="current word" id="typed-value" />
+		</div>
+		<div>
+			<button id="start" type="button">시작</button>
+		</div>
+        <script>
+            const quotes = [
+	'한국에서 사람들이 이용하는 많은 프로그램 중 하나는 바로, 네이버, 유튜브, 메인 아티스트 이다. 특히, 메인 아티스트를 사람들은 많이 이용을 하는데, 왜냐하면 매우 질좋은 아티스트를 선정해줘서, 우리의 일상에 기쁨을 전해주기 때문이다.',
+	'은수가 흑인인 이유가 있다. 은수는 어렸을적에 가족들과 함께 캄보디아에 놀러가 니거들과 같이 놀다가 피부색이 꺼매졌다고 한다. 장난이고, 햇빛 아래에서 선크림을 바르지 않고 놀다가, 피부가 다 타버려서, 그게 아직까지 지속되어 있다고 한다. 그러나 변명같다.',
+	'김무겸은 외국힙합을 한사람만 파는 것이 아닌 여러 사람을 많이 판다고 한다. 그러나 박은수는, 한명의 래퍼를 질리도록 파며, 질리게 되면 그 래퍼를 버리고 샀던 앨범도 똥이 되게 하는 마술을 보여준다.',
+	'박은수는 앨범을 매우 자주 충동구매 한다. 그가 이렇게 충동구매를 하는 이유는 그가 첫번째 앨범으로 타일러 라는 래퍼의 앨범을 처음으로 구매하였기 때문인데 그 앨범에는 들어있는게 얼마없어서 박은수가 실망했지만, 그 앨범 덕분에 박은수가 앨범 충동구매까지 이어질수있었다.',
+	'박은수는 열두살때 부터 타일러 라는 래퍼의 음악을 들었다고 전해지고 있다. 그러나 그에 비해 김무겸은 작년 말부터 랩을 듣기 시작했으나 듣는 귀는 박은수보다 더 좋은것으로 알려져있으며, 박은수와 김무겸의 좋아하는 장르의 차이와 어떻게 듣는지는 매우 다르다.',
+	'메인 아티스트 사이트는 사람들에게 좋은 외국 힙합에 관련한 정보를 제공해주며, 오늘의 아티스트와 오늘의 앨범 그리고 오늘의 곡은 매일매일 업데이트 된다. 이 세가지 선정은 김무겸혼자서만 결정되는것이 아니며 철저한 박은수와의 상의후에 결정된다. 그러나 사실 박은수가 내는 의견은 김무겸과 별로 잘 맞지 않다.',
+	'김무겸은 항상 이 메인아티스트 라는 사이트를 어떻게 꾸며야 불법 사이트 같지 않아 보이는지 항상 고민하고 있다고 한다. 물론 박은수도 이 사이트가 기능성이 매우 좋기 때문에 이 사이트가 불법 사이트 처럼 보여주지 않도록 김무겸에게 여러가지 의견을 제시했으나 김무겸은 더 불법 사이트 같이 보일뿐이라며 항상 의견을 무시한다. 정상이다.',
+];
+
+// array for storing the words of the current challenge
+let words = [];
+// stores the index of the word the player is currently typing
+let wordIndex = 0;
+// default value for startTime (will be set on start)
+let startTime = Date.now();
+
+// grab UI items
+const quoteElement = document.getElementById('quote');
+const messageElement = document.getElementById('message')
+const typedValueElement = document.getElementById('typed-value');
+
+document.getElementById('start').addEventListener('click', function () {
+	// get a quote
+	const quoteIndex = Math.floor(Math.random() * quotes.length);
+	const quote = quotes[quoteIndex];
+	// Put the quote into an array of words
+	words = quote.split(' ');
+	// reset the word index for tracking
+	wordIndex = 0;
+
+	// UI updates
+	// Create an array of span elements so we can set a class
+	const spanWords = words.map(function(word) { return `<span>${word} </span>`});
+	// Convert into string and set as innerHTML on quote display
+	quoteElement.innerHTML = spanWords.join('');
+	// Highlight the first word
+	quoteElement.childNodes[0].className = 'highlight';
+	// Clear any prior messages
+	messageElement.innerText = '';
+
+	// Setup the textbox
+	// Clear the textbox
+	typedValueElement.value = '';
+	// set focus
+	typedValueElement.focus();
+	// set the event handler
+
+	// Start the timer
+	startTime = new Date().getTime();
+});
+
+typedValueElement.addEventListener('input', (e) => {
+	// Get the current word
+	const currentWord = words[wordIndex];
+	// get the current value
+	const typedValue = typedValueElement.value;
+
+	if (typedValue === currentWord && wordIndex === words.length - 1) {
+		// end of quote
+		// Display success
+		const elapsedTime = new Date().getTime() - startTime;
+		const message = `님은 이 쉽고 짧은 문장을 무려 ${elapsedTime / 1000} 초 동안이나 치셨음 발가락으로 친거임?`;
+		messageElement.innerText = message;
+	} else if (typedValue.endsWith(' ') && typedValue.trim() === currentWord) {
+		// end of word
+		// clear the typedValueElement for the new word
+		typedValueElement.value = '';
+		// move to the next word
+		wordIndex++;
+		// reset the class name for all elements in quote
+		for (const wordElement of quoteElement.childNodes) {
+			wordElement.className = '';
+		}
+		// highlight the new word
+		quoteElement.childNodes[wordIndex].className = 'highlight';
+	} else if (currentWord.startsWith(typedValue)) {
+		// currently correct
+		// highlight the next word
+		typedValueElement.className = '';
+	} else {
+		// error state
+		typedValueElement.className = 'error';
+	}
+});
+        </script>
+         <form action='mg2.html'>
+  <input type='submit' value='영어로 전환하기'>
+  </form>
+        <form action='html.html'>
+  <input type='submit' value='Main Artists로 돌아가기'>
+  </form>
+    </body>
+</html>
