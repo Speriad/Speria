@@ -2,7 +2,6 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
 	<meta name="description" content="Main Rap Artists">
 	<meta name='keywords' content='artist,main,mainartist,artist,rapper,artists,mainartists,artistmain'>
 	<meta name='author' content='speria'>
@@ -14,7 +13,8 @@
 		}
 
 	 body{
-      font-family: Comic sans MS
+      font-family: Comic sans MS;
+      background-color: #A8E66C
     }
 
 		header h1 {
@@ -24,28 +24,36 @@
 		}
 
 		#todaybox {
-			border: 1px solid black;
+			border: 2px solid black;
 			text-align: center;
 		}
 
 		#mainbox {
-			border: 2px solid black;
+			border: 3px solid black;
 			text-align: left;
 			float: left
 		}
 
 		#repbox {
-			border: 2px solid black;
+			border: 1px solid black;
 			text-align: left;
 			float: right;
 		}
-
+    .maine{
+      border: 2px solid black;
+      text-align: left
+    }
 		th {
 			background-color: #F0DAC2;
 		}
 
-		.black {
-			color: black
+		.black:hover{
+			background: #434343;
+	letter-spacing: 1px;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
 		}
 
 		input[name="Coupon1"] {
@@ -79,7 +87,6 @@
 			height: 10px;
 			font-size: 8px;
 		}
-
 		input[name='name'] {
 			background-color: #F0DAC2;
 			border-radius: 0.3em
@@ -111,13 +118,10 @@
 
 		input[type='button'] {
 			border-radius: 0.3em;
-			color: black;
-			background: #B2F6F0;
 		}
 
 		input[type='submit'] {
-			background-color: #F0DAC2;
-			border-radius: 0.3em
+			border-radius: 0.3em;
 		}
 
 		input[type='file'] {
@@ -136,69 +140,33 @@
 		}
 
 		a:hover {
-			color: #98AA99;
-			cursor: pointer;
+			text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
 		}
+    input[type='submit']:hover{
+      background: #F45555;
+	letter-spacing: 1px;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
+    }
+    input[type='button']:hover{
+      background: #F45555;
+	letter-spacing: 1px;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
+    }
 	</style>
 </head>
 
 <body>
 	<script type="text/javascript">
-		//1.------------------계산기 만들기--------------------------
-   function cal1(){
-      first=prompt('첫번째 숫자를 입력하시오')
-   second=prompt('두번째 숫자를 입력하시오')
-   plus=parseFloat(first)+  parseFloat(second) 
-     alert(plus)
-            }
-  function cal2(){
-      firsta=prompt('첫번째 숫자를 입력하시오')
-   seconda=prompt('두번째 숫자를 입력하시오')
-   minus=parseFloat(firsta)-parseFloat(seconda) 
-     alert(minus)
-            }
-  function cal3(){
-      firstb=prompt('첫번째 숫자를 입력하시오')
-   secondb=prompt('두번째 숫자를 입력하시오')
-     alert(firstb*secondb)
-            }
-  function cal4(){
-      firstc=prompt('첫번째 숫자를 입력하시오')
-   secondc=prompt('두번째 숫자를 입력하시오')
-     alert(firstc/secondc)
-            }
-  	function power(){
-      firstn=prompt('제곱할 수를 쓰시오')
-      secondn=prompt('지수를 쓰시오지수를 쓰시오')
-      result=Math.pow(firstn,secondn)
-      alert(result)
-    }
-  function squart(){
-    firstm=prompt('제곱근을 구할 수를 쓰시오.')
-  resultm=Math.sqrt(firstm)
-    alert(resultm)
-  }
-  //2. 배열만들기
-  var member=[]
-  function reset(){
-    member=[]
-  }
-  function Drake(){
-    member.push('Drake')
-    alert(member)
-  }
-  function Tyler(){
-    member.push('Tyler')
-    alert(member)
-  }
-  function Kendrick(){
-    member.push('Kendrick')
-    alert(member)
-  }
-  function Scott(){
-    member.push('Scott')
-    alert(member)
-  }
+
 	</script>
 	<!---------------------하이퍼텍스트와 이미지첨부 리스트----------------------->
 	<h2 id='mainbox'><a href='html.html'>Main Artists</h2></a>
@@ -209,21 +177,24 @@
 <input type='submit' class='btn' name='btn' value='후원하기' style="float: right">
 </form>
 <form action='lower.html'>
-<input type='submit' class='btn' name='btn' value='미니 게임 하기' style="float: left">
+<input type='submit' class='btn' name='btn' value='은무 선정'' style="float: left">
 </form>
 </header>
-<h1 id='todaybox'><font color='red'>오늘의 메인 아티스트</font>
-<br><h2 class='Black'><a href=https://namu.wiki/w/Juice%20WRLD?from=%EC%A5%AC%EC%8A%A4%20%EC%9B%94%EB%93%9C>쥬스 월드</a></h2>
-	추천 곡 : <a href=https://youtu.be/YWBohgkedIM><strong class='Black'>Juice WRLD - Lucid Dreams</strong></a>
-		 <br>더 많은 음악 듣기 : <a href=https://youtube.com/c/JuiceWRLDOfficial> <strong class='tyler'>Juice WRLD YouTube Channel</strong></a>
-		 <br><div id='tyler'><a href=https://youtube.com/c/JuiceWRLDOfficial><img src=https://i.ibb.co/wd76HWQ/image.jpg></a></div>
+<h1 id='todaybox'><font color='red'>오늘의 메인 아티스트</font></h1>
+<br><div class='maine'><h2><a href=https://namu.wiki/w/Kendrick%20Lamar>켄드릭 라마</a></h2>
+	추천 곡 : <a href=https://www.youtube.com/watch?v=g0NVaX8DRN4&list=PLerB9t5UmnAhmDwMFNrSFkD02zkynvxFd&index=26><strong class='Black'>Kendrick Lamar - King Kunta</strong></a>
+		 <br>더 많은 음악 듣기 : <a href=https://www.youtube.com/channel/UC3lBXcrKFnFAFkfVk5WuKcQ><strong class='tyler'>Kendrick Lamar YouTube Channel</strong></a>
+		 <br><div id='tyler'><a href=https://www.youtube.com/channel/UC3lBXcrKFnFAFkfVk5WuKcQ><img src=https://i.ibb.co/LrLGkN2/image.jpg></a></div></div>
 		<hr width = "100%" color = "black" size = "2">
 		<h1 id='todaybox'><font color='red'>오늘의 메인 앨범</font>
-			<br><h2 class='Black'><a href=https://youtube.com/playlist?list=OLAK5uy_m6xt1ZipEd_hALlmTOFY6S9OORu5LqPqc>ASTROWORLD</a></h2>
-			<div id='tyler'><a href=https://youtube.com/playlist?list=OLAK5uy_m6xt1ZipEd_hALlmTOFY6S9OORu5LqPqc><img src=https://i.ibb.co/2qBXTxf/image.jpg></div></a>
-      추천곡 : <a href=https://youtu.be/_EyZUTDAH0U>Travis Scott - BUTTERFLY EFFECT</a>
-
+			<br><h2><a href=https://www.youtube.com/playlist?list=OLAK5uy_mRFuqe0IIrexXkU7JOxo4rOb0WLEcwuz8>My Beautiful Dark Twisted Fantasy</a></h2>
+			<div id='tyler'><a href=https://www.youtube.com/playlist?list=OLAK5uy_mRFuqe0IIrexXkU7JOxo4rOb0WLEcwuz8><img src=https://i.ibb.co/y6bYvfK/MBTDF.jpg></div></a>
+      추천곡 : <a href=https://www.youtube.com/watch?v=chPDTUjnWgA>Kanye West - POWER</a></div>
 		<hr width = "100%" color = "black" size = "2">
+    <h1 id='todaybox'><font color='red'>오늘의 메인 곡</font>
+			<br><h2><a href=https://www.youtube.com/watch?v=j-OOPPT_bLI>Dr.Dre - Still D.R.E (Feat. Snoop Dogg)</a></h2>
+			<div id='tyler'><a href=https://www.youtube.com/watch?v=j-OOPPT_bLI><img src=https://i.ibb.co/CBQtVWt/2001.jpg></div></a>
+      <hr width = "100%" color = "black" size = "2">
     <h1>Today's headline</h1>
     <a href='https://instagram.com/eunsoomilk'><img src=https://i.ibb.co/0qm3BCn/image.jpg></a>
     <br>(사망전 웃는 모습을 보여주며 작별인사를 하는 박은수 군(향년 15세) )
@@ -242,6 +213,7 @@
       <li><a href='article11.html'>[속보]'나는 타일러 엄마다' 타일러 더 크리에이터의 친모는 사실 박은수?</a></li>
       <li><a href='article12.html'>박은수 직접 입 열었다..'중고거래로 LP판과 네이버에서 외국힙합 LP구매 했다..' 논란 불거져..</a></li>
       <li><a href='article13.html'>박은수 사망사건 드디어 흔적 발견돼..권총 한자루와 소파 찢어짐 발견되어..</a></li>
+      <li><a href='article14.html'>박은수 유명 게임 '마인크래프트' 구매 '카드 사기당했다..' 밝혀..</a>
     <hr width = "100%" color = "black" size = "2">
 		🔥<strong><font size='6' color='red'>인기있는 아티스트</strong></font>🔥
 		<a href=https://namu.wiki/w/J.%20Cole?from=J.Cole><li class='Black'>제이 콜</a></li>
@@ -260,115 +232,7 @@
 		<hr width = "100%" color = "black" size = "2">
 		<h2 class='Black'>유튜브 재생목록 모음</h2>김무겸 재생목록 : <a href='https://youtube.com/playlist?list=PLerB9t5UmnAhmDwMFNrSFkD02zkynvxFd'>Favorite</a>
     <br>박은수 재생목록 : <a href=https://www.youtube.com/playlist?list=PLFE3L-RfNA3vBbRg0ZSgrWIq_Q5Tm2f-Y>NEW 은생목록</a>
+    <br>은수&무겸 재생목록 : <a href=https://www.youtube.com/playlist?list=PLFE3L-RfNA3sXOW8_pliIJ5SWd6cUr-Ad>수겸목록</a>
     <hr width = "100%" color = "black" size = "2">
-		<!------------------------표 만들기----------------------------->
-		<table border='1'>
-		<thead>
-			<tr>
-				<th>이름</th> <th>구독자</th> <th>히트곡</th> <th>관계</th>
-			</tr>
-		</thead>
-		<tbody>
-		<tr>
-			<td>켄드릭 라마</td> <td>962만</td> <td><a href='https://www.youtube.com/watch?v=ov4WobPqoSA' class='Black'>HUMBLE.</a></td> <td>X</td>
-		</tr>
-		<tr>
-			<td>에이샙 라키</td> <td>423만</td> <td><a href='https://www.youtube.com/watch?v=wnyKQ2WAw08' class='Black'>Praise The Lord</a></td> <td rowspan='2'>친구
-		</tr>
-		<tr>
-			<td>타일러 더 크리에이터</td>
-<td>349만</td> <td><a href='https://www.youtube.com/watch?v=t-E2gm0a_N0&list=PLerB9t5UmnAhmDwMFNrSFkD02zkynvxFd&index=33' class='Black'>EARFQUAKE</a></td>
-		</tr>
-		<tr>
-			<td>트래비스 스캇</td> <td>1490만</td> <td><a href='https://www.youtube.com/watch?v=5rH9v7geLr8' class='Black'>SICKO MODE</a></td> <td>X</td>
-		</tr>
-	   </tbody>
-	   <tfoot>
-	   	<tr>
-	   		<td>구독자 합계</td> <td colspan='3'>32,240,000명</td>
-	   	</tr>
-	   </tfoot>
-		</table>
-		<hr width = "100%" color = "black" size = "2">
-		<!-------------------------Form 만들기------------------------>
-		<h1>신발 주문하기</h1>
-    <form action='method.html'>
-		이름 : <input type='text' name='name' placeholder="이름을 써주십시오.">
-		<br>쿠폰 번호 : <input type='number' name='Coupon1' placeholder='쿠'> -
-		<input type='number' name='Coupon2' placeholder='폰'> -
-		<input type='number' name='Coupon3' placeholder='번'> -
-		<input type='number' name='Coupon4' placeholder='호'>
-	<br>주소 : <input type='text' name='Adr' placeholder='주소를 써주십시오.'>
-		<br><br><strong>성별 : </strong>
-		<select name='Male or Female'>
-			<option value='Male'>남성</option>
-			<option value='Female'>여성</option>
-		</select>
-		<br><strong>갯수 : </strong>
-		<select name='much'>
-			<option value='One'>1</option>
-			<option value='Two'>2</option>
-			<option value='Three'>3</option>
-			<option value='Four'>4</option>
-			<option value='Five'>5</option>
-			<option value='Six'>6</option>
-			<option value='Seven'>7</option>
-			<option value='Eight'>8</option>
-			<option value='Nine'>9</option>
-      <option value='Nine'>10</option>
-		</select>
-		<br><strong>색깔 : </strong>
-		빨간색<input type='radio' name='color' value='Red'>
-		파란색<input type='radio' name='color' value='Blue'>
-		검정색<input type='radio' name='color' value='Black'>
-		흰색<input type='radio' name='color' value='White'>
-		<br><strong>추가 물품 : </strong>
-		깔창<input type='checkbox' name='additionalitem' value='Ggal'>
-		신발끈<input type='checkbox' name='additionalitem' value='tie'>
-		신발닦이<input type='checkbox' name='additionalitem' value='brush'>
-		<br><strong>사이즈 : </strong>
-		<input type='text' name='Size' placeholder='사이즈를 적어주세요'>mm
-		<br><input type='submit' value='주문'>
-			</form>
-			<form action='file.html'>
-		<br><input type='file'>
-		<br><input type='submit' value='전송'>
-	</form>
-	<hr width = "100%" color = "black" size = "2">
-</p> 
-<!----------------------계산기 버튼 만들기--------------------------------->
-	<input type='button' 
-         value='+'
-         onclick='cal1()'/>
-  <input type='button' 
-         value='-'
-         onclick='cal2()'/>
-<input type='button' 
-         value='*'
-         onclick='cal3()'/>
-<input type='button' 
-         value='/'
-         onclick='cal4()'/>
-  <input type='button' 
-         value='^' 
-         onclick='power()'/>
-  <input type='button' 
-         value='√' 
-         onclick='squart()'/>
-         <input type='button' 
-         value='Drake 추가' 
-         onclick='Drake()'/>
-         <input type='button' 
-         value='Tyler 추가' 
-         onclick='Tyler()'/>
-         <input type='button' 
-         value='Kendrick 추가' 
-         onclick='Kendrick()'/>
-         <input type='button' 
-         value='Scott 추가' 
-         onclick='Scott()'/>
-         <input type='button' 
-         value='초기화' 
-         onclick='reset()'/>
 </body>
 </html>
