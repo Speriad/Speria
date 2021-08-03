@@ -398,13 +398,20 @@ print('{0:.2f}'.format(5/3))    #소수점 둘째 자리까지 출력
 # attack(tank2_name,'1시',tank2_damage)
 
 class Unit:
-    def __init__(self, name, hp):
+    def __init__(self, name, hp, speed):
         self.name = name   #멤버 변수
-        self.hp = hp       #멤버 변수
+        self.hp = hp     #멤버 변수
+        self.speed=speed       #멤버 변수
+
+    
+    def move(self, location):
+        print('[지상 유닛 이동]')
+        print('{0} : {1} 방향으로 이동합니다. [속도 {2}]'\
+            .format(self.name, location, self.speed))
 
 class AttackUnit(Unit):
-    def __init__(self, name, hp, damage):
-        Unit.__init__(self, name, hp)
+    def __init__(self, name, hp, speed, damage):
+        Unit.__init__(self, name, hp, speed)
         self.damage = damage   
 
     def attack(self,location):
@@ -418,7 +425,7 @@ class AttackUnit(Unit):
         if self.hp <= 0 :
             print('{0} : 파괴되었습니다.'.format(self.name))
 
-firebat1 = AttackUnit('파이어뱃', 50, 16)
+firebat1 = AttackUnit('파이어뱃', 50, 16, 3)
 firebat1.attack('5시')
 
 firebat1.damaged(25)
@@ -434,8 +441,15 @@ class Flyable:
 
 class FlyableAttackUnit(AttackUnit, Flyable): 
         def __init__(self, name, hp, damage, flying_speed):
-            AttackUnit.__init__(self, name, hp, damage)
+            AttackUnit.__init__(self, name, hp, 0, damage)
             Flyable. __init__(self, name, hp, damage)
 
-valkyrie = FlyableAttackUnit('발키리',200,6,5)
-valkyrie.fly(valkyrie.name, '3시')
+        def move(self, location):
+            print('[공중 유닛 이동]')
+            self.fly(self.name, location)
+
+class BuildingUnit(Unit):
+    def __init__(self, name, hp, location):
+        # =Unit.__init__(self, name, hp, 0)
+        super().__init__(name, hp, 0)
+        self.location = location
