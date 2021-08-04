@@ -544,3 +544,6 @@ from random import*
 #     unit.damaged(randint(5,21))  #공격은 5~ 20 사이로 받음
 
 # game_over()
+
+#예외 처리
+
