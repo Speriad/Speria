@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width">
+	<title>타자 미니게임</title>
+	<link href="https://i.ibb.co/ckzkb3G/image.jpg" rel="shortcut icon" type="image/x-icon">
+    <style>
+      body{
+      font-family: Comic sans MS;
+      background-color: #A8E66C
+    }
+.highlight {
+	background-color: yellow;
+}
+
+.error {
+	background-color: lightcoral;
+	border-color: red;
+}
+#start:hover{
+   background: #F45555;
+	letter-spacing: 1px;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
+}
+input[type='submit']:hover{
+      background: #F45555;
+	letter-spacing: 1px;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
+    }
+    input[type='button']:hover{
+      background: #F45555;
+	letter-spacing: 1px;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
+    }
+    </style>
+    </head>
+    <body>
+      <h1>타자 미니 게임 (영어)</h1>
+		<div>시작 버튼을 눌러 아래에 있는 문장에 있는 단어를 하나하나 입력 하고 스페이스바를 누르셈 (부호까지 써야함)</div>
+
+		<p id="quote"></p>
+		<p id="message"></p>
+		<div>
+			<input type="text" aria-label="current word" id="typed-value" />
+		</div>
+		<div>
+			<button id="start" type="button">시작</button>
+		</div>
+        <script>
+            const quotes = [
+	'When you have eliminated the impossible, whatever remains, however improbable, must be the truth.',
+	'There is nothing more deceptive than an obvious fact.',
+	'I ought to know by this time that when a fact appears to be opposed to a long train of deductions it invariably proves to be capable of bearing some other interpretation.',
+	'I never make exceptions. An exception disproves the rule.',
+	'What one man can invent another can discover.',
+	'Nothing clears up a case so much as stating it to another person.',
+	'Education never ends, Watson. It is a series of lessons, with the greatest for the last.',
+];
+
+// array for storing the words of the current challenge
+let words = [];
+// stores the index of the word the player is currently typing
+let wordIndex = 0;
+// default value for startTime (will be set on start)
+let startTime = Date.now();
+
+// grab UI items
+const quoteElement = document.getElementById('quote');
+const messageElement = document.getElementById('message')
+const typedValueElement = document.getElementById('typed-value');
+
+document.getElementById('start').addEventListener('click', function () {
+	// get a quote
+	const quoteIndex = Math.floor(Math.random() * quotes.length);
+	const quote = quotes[quoteIndex];
+	// Put the quote into an array of words
+	words = quote.split(' ');
+	// reset the word index for tracking
+	wordIndex = 0;
+
+	// UI updates
+	// Create an array of span elements so we can set a class
+	const spanWords = words.map(function(word) { return `<span>${word} </span>`});
+	// Convert into string and set as innerHTML on quote display
+	quoteElement.innerHTML = spanWords.join('');
+	// Highlight the first word
+	quoteElement.childNodes[0].className = 'highlight';
+	// Clear any prior messages
+	messageElement.innerText = '';
+
+	// Setup the textbox
+	// Clear the textbox
+	typedValueElement.value = '';
+	// set focus
+	typedValueElement.focus();
+	// set the event handler
+
+	// Start the timer
+	startTime = new Date().getTime();
+});
+
+typedValueElement.addEventListener('input', (e) => {
+	// Get the current word
+	const currentWord = words[wordIndex];
+	// get the current value
+	const typedValue = typedValueElement.value;
+
+	if (typedValue === currentWord && wordIndex === words.length - 1) {
+		// end of quote
+		// Display success
+		const elapsedTime = new Date().getTime() - startTime;
+		const message = `님은 이 쉽고 짧은 문장을 무려 ${elapsedTime / 1000} 초 동안이나 치셨음 발가락으로 친거임?`;
+		messageElement.innerText = message;
+	} else if (typedValue.endsWith(' ') && typedValue.trim() === currentWord) {
+		// end of word
+		// clear the typedValueElement for the new word
+		typedValueElement.value = '';
+		// move to the next word
+		wordIndex++;
+		// reset the class name for all elements in quote
+		for (const wordElement of quoteElement.childNodes) {
+			wordElement.className = '';
+		}
+		// highlight the new word
+		quoteElement.childNodes[wordIndex].className = 'highlight';
+	} else if (currentWord.startsWith(typedValue)) {
+		// currently correct
+		// highlight the next word
+		typedValueElement.className = '';
+	} else {
+		// error state
+		typedValueElement.className = 'error';
+	}
+});
+        </script>
+         <form action='mg.html'>
+  <input type='submit' value='한글로 전환하기'>
+  </form>
+        <form action='html.html'>
+  <input type='submit' value='Main Artists로 돌아가기'>
+  </form>
+    </body>
+</html>
