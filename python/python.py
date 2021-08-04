@@ -402,6 +402,7 @@ class Unit:
         self.name = name   #멤버 변수
         self.hp = hp     #멤버 변수
         self.speed=speed       #멤버 변수
+        print('{0} 유닛이 생성되었습니다.'.format(name))
 
     
     def move(self, location):
@@ -448,8 +449,16 @@ class FlyableAttackUnit(AttackUnit, Flyable):
             print('[공중 유닛 이동]')
             self.fly(self.name, location)
 
-class BuildingUnit(Unit):
-    def __init__(self, name, hp, location):
-        # =Unit.__init__(self, name, hp, 0)
-        super().__init__(name, hp, 0)
-        self.location = location
+class Marine(AttackUnit):
+    def __init__(self):
+        AttackUnit.__init__(self, '마린', 40, 1, 5)
+
+    def stimpack(self):
+        if self.hp > 10:
+            self.hp = self.hp-10
+            print('{0} : 스팀팩을 사용합니다. (HP 10 감소)'.format(self.name))
+        else:print('{0} : 체력이 부족하여 스팀팩을 사용하지 않습니다.'.format(self.name))
+
+class Tank(AttackUnit):
+    def __init__(self):
+        AttackUnit.__init__(self, '마린', 40, 1, 5)
