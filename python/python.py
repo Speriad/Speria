@@ -557,7 +557,8 @@ def divide():
     except ValueError:
         print('숫자만 입력하라고')
         start()
-
+    #finally:
+        #print('계산기 써주셔서 참 고마움')   #오류가 뜨든 안뜨든 무조건 실행됨
 def start():
     star=input('시작하려면 아무것도 치지말고 엔터만 눌러라 끝내려면 끝 이라고 쳐라 : ')
     if star=='':
