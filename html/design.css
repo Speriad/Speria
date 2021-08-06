@@ -1,0 +1,89 @@
+	body {
+			font-family: Comic sans MS;
+			background-color: #64F6BC
+		}
+
+		header h1 {
+			border: 3px solid black;
+			text-align: center;
+			font-size: 3em;
+		}
+
+		#todaybox {
+			border: 2px solid black;
+			text-align: center;
+		}
+
+		#mainbox {
+			border: 3px solid black;
+			text-align: left;
+			float: left
+		}
+
+		#repbox {
+			border: 1px solid black;
+			text-align: left;
+			float: right;
+		}
+
+		.maine {
+			border: 2px solid black;
+			text-align: left
+		}
+
+		input[type='button'] {
+			border-radius: 0.3em;
+			cursor: pointer;
+		}
+
+		input[type='submit'] {
+			border-radius: 0.3em;
+			cursor: pointer;
+		}
+
+		#buttons {
+			background-color: #64F6BC;
+			border: none;
+			color: white;
+			padding: 15px 30px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+		}
+
+		img {
+			border-radius: 1em;
+			width: 300px;
+		}
+
+		a {
+			color: blue;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+			-webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+			-moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+			transition: all 0.4s ease 0s;
+		}
+
+		input[type='submit']:hover {
+			background: #F45555;
+			letter-spacing: 1px;
+			-webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+			-moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+			box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+			transition: all 0.4s ease 0s;
+		}
+
+		input[type='button']:hover {
+			background: #F45555;
+			letter-spacing: 1px;
+			-webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+			-moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+			box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+			transition: all 0.4s ease 0s;
+		}
