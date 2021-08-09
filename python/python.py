@@ -547,28 +547,27 @@ from random import*
 
 #예외 처리
 
-def divide():
-    try:
-        print('나누기 전용 계산기이다 숫자만 입력해라')
-        num1 = int(input('첫번째 숫자를 입력하셈 : '))
-        num2 = int(input('두번째 숫자를 입력하셈 : '))
-        print('{0} 나누기 {1} 은 {2} 임'.format(num1, num2, num1/num2))
-        start()
-    except ValueError:
-        print('숫자만 입력하라고')
-        start()
-    #finally:
-        #print('계산기 써주셔서 참 고마움')   #오류가 뜨든 안뜨든 무조건 실행됨
-def start():
-    star=input('시작하려면 아무것도 치지말고 엔터만 눌러라 끝내려면 끝 이라고 쳐라 : ')
-    if star=='':
-        divide()
-    elif star=='끝':
-        print('끝났다')
-        exit()
-    else:
-        print('아무것도 안치거나 끝 이라고 치기만하라고')
-        start()
-
-start()
-
+def calc():
+    print('계산기를 실행하도록 하겠다')
+    first=int(input('첫번째 숫자를 입력해라 : '))
+    YSJ=input('더하기는 1 , 빼기는 2 , 곱하기는 3 , 나누기는 4 를 입력해라 : ')
+    second=int(input('두번째 숫자를 입력해라 : '))
+    if(YSJ=='1'):
+        print(first+second); end()
+    elif(YSJ=='2'):
+        print(first-second); end()
+    elif(YSJ=='3'):
+        print(first*second); end()
+    elif(YSJ=='4'):
+        print(first/second); end()
+    else:print('오류임 ㅅㄱ'); end()
+def end():
+        again=input('다시 하려면 다시 라고 치고 아니면 끝 이라고 치셈 : ')
+        if(again=='다시'):
+            calc()
+        elif(again=='끝'):
+            print('끝남 ㅅㄱ')
+        else:
+            print('다시 아니면 끝 이라고만 치라고')
+            end()
+calc()
