@@ -10,17 +10,14 @@ pygame.display.set_caption('Testing')
 
 background = pygame.image.load("C:\\무겸\\Programming\\Speria\\python\\blue.png")
 
-running=True
+running = True
 while running:
   for event in pygame.event.get():
     if event.type == pygame.QUIT:
       running = False
   
-  screen.blit(background, (0, 0))
+  screen.blit(background, (0,0))
 
   pygame.display.update()
-  
-  
-pygame.display.update()
 
 pygame.quit()
