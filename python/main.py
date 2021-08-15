@@ -22,11 +22,18 @@ character_y_pos = screen_height - character_height
 to_x = 0
 to_y = 0
 
-character_speed = 10
+character_speed = 0.6
+
+enemy = pygame.image.load('C:\\무겸\\Programming\\Speria\\python\\yellow.png')
+enemy_size = enemy.get_rect().size
+enemy_width = enemy_size[0]
+enemy_height = enemy_size[1]
+enemy_x_pos = (screen_width/2) - (enemy_width/2)
+enemy_y_pos = (screen_height/2) - (enemy_height/2)
 
 running = True
 while running:
-    dt = clock.tick(10)
+    dt = clock.tick(60)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
@@ -47,8 +54,8 @@ while running:
           elif event.key == pygame.K_UP or event.key == pygame.K_DOWN:
             to_y = 0
     
-    character_x_pos += to_x
-    character_y_pos += to_y
+    character_x_pos += to_x * dt
+    character_y_pos += to_y * dt
 
     if character_x_pos < 0:
         character_x_pos = 0
@@ -62,6 +69,7 @@ while running:
     
     screen.blit(background, (0, 0))
     screen.blit(character, (character_x_pos, character_y_pos))
+    screen.blit(enemy, (enemy_x_pos, enemy_y_pos))
 
     pygame.display.update()
 
