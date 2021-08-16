@@ -72,8 +72,13 @@ class App extends Component {
     <div className="App">
       <header>
       <h1><a href='/' onClick={function(e){
+        console.log(e)
         e.preventDefault();   //누를때마다 리로드 되는것을 방지함
-      }}>{this.state.subject.title}</a></h1>
+        //this.state.mode = 'welcome'  라고 하면 바뀌었다고 인식하지 못함
+        this.setState({
+          mode:'welcome'
+        })
+      }.bind(this)}>{this.state.subject.title}</a></h1>
       {this.state.subject.sub}
     </header>
       <Table></Table>
