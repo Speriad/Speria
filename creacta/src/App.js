@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-
+//24편부터
 class Subject extends Component {
   render(){
     return (
