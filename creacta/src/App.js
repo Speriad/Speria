@@ -17,9 +17,9 @@ class Table extends Component {
     return (
     <nav>
       <ul>
-          <li><a href='https://namu.wiki/w/Kendrick%20Lamar'>Kendrick</a></li>
-          <li><a href='https://namu.wiki/w/Drake'>Drake</a></li>
-          <li><a href='https://namu.wiki/w/%ED%83%80%EC%9D%BC%EB%9F%AC%2C%20%EB%8D%94%20%ED%81%AC%EB%A6%AC%EC%97%90%EC%9D%B4%ED%84%B0?from=Tyler,%20The%20Creator'>Tyler</a></li>
+          <div id='table1'><li>{this.state.table1.title}</li></div>
+          <div id='table2'><li>{this.state.table2.title}</li></div>
+          <div id='table3'><li>{this.state.table3.title}</li></div>
       </ul>
     </nav>
     );
@@ -43,14 +43,18 @@ class App extends Component {
   constructor(props){   //props 초기화
     super(props);
   this.state={     
-    mode:'tyler',  
+    mode: null,  
     welcome:{title:'Welcome', sub:'Welcome to React Tessting'},
     subject:{title:'REACT.JS', sub:'React.JS Testing Website'},
     contents:[
-      {id:1, title:'Kendrick', sub:'Kendrick Lamar Duckworth'},
-      {id:2, title:'Drake', sub:'Drizzy'},
-      {id:3, title:'Tyler', sub: 'Tyler The Creator'}
-    ]
+      {id:1, title:'Kendrick', sub:'Kendrick Lamar Duckworth is GOAT'},
+      {id:2, title:'Drake', sub:'Drizzy is his nickname.'},
+      {id:3, title:'Tyler', sub: 'Tyler The Creator was out new album'},
+      {id:4, title: 'React', sub: 'React.js was made by FaceBook'}
+    ],
+    table1:{title:'Kendrick'},
+    table2:{title:'Drake'},
+    table3:{title:'Tyler'},
     }
   }
   render(){
@@ -67,21 +71,44 @@ class App extends Component {
     }else if(this.state.mode === 'tyler'){
       _title = this.state.contents[2].title
       _sub = this.state.contents[2].sub
+    }else if(this.state.mode == 'react'){
+      _title = this.state.contents[3].title
+      _sub = this.state.contents[3].sub
     }
     return (
     <div className="App">
       <header>
       <h1><a href='/' onClick={function(e){
-        console.log(e)
-        e.preventDefault();   //누를때마다 리로드 되는것을 방지함
-        //this.state.mode = 'welcome'  라고 하면 바뀌었다고 인식하지 못함
+        e.preventDefault();
         this.setState({
-          mode:'welcome'
+          mode: 'react'
         })
       }.bind(this)}>{this.state.subject.title}</a></h1>
       {this.state.subject.sub}
     </header>
-      <Table></Table>
+        <a href='/' onClick={function(e){
+        e.preventDefault();   //누를때마다 리로드 되는것을 방지함
+        //this.state.mode = 'welcome'  라고 하면 바뀌었다고 인식하지 못함
+        this.setState({
+          mode:'kendrick'
+        })
+      }.bind(this)}><li>{this.state.table1.title}</li></a>
+      
+      
+      <a href='/' onClick={function(e){
+        e.preventDefault();  
+        this.setState({
+          mode:'drake'
+        })
+      }.bind(this)}><li>{this.state.table2.title}</li></a>
+      
+      
+      <a href='/' onClick={function(e){
+        e.preventDefault(); 
+        this.setState({
+          mode:'tyler'
+        })
+      }.bind(this)}><li>{this.state.table3.title}</li></a>
       <Content title={_title} desc={_sub}></Content>
     </div>
     );
