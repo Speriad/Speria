@@ -50,7 +50,7 @@ class App extends Component {
       {id:1, title:'Kendrick', sub:'Kendrick Lamar Duckworth is GOAT'},
       {id:2, title:'Drake', sub:'Drizzy is his nickname. He is one of the most popular Rappers in the world.'},
       {id:3, title:'Tyler', sub: 'Tyler The Creator was out new album'},
-      {id:4, title: 'React', sub: 'React.js was made by FaceBook'}
+      {id:4, title: 'React', sub: 'React.js was made by FaceBook.'}
     ],
     table1:{title:'Kendrick'},
     table2:{title:'Drake'},
