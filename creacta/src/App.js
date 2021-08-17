@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-//24편부터
+
 class Subject extends Component {
   render(){
     return (
@@ -48,7 +48,7 @@ class App extends Component {
     subject:{title:'REACT.JS', sub:'React.JS Testing Website'},
     contents:[
       {id:1, title:'Kendrick', sub:'Kendrick Lamar Duckworth is GOAT'},
-      {id:2, title:'Drake', sub:'Drizzy is his nickname.'},
+      {id:2, title:'Drake', sub:'Drizzy is his nickname. He is one of the most popular Rappers in the world'},
       {id:3, title:'Tyler', sub: 'Tyler The Creator was out new album'},
       {id:4, title: 'React', sub: 'React.js was made by FaceBook'}
     ],
