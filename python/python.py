@@ -550,7 +550,7 @@ from random import*
 def calc():
     print('계산기를 실행하도록 하겠다')
     first=int(input('첫번째 숫자를 입력해라 : '))
-    YSJ=input('더하기는 1 , 빼기는 2 , 곱하기는 3 , 나누기는 4 를 입력해라 : ')
+    YSJ=input('더하기는 1 , 빼기는 2 , 곱하기는 3 , 나누기는 4 를 입력하시오 : ')
     second=int(input('두번째 숫자를 입력해라 : '))
     if(YSJ=='1'):
         print(first+second); end()
