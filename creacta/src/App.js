@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import Control from './Control.js'
 import './App.css';
+
 
 class Subject extends Component {
   render(){
@@ -48,9 +50,9 @@ class App extends Component {
     subject:{title:'REACT.JS', sub:'React.JS Testing Website'},
     contents:[
       {id:1, title:'Kendrick', sub:'Kendrick Lamar Duckworth is GOAT'},
-      {id:2, title:'Drake', sub:'Drizzy is his nickname. He is one of the most popular Rappers in the world.'},
-      {id:3, title:'Tyler', sub: 'Tyler The Creator was out new album'},
-      {id:4, title: 'React', sub: 'React.js was made by FaceBook.'}
+      {id:2, title:'Drake', sub:'Drizzy is his nickname.'},
+      {id:3, title:'Tyler', sub: 'CALL ME IF YOU GET LOST is one of the hottest albums in 2021🔥'},
+      {id:4, title: 'React', sub: 'React.js was made by FaceBook'}
     ],
     table1:{title:'Kendrick'},
     table2:{title:'Drake'},
@@ -92,7 +94,7 @@ class App extends Component {
         this.setState({
           mode:'kendrick'
         })
-      }.bind(this)}><li>{this.state.table1.title}</li></a>
+      }.bind(this)}><br /><li>{this.state.table1.title}</li></a>
       
       
       <a href='/' onClick={function(e){
@@ -109,6 +111,11 @@ class App extends Component {
           mode:'tyler'
         })
       }.bind(this)}><li>{this.state.table3.title}</li></a>
+      <Control onChangeMode={function(_mode){
+        this.setState({
+          mode:_mode
+        })
+      }.bind(this)}></Control>
       <Content title={_title} desc={_sub}></Content>
     </div>
     );
