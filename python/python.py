@@ -265,7 +265,7 @@ def checkpoint(soldiers): #경계근무
 
 def checkpoint_ret(gun, soldiers):
     gun=gun-soldiers
-    print('[함수 내] 남은 총 : {0}'.format(gun))
+    print('[함수 내] 남은 총 수 : {0}'.format(gun))
     return gun
 
 print('전체 총 : {0}'.format(gun))
