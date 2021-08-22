@@ -261,7 +261,7 @@ gun = 10
 def checkpoint(soldiers): #경계근무
     global gun  #전역 공간에 있는 gun을 사용하겠다.
     gun = gun - soldiers
-    print('[함수 내] 남은 총 : {0}'.format(gun))
+    print('[함수 내] 남은 총 수 : {0}'.format(gun))
 
 def checkpoint_ret(gun, soldiers):
     gun=gun-soldiers
