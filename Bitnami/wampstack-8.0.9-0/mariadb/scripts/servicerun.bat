@@ -5,11 +5,11 @@ rem Check if argument is STOP or START
 
 if not ""%1"" == ""START"" goto stop
 
-net start "wampstackMariaDB"
+net start "wampstackMariaDB-1"
 goto end
 
 :stop
-net stop "wampstackMariaDB"
+net stop "wampstackMariaDB-1"
 
 :end
 exit
