@@ -1,0 +1,18 @@
+ PMA_token |s:32:"36502a3447352b2f2d2522716b612350"; HMAC_secret |s:16:",_?CD%TUHd-et/r";browser_access_time|a:1:{s:7:"default";i:1630325544;}encryption_key|s:32:"�^t�t���m{hS���l��uB��,�q|�";relation|a:1:{i:1;a:22:{s:11:"PMA_VERSION";s:5:"5.1.1";s:7:"relwork";b:0;s:11:"displaywork";b:0;s:12:"bookmarkwork";b:0;s:7:"pdfwork";b:0;s:8:"commwork";b:0;s:8:"mimework";b:0;s:11:"historywork";b:0;s:10:"recentwork";b:0;s:12:"favoritework";b:0;s:11:"uiprefswork";b:0;s:12:"trackingwork";b:0;s:14:"userconfigwork";b:0;s:9:"menuswork";b:0;s:7:"navwork";b:0;s:17:"savedsearcheswork";b:0;s:18:"centralcolumnswork";b:0;s:20:"designersettingswork";b:0;s:19:"exporttemplateswork";b:0;s:8:"allworks";b:0;s:4:"user";N;s:2:"db";N;}}cache|a:3:{s:13:"server_1_root";a:14:{s:14:"mysql_cur_user";s:14:"root@localhost";s:17:"is_create_db_priv";b:1;s:14:"is_reload_priv";b:1;s:12:"db_to_create";s:0:"";s:30:"dbs_where_create_table_allowed";a:1:{i:0;s:1:"*";}s:11:"dbs_to_test";b:0;s:9:"proc_priv";b:1;s:10:"table_priv";b:1;s:8:"col_priv";b:1;s:7:"db_priv";b:1;s:12:"is_superuser";b:1;s:12:"is_grantuser";b:1;s:11:"binary_logs";a:0:{}s:18:"menu-levels-server";a:13:{s:9:"databases";s:18:"데이터베이스";s:3:"sql";s:3:"SQL";s:6:"status";s:6:"상태";s:6:"rights";s:9:"사용자";s:6:"export";s:12:"내보내기";s:6:"import";s:12:"가져오기";s:8:"settings";s:6:"설정";s:6:"binlog";s:19:"바이너리 로그";s:11:"replication";s:6:"복제";s:4:"vars";s:15:"환경설정값";s:7:"charset";s:9:"문자셋";s:7:"plugins";s:12:"플러그인";s:6:"engine";s:6:"엔진";}}s:8:"server_1";a:4:{s:15:"userprefs_mtime";i:1630325544;s:14:"userprefs_type";s:7:"session";s:12:"config_mtime";i:1630325358;s:9:"userprefs";a:2:{s:4:"lang";s:2:"ko";s:7:"Console";a:1:{s:4:"Mode";s:8:"collapse";}}}s:13:"version_check";a:2:{s:8:"response";s:419:"{
+    "date": "2021-06-04", 
+    "version": "5.1.1", 
+    "releases": [
+        {
+            "date": "2021-06-04", 
+            "php_versions": ">=7.1,<8.1", 
+            "version": "5.1.1", 
+            "mysql_versions": ">=5.5"
+        }, 
+        {
+            "date": "2020-10-15", 
+            "php_versions": ">=5.5,<8.0", 
+            "version": "4.9.7", 
+            "mysql_versions": ">=5.5"
+        }
+    ]
+}";s:9:"timestamp";i:1630325540;}}userconfig|a:2:{s:2:"db";a:2:{s:4:"lang";s:2:"ko";s:12:"Console/Mode";s:8:"collapse";}s:2:"ts";i:1630325544;}two_factor_check|b:1;tmpval|a:2:{s:14:"favoriteTables";a:1:{i:1;a:0:{}}s:12:"recentTables";a:1:{i:1;a:0:{}}}git_location|N;is_git_revision|b:0;ConfigFile1|a:0:{}debug|a:0:{}errors|a:0:{}
