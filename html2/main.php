@@ -7,7 +7,8 @@
    </head>
    <body>
         <?php
-            print('Hello World')
+            $d='Helloworld';
+            print($d);
         ?>
    </body>
 <html>
