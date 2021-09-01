@@ -79,13 +79,14 @@
         <div class='input-group'>
           <form action='condb.php' method='post'>
           <input type='text' class='form-control'
-          placeholder='ID' aria-label='ID' aria-describedby='loginbutton' name='id' id='id'>
+          placeholder='ID' aria-label='id' aria-describedby='loginbutton' name='id' id='id'>
           <div class='input-group'>
           <input type='password' class='form-control'
-          placeholder='Password' aria-label='Password' aria-describedby='loginbutton' name='password' id='password'>
+          placeholder='Password' aria-label='password' aria-describedby='loginbutton' name='password' id='password'>
           <div class='input-group'>
             <button class='btn btn-warning btn-md' type='submit'
           id='loginbutton'>GO</button>
+            </form>
             <button type='submit' class='btn btn-outline-warning'>Forgot Password?</button>
             <button type='submit' class='btn btn-outline-warning'>Register</button>
           </div>

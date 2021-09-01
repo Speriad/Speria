@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php
-	$firstName = $_POST['id'];
+	$id = $_POST['id'];
 	$password = $_POST['password'];
 
 	// Database connection
@@ -26,6 +26,5 @@
 		$conn->close();
 	}
 ?>
-<meta http-equiv="Refresh" content="0; url='index.php'" />
 </body>
 </html>
