@@ -62,8 +62,7 @@
         <div>
           <h1><span class='text-warning'>Kanye West</span> Was Out New Album <span class='text-warning'>'DONDA'</span></h1>
           <p class='lead my-4'>Finally, He released 10th album, 'DONDA'</p>
-          <a class="btn btn-danger btn-lg" href="https://www.youtube.com/watch?v=y4l85Qrnd-c" role="button">Listen in YouTube</a>
-          <p class='lead my-5'>We cannot find whole playlist, so recommended the best song we thought</p>
+          <a class="btn btn-danger btn-lg" href="https://youtube.com/playlist?list=PL8czsbhQP4tvew4t_V2PL-wUMbxIUdz4o" role="button">Listen in YouTube</a>
         </div>
         <a href='https://www.youtube.com/watch?v=y4l85Qrnd-c'><img class='img-fluid w-200 d-none d-sm-block' src='https://lh3.googleusercontent.com/gd7qsOzpy8aoUf0SV1E-LZiUjo03QYiDNFRwSwQc3h5rBG8JHuk1P_nsB7I9A4rS_cMpyU18D8SEOA7iDw=w544-h544-l90-rj' alt='' /></a>
       </div>

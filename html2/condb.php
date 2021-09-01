@@ -26,6 +26,6 @@
 		$conn->close();
 	}
 ?>
-<meta http-equiv="Refresh" content="0; url='html.html'" />
+<meta http-equiv="Refresh" content="0; url='index.php'" />
 </body>
 </html>
