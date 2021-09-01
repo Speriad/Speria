@@ -87,8 +87,6 @@
             <button class='btn btn-warning btn-md' type='submit'
           id='loginbutton'>GO</button>
             </form>
-            <button type='submit' class='btn btn-outline-warning'>Forgot Password?</button>
-            <button type='submit' class='btn btn-outline-warning'>Register</button>
           </div>
         </div>
         </div>
