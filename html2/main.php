@@ -7,7 +7,7 @@
    </head>
    <body>
         <?php
-            $d='Helloworld';
+            $d='Hello Wrld';
             print('This is '.$d.' Yeah');   //문자.변수.문자 형태로 써야함
         ?>
    </body>
