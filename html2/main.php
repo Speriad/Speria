@@ -8,7 +8,7 @@
    <body>
         <?php
             $d='Helloworld';
-            print($d);
+            print('This is '.$d.' Yeah');   //문자.변수.문자 형태로 써야함
         ?>
    </body>
 <html>
