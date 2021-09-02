@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link href="https://i.ibb.co/hKp3HtP/DAMN.jpg" rel="shortcut icon" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
@@ -74,17 +74,16 @@
   <section class='bg-primary text-light p-4'>
     <div class='container'>
       <div class='d-md-flex justify-content-between align-items-center'>
-        <h2 class='mb-2 mb-md-0'>Log-In to enjoy all services</h2>
-        <div class='input-group'>
+        <h2 class='mb-2 mb-md-0'>Report</h2>
+        <div class='form-group'>
           <form action='condb.php' method='post'>
           <input type='text' class='form-control'
-          placeholder='ID' aria-label='id' aria-describedby='loginbutton' name='id' id='id'>
+          placeholder='Nickname (Only English)' aria-label='id' aria-describedby='loginbutton' name='id' id='id'>
           <div class='input-group'>
-          <input type='password' class='form-control'
-          placeholder='Password' aria-label='password' aria-describedby='loginbutton' name='password' id='password'>
+          <input type='text' class='form-control'
+          placeholder='Report Something' aria-label='password' aria-describedby='loginbutton' name='password' id='password'>
           <div class='input-group'>
-            <button class='btn btn-warning btn-md' type='submit'
-          id='loginbutton'>GO</button>
+            <input type="submit" class="btn btn-warning btn-md" />
             </form>
           </div>
         </div>
@@ -98,6 +97,7 @@
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
   </section>
+
 
 
 
