@@ -30,3 +30,5 @@
 <meta http-equiv="Refresh" content="0; url='index.php'" />
 </body>
 </html>
+
+<!-- $conn = new mysqli('sql206.epizy.com','epiz_29599569','8DfkA57d5o77A','epiz_29599569_php'); -->
