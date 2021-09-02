@@ -8,7 +8,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
 	 crossorigin="anonymous">
 
-	<title>부트스트랩</title>
+	<title>MooHipGal</title>
 	<style type='text/css'>
 		body {
 			background-color: white;
@@ -77,23 +77,22 @@
         <h2 class='mb-2 mb-md-0'>Report</h2>
         <div class='form-group'>
           <form action='condb.php' method='post'>
+          <div class=''>
           <input type='text' class='form-control'
-          placeholder='Nickname (Only English)' aria-label='id' aria-describedby='loginbutton' name='id' id='id'>
-          <div class='input-group'>
-          <input type='text' class='form-control'
-          placeholder='Report Something' aria-label='password' aria-describedby='loginbutton' name='password' id='password'>
-          <div class='input-group'>
-            <input type="submit" class="btn btn-warning btn-md" />
-            </form>
+          placeholder='닉네임' aria-label='id' aria-describedby='loginbutton' name='id' id='id'>
           </div>
-        </div>
-        </div>
+          <div class='col-xs-10'>
+          <input type='text' class='form-control'
+          placeholder='신고할 내용' aria-label='password' aria-describedby='loginbutton' name='password' id='password'>
+          </div>  
+          <input type="submit" class="btn btn-outline-warning" value='신고' />
+            </form>
       </div>
     </div>
   </section>
   <section>
   <div class="alert alert-warning alert-dismissible fade show" role="alert">
-  If you get log-in to here, You can approach to every service!
+  신고는 바로 만든 사람에게 전송됩니다.
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
   </section>
