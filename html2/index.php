@@ -94,14 +94,16 @@
       </div>
     </div>
   </section>
-
-
   <section>
   <div class="alert alert-warning alert-dismissible fade show" role="alert">
   신고는 바로 만든 사람에게 전송됩니다.
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
   </section>
+
+
+
+  
 
 
 
