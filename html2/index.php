@@ -73,7 +73,7 @@
   <section class='bg-primary text-light p-4'>
     <div class='container'>
       <div class='d-md-flex justify-content-between align-items-center'>
-        <h2 class='mb-2 mb-md-0'>Write your Nickname and Report anything</h2>
+        <h2 class='mb-2 mb-md-0'>Report to improve our website</h2>
         <div class='input-group'>
           <form action='condb.php' method='post'>
           <input type='text' class='form-control'
@@ -94,14 +94,32 @@
       </div>
     </div>
   </section>
-
-
   <section>
   <div class="alert alert-warning alert-dismissible fade show" role="alert">
   신고는 바로 만든 사람에게 전송됩니다.
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
   </section>
+
+  <!-- Making BOXES -->
+
+  <section class='p-5'>
+    <div class='container'>
+      <div class='row text-center'>
+        <div class='col-md'>
+          <div class='card bg-dark text-light'>
+            <div class='card-body text-center'>
+              <!-- 33:33부터 보기 -->
+            </div>
+          </div>
+        </div>
+        <div class='col-md'>Get Type Beat</div>
+        <div class='col-md'>Find Lyrics</div>
+      </div>
+  </div>
+  </section>
+
+
 
 
 
