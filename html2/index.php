@@ -1,5 +1,4 @@
 <!doctype html>
-<html lang="en">
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -74,22 +73,29 @@
   <section class='bg-primary text-light p-4'>
     <div class='container'>
       <div class='d-md-flex justify-content-between align-items-center'>
-        <h2 class='mb-2 mb-md-0'>Report</h2>
-        <div class='form-group'>
+        <h2 class='mb-2 mb-md-0'>Write your Nickname and Report anything</h2>
+        <div class='input-group'>
           <form action='condb.php' method='post'>
-          <div class=''>
           <input type='text' class='form-control'
-          placeholder='닉네임' aria-label='id' aria-describedby='loginbutton' name='id' id='id'>
-          </div>
-          <div class='col-xs-10'>
+          placeholder='닉네임' aria-label='ID' aria-describedby='loginbutton' name='id' id='id'>
+          <div class='input-group'>
           <input type='text' class='form-control'
-          placeholder='신고할 내용' aria-label='password' aria-describedby='loginbutton' name='password' id='password'>
-          </div>  
-          <input type="submit" class="btn btn-outline-warning" value='신고' />
+          placeholder='내용' aria-label='Password' aria-describedby='loginbutton' name='password' id='password'>
+          <div class='input-group'>
+            <button class='btn btn-outline-warning btn-md' type='submit'
+          id='loginbutton'>전송</button>
             </form>
+            <form action='#'>
+            <button type='submit' class='btn btn-outline-warning btn-lg'>신고를 하는 이유</button>
+            </form>
+          </div>
+        </div>
+        </div>
       </div>
     </div>
   </section>
+
+
   <section>
   <div class="alert alert-warning alert-dismissible fade show" role="alert">
   신고는 바로 만든 사람에게 전송됩니다.
