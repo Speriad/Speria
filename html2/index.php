@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
 	 crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 	<title>MooHipGal</title>
 	<style type='text/css'>
@@ -86,7 +87,7 @@
           id='loginbutton'>전송</button>
             </form>
             <form action='#'>
-            <button type='submit' class='btn btn-outline-warning btn-lg'>신고를 하는 이유</button>
+            <button type='submit' class='btn btn-outline-warning'>신고를 하는 이유</button>
             </form>
           </div>
         </div>
@@ -107,17 +108,58 @@
     <div class='container'>
       <div class='row text-center'>
         <div class='col-md'>
-          <div class='card bg-dark text-light'>
+          <div class='card bg-secondary text-light'>
             <div class='card-body text-center'>
-              <!-- 33:33부터 보기 -->
+              <div class='h1 mb-3'>
+              <i class="bi bi-chat-fill"></i>
+            </div>
+            <h3 class='card-title'>
+              Community
+            </h3>
+            <p class='card-text'>
+              Most intuitive HipHop Community
+            </p>
+            <a href='#' class='btn btn-outline-warning'>Read More</a>
             </div>
           </div>
         </div>
-        <div class='col-md'>Get Type Beat</div>
-        <div class='col-md'>Find Lyrics</div>
+        <div class='col-md'>
+          <div class='card bg-dark text-light'>
+            <div class='card-body text-center'>
+              <div class='h1 mb-3'>
+              <i class="bi bi-file-earmark-music-fill"></i>
+            </div>
+            <h3 class='card-title'>
+              Type Beat
+            </h3>
+            <p class='card-text'>
+              Get your type beat for free
+            </p>
+            <a href='#' class='btn btn-outline-warning'>Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class='col-md'>
+          <div class='card bg-secondary text-light'>
+            <div class='card-body text-center'>
+              <div class='h1 mb-3'>
+              <i class="bi bi-justify-left"></i>
+            </div>
+            <h3 class='card-title'>
+              Lyrics
+            </h3>
+            <p class='card-text'>
+              Find your songs' Lyrics
+            </p>
+            <a href='#' class='btn btn-outline-warning'>Read More</a>
+            </div>
+          </div>
+        </div>
       </div>
   </div>
   </section>
+
+  <!-- Other Sections -->
 
 
 
