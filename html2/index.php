@@ -74,7 +74,7 @@
   <section class='bg-primary text-light p-4'>
     <div class='container'>
       <div class='d-md-flex justify-content-between align-items-center'>
-        <h2 class='mb-2 mb-md-0'>Report to improve our website</h2>
+        <h2 class='mb-2 mb-md-0'>Report your opinion to improve our website</h2>
         <div class='input-group'>
           <form action='condb.php' method='post'>
           <input type='text' class='form-control'
@@ -106,7 +106,7 @@
 
   <section class='p-5'>
     <div class='container'>
-      <div class='row text-center'>
+      <div class='row text-center g-4'>
         <div class='col-md'>
           <div class='card bg-secondary text-light'>
             <div class='card-body text-center'>
@@ -161,8 +161,18 @@
 
   <!-- Other Sections -->
 
-  
-
+  <section id='learn' class='p-5'>
+    <div class='container'>
+      <div class='row align-items-center justify-content-center'>
+        <div class='col-md'>
+          <h2>Gather With your HipHop Friends!</h2>
+          <p class='lead'>
+            If you want to talk with your same-taste friends or 
+          </p>
+        </div>
+      </div>
+  </section>
+    
 
 
 
