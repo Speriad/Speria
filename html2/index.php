@@ -161,14 +161,46 @@
 
   <!-- Other Sections -->
 
-  <section id='learn' class='p-5'>
+  <section id='learn' class='p-5 bg-light'>
+    <div class='container'>
+      <div class='row align-items-center justify-content-center'>
+      <div class='col-md'>
+          <img src='https://image.freepik.com/free-vector/diverse-crowd-people-different-ages-races_74855-5235.jpg' class='img-fluid' alt=''>
+        </div>
+        <div class='col-md p-5'>
+          <h2>Gather With your HipHop Friends!</h2>
+          <p class='lead'>
+            If you want to talk with your same-taste friends or share your favorite songs with them, 
+            Here is the best one! Find your hidden taste or not-famous but, well-made songs. 
+          </p>
+          <p class='lead'>
+            Community for HipHop Fans and Musicians. Share your favorite songs!
+          </p>
+          <a href='' class='btn btn-dark mt-3'>
+            <i class='bi bi-chevron-right'>Dive into Community</i>
+          </a>
+        </div>
+      </div>
+  </section>
+
+  <section id='learn' class='p-5 bg-black'>
     <div class='container'>
       <div class='row align-items-center justify-content-center'>
         <div class='col-md'>
-          <h2>Gather With your HipHop Friends!</h2>
-          <p class='lead'>
-            If you want to talk with your same-taste friends or 
+          <img src='https://i.pinimg.com/originals/7e/3b/50/7e3b5074bfb8f14f0d68d6851b56447b.jpg' class='img-fluid' alt=''>
+        </div>
+        <div class='col-md p-5 text-white'>
+          <h2>Get Your Type Beat that fits!</h2>
+          <p class='lead text-white'>
+            If you want to talk with your same-taste friends or share your favorite songs with them, 
+            Here is the best one! Find your hidden taste or not-famous but, well-made songs. 
           </p>
+          <p class='lead text-white'>
+            Community for HipHop Fans and Musicians. Share your favorite songs!
+          </p>
+          <a href='' class='btn btn-light mt-3'>
+            <i class='bi bi-chevron-right'>Dive into Type Beat</i>
+          </a>
         </div>
       </div>
   </section>
