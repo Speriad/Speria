@@ -326,24 +326,6 @@
             <div class="card bg-light">
               <div class="card-body text-center">
                 <img
-                  src="https://cdn.discordapp.com/attachments/823889953079427093/884443008609689630/unknown.png"
-                  class="rounded-circle mb-3"
-                  alt=""
-                />
-                <h3 class="card-title mb-3">Eunsoo, The Creator</h3>
-                <p class="card-text">
-                  'This is one of the most revolutionary communities in the world'
-                </p>
-                <a href="https://www.facebook.com/profile.php?id=100059675180077"><i class="bi bi-facebook text-dark mx-1"></i></a>
-                <a href="https://instagram.com/eunsoomilk?utm_medium=copy_link"><i class="bi bi-instagram text-dark mx-1"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img
                   src="https://cdn.discordapp.com/attachments/823889953079427093/884442746214039552/unknown.png"
                   class="rounded-circle mb-3"
                   alt=""
@@ -358,23 +340,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img
-                  src="https://cdn.discordapp.com/attachments/823889953079427093/884438842017476628/unknown.png"
-                  class="rounded-circle mb-3"
-                  alt=""
-                />
-                <h3 class="card-title mb-3">Metro Eunmin</h3>
-                <p class="card-text">
-                  'Here is my home. I use MooHipGal every time to share my beat'
-                </p>
-                <a href="https://www.facebook.com/profile.php?id=100059675180077"><i class="bi bi-facebook text-dark mx-1"></i></a>
-                <a href="https://instagram.com/eunsoomilk?utm_medium=copy_link"><i class="bi bi-instagram text-dark mx-1"></i></a>
-              </div>
-            </div>
-          </div>
+          
 
           <div class="col-md-6 col-lg-3">
             <div class="card bg-light">
