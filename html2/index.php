@@ -219,7 +219,7 @@
     </h2>
     <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>You can join Community anytime.</strong> Log-In System will be given to you. But you can join community by Log-Out User
+        <strong>You can join Community anytime.</strong><br><br>Log-In System will be given to you. But you can join community by Log-Out User
       </div>
     </div>
   </div>
@@ -231,7 +231,7 @@
     </h2>
     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>It doesn't cost for using.</strong> Moohipgal's Type beat is for Beginners' beat and Users must upload their beat for free.
+        <strong>It doesn't cost for using.</strong><br><br>Moohipgal's Type beat is for Beginners' beat and Users must upload their beat for free.
       </div>
     </div>
   </div>
@@ -243,7 +243,7 @@
     </h2>
     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>You can send Report at Lobby Page</strong>Write Nickname and What you want to say, It can send to developer directly.
+        <strong>You can send Report at Lobby Page</strong><br><br>Write Nickname and What you want to say, It can send to developer directly.
       </div>
     </div>
   </div>
@@ -257,7 +257,7 @@
     </h2>
     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>This is the first item's accordion body.</strong>
+        <strong>This is the first item's accordion body.</strong><br><br>
       </div>
     </div>
   </div>
@@ -269,7 +269,7 @@
     </h2>
     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>This is the second item's accordion body.</strong>
+        <strong>This is the second item's accordion body.</strong><br><br>
       </div>
     </div>
   </div>
@@ -281,7 +281,7 @@
     </h2>
     <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong>
+        <strong>This is the third item's accordion body.</strong><br><br>
       </div>
     </div>
   </div>
