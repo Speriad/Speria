@@ -78,16 +78,16 @@
         <div class='input-group'>
           <form action='condb.php' method='post'>
           <input type='text' class='form-control'
-          placeholder='닉네임' aria-label='ID' aria-describedby='loginbutton' name='id' id='id'>
+          placeholder='NickName' aria-label='ID' aria-describedby='loginbutton' name='id' id='id'>
           <div class='input-group'>
           <input type='text' class='form-control'
-          placeholder='내용' aria-label='Password' aria-describedby='loginbutton' name='password' id='password'>
+          placeholder='Say Something..' aria-label='Password' aria-describedby='loginbutton' name='password' id='password'>
           <div class='input-group'>
             <button class='btn btn-outline-warning btn-md' type='submit'
-          id='loginbutton'>전송</button>
+          id='loginbutton'>Send</button>
             </form>
             <form action='#'>
-            <button type='submit' class='btn btn-outline-warning'>신고를 하는 이유</button>
+            <button type='submit' class='btn btn-outline-warning'>The Reason Why you should Report</button>
             </form>
           </div>
         </div>
@@ -97,7 +97,7 @@
   </section>
   <section>
   <div class="alert alert-warning alert-dismissible fade show" role="alert">
-  신고는 바로 만든 사람에게 전송됩니다.
+  Report is sent to Developer directly.
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
   </section>
@@ -119,7 +119,7 @@
             <p class='card-text'>
               Most intuitive HipHop Community
             </p>
-            <a href='#' class='btn btn-outline-warning'>Read More</a>
+            <a href='#crm' class='btn btn-outline-warning'>Read More</a>
             </div>
           </div>
         </div>
@@ -135,7 +135,7 @@
             <p class='card-text'>
               Get your type beat for free
             </p>
-            <a href='#' class='btn btn-outline-warning'>Read More</a>
+            <a href='#trm' class='btn btn-outline-warning'>Read More</a>
             </div>
           </div>
         </div>
@@ -151,7 +151,7 @@
             <p class='card-text'>
               Find your songs' Lyrics
             </p>
-            <a href='#' class='btn btn-outline-warning'>Read More</a>
+            <a href='#lrm' class='btn btn-outline-warning'>Read More</a>
             </div>
           </div>
         </div>
@@ -161,7 +161,7 @@
 
   <!-- Other Sections -->
 
-  <section id='learn' class='p-5 bg-light'>
+  <section id='crm' class='p-5 bg-light'>
     <div class='container'>
       <div class='row align-items-center justify-content-center'>
       <div class='col-md'>
@@ -183,7 +183,7 @@
       </div>
   </section>
 
-  <section id='learn' class='p-5 bg-black'>
+  <section id='trm' class='p-5 bg-black'>
     <div class='container'>
       <div class='row align-items-center justify-content-center'>
         <div class='col-md'>
@@ -196,10 +196,32 @@
             Here is the best one! Find your hidden taste or not-famous but, well-made songs. 
           </p>
           <p class='lead text-white'>
-            Community for HipHop Fans and Musicians. Share your favorite songs!
+            Type Beat for beginner! You can get it anytime.
           </p>
           <a href='' class='btn btn-light mt-3'>
             <i class='bi bi-chevron-right'>Dive into Type Beat</i>
+          </a>
+        </div>
+      </div>
+  </section>
+
+  <section id='lrm' class='p-5 bg-white'>
+    <div class='container'>
+      <div class='row align-items-center justify-content-center'>
+        <div class='col-md'>
+          <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_B_fuU2qhoWCCgblAuozsKAdVZashFLfbinvp1GuZ-j9gGR2xY9NXDPHM1l7vfPQygjc&usqp=CAU' class='img-fluid' alt=''>
+        </div>
+        <div class='col-md p-5 text-black'>
+          <h2>Get your favorite songs' Lyrics!</h2>
+          <p class='lead text-black'>
+           You can find your favorite songs' Lyrics Anytime. Users can write lyrics and comment about lyrics! Share your
+           Lyrics with Hip-Hop Fans!
+          </p>
+          <p class='lead text-black'>
+            Find Lyrics with listening Music. It can be extreme.
+          </p>
+          <a href='' class='btn btn-dark mt-3'>
+            <i class='bi bi-chevron-right'>Dive into Lyrics</i>
           </a>
         </div>
       </div>
@@ -219,19 +241,23 @@
     </h2>
     <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>You can join Community anytime.</strong> Log-In System will be given to you. But you can join community by Log-Out User
+        <strong>You can join Community anytime.</strong><br><br>Log-In System will be given to you. But you can join community by Log-Out User. But you can't write comment or post in Community.
+        But Accessing Community, Reading Other Community Members' Post are not needed Log-in. You can Login at the top of MooHipGal page. If you are in Mobile-Environment, Touch Hamberger-Button and 
+        Go to Login Page and You can Register very easily. Thanks for enjoying our community.
       </div>
     </div>
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingTwo">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Does type beat cost for using?
+        Does type beat cost money to use?
       </button>
     </h2>
     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>It doesn't cost for using.</strong> Moohipgal's Type beat is for Beginners' beat and Users must upload their beat for free.
+        <strong>It doesn't cost for using.</strong><br><br>Moohipgal's Type beat is for Beginners' beat and Users must upload their beat for free. You can download other producers' Type-Beat any time. 
+        And For producers, You must agree the terms of type-beat's No-Copyright. And do not require users to give you money. And If you want to download producers' Type-Beat You must be log-in to Moohipgal.
+        Use real Producers' Type Beat anytime!
       </div>
     </div>
   </div>
@@ -243,7 +269,8 @@
     </h2>
     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>You can send Report at Lobby Page</strong>Write Nickname and What you want to say, It can send to developer directly.
+        <strong>You can send Report at Lobby Page</strong><br><br>You can report your discomfort anytime you want. Report is needed Log-In So you must be log-in before you report to developer. You must report 
+        error, advice, etc. But if you report not-associated things. You can be punished without warning.
       </div>
     </div>
   </div>
@@ -252,36 +279,39 @@
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingFour">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-        AAAAAAA
+      What is the difference of 'Albums' Page and 'Community' Page?
       </button>
     </h2>
     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>This is the first item's accordion body.</strong>
+        <strong>It is difference of Share and Information</strong><br><br>Community is for everything like sharing songs, advertising their music, or music video and also Albums! But 'Albums'
+        Page is a series of every album. You can find your albums' information written by other users. It is similar with WikiPedia. But it's for Hip-Hop Albums like Illmatic And To Pimp A Butterfly etc. 
+        If you want information of your favorite albums, You can visit 'Albums' Page and read that!
       </div>
     </div>
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingFive">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-        AAAAAAAAA
+        What's the 'Lyrics' Page and What can I get through it?
       </button>
     </h2>
     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>This is the second item's accordion body.</strong>
+        <strong>You can get your favorite songs' Lyrics Anytime!</strong><br><br>If you want to get your favorite songs' Lyrics, You must visit 'Lyrics' Page! Lyrics Page is Uploaded by other users.
+        And finally, If Songs' Lyrics have errors, Report to developer in Lobby Page. Thanks.
       </div>
     </div>
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingSix">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-        AAAAAAAAAAA
+        Does MooHipGal have Mebership service or Subscribing?
       </button>
     </h2>
     <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong>
+        <strong>No, There isn't. And We don't have an idea like Money-Needed Service.</strong><br><br>
       </div>
     </div>
   </div>
