@@ -165,7 +165,7 @@
     <div class='container'>
       <div class='row align-items-center justify-content-center'>
       <div class='col-md'>
-          <img src='https://image.freepik.com/free-vector/diverse-crowd-people-different-ages-races_74855-5235.jpg' class='img-fluid' alt=''>
+          <img src='https://i.pinimg.com/originals/01/1b/24/011b24f9cb707b842aeb862ef9d54e5a.gif' class='img-fluid' alt=''>
         </div>
         <div class='col-md p-5'>
           <h2>Gather With your HipHop Friends!</h2>
@@ -208,7 +208,7 @@
   <!-- Question Accordian -->
 
   <section id='questions' class='p-5'>
-    <!-- 44:44 -->
+    <!--  -->
   </section>
     
   
