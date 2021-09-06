@@ -241,13 +241,9 @@
     </h2>
     <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-<<<<<<< HEAD
         <strong>You can join Community anytime.</strong><br><br>Log-In System will be given to you. But you can join community by Log-Out User. But you can't write comment or post in Community.
         But Accessing Community, Reading Other Community Members' Post are not needed Log-in. You can Login at the top of MooHipGal page. If you are in Mobile-Environment, Touch Hamberger-Button and 
         Go to Login Page and You can Register very easily. Thanks for enjoying our community.
-=======
-        <strong>You can join Community anytime.</strong><br><br>Log-In System will be given to you. But you can join community by Log-Out User
->>>>>>> 878b366e683689ae11c6e25c42267a8c74be7a9d
       </div>
     </div>
   </div>
@@ -259,13 +255,9 @@
     </h2>
     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-<<<<<<< HEAD
         <strong>It doesn't cost for using.</strong><br><br>Moohipgal's Type beat is for Beginners' beat and Users must upload their beat for free. You can download other producers' Type-Beat any time. 
         And For producers, You must agree the terms of type-beat's No-Copyright. And do not require users to give you money. And If you want to download producers' Type-Beat You must be log-in to Moohipgal.
         Use real Producers' Type Beat anytime!
-=======
-        <strong>It doesn't cost for using.</strong><br><br>Moohipgal's Type beat is for Beginners' beat and Users must upload their beat for free.
->>>>>>> 878b366e683689ae11c6e25c42267a8c74be7a9d
       </div>
     </div>
   </div>
@@ -277,12 +269,8 @@
     </h2>
     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-<<<<<<< HEAD
         <strong>You can send Report at Lobby Page</strong><br><br>You can report your discomfort anytime you want. Report is needed Log-In So you must be log-in before you report to developer. You must report 
         error, advice, etc. But if you report not-associated things. You can be punished without warning.
-=======
-        <strong>You can send Report at Lobby Page</strong><br><br>Write Nickname and What you want to say, It can send to developer directly.
->>>>>>> 878b366e683689ae11c6e25c42267a8c74be7a9d
       </div>
     </div>
   </div>
@@ -296,13 +284,9 @@
     </h2>
     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-<<<<<<< HEAD
         <strong>It is difference of Share and Information</strong><br><br>Community is for everything like sharing songs, advertising their music, or music video and also Albums! But 'Albums'
         Page is a series of every album. You can find your albums' information written by other users. It is similar with WikiPedia. But it's for Hip-Hop Albums like Illmatic And To Pimp A Butterfly etc. 
         If you want information of your favorite albums, You can visit 'Albums' Page and read that!
-=======
-        <strong>This is the first item's accordion body.</strong><br><br>
->>>>>>> 878b366e683689ae11c6e25c42267a8c74be7a9d
       </div>
     </div>
   </div>
@@ -314,12 +298,8 @@
     </h2>
     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-<<<<<<< HEAD
         <strong>You can get your favorite songs' Lyrics Anytime!</strong><br><br>If you want to get your favorite songs' Lyrics, You must visit 'Lyrics' Page! Lyrics Page is Uploaded by other users.
         And finally, If Songs' Lyrics have errors, Report to developer in Lobby Page. Thanks.
-=======
-        <strong>This is the second item's accordion body.</strong><br><br>
->>>>>>> 878b366e683689ae11c6e25c42267a8c74be7a9d
       </div>
     </div>
   </div>
@@ -331,11 +311,7 @@
     </h2>
     <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-<<<<<<< HEAD
         <strong>No, There isn't. And We don't have an idea like Money-Needed Service.</strong><br><br>
-=======
-        <strong>This is the third item's accordion body.</strong><br><br>
->>>>>>> 878b366e683689ae11c6e25c42267a8c74be7a9d
       </div>
     </div>
   </div>
