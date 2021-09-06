@@ -29,25 +29,19 @@
       <div class='collapse navbar-collapse' id='navmenu'>
         <ul class='navbar-nav ms-auto'>
           <li class='nav-item'>
-            <a href='#commnunity' class='nav-link'>Community</a>
+            <a href='community.php' class='nav-link'>Community</a>
           </li>
           <li class='nav-item'>
-            <a href='#typebeat' class='nav-link'>Type Beat</a>
+            <a href='typebeat.php' class='nav-link'>Type Beat</a>
           </li>
           <li class='nav-item'>
-            <a href='#notice' class='nav-link'>Notice</a>
+            <a href='albums.php' class='nav-link'>Albums</a>
           </li>
           <li class='nav-item'>
-            <a href='#albums' class='nav-link'>Albums</a>
+            <a href='lyrics.php' class='nav-link'>Lyrics</a>
           </li>
           <li class='nav-item'>
-            <a href='#Lyric' class='nav-link'>lyric</a>
-          </li>
-          <li class='nav-item'>
-            <a href='#policy' class='nav-link'>Policy</a>
-          </li>
-          <li class='nav-item'>
-            <a href='#about' class='nav-link'>About</a>
+            <a href='etc.php' class='nav-link'>etc.</a>
           </li>
         </ul>
       </div>
