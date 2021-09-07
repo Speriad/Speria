@@ -313,55 +313,7 @@
     </div>
   </section>
 
-  <!-- Instructor Grid Cards -->
-
-  <section id="instructors" class="p-5 bg-primary">
-      <div class="container">
-        <h2 class="text-center text-white">Our users' Review</h2>
-        <p class="lead text-center text-white mb-5">
-          Our users that used MooHipGal as a Beat-Producer
-        </p>
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-3">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img
-                  src="https://cdn.discordapp.com/attachments/823889953079427093/884442746214039552/unknown.png"
-                  class="rounded-circle mb-3"
-                  alt=""
-                />
-                <h3 class="card-title mb-3">Eunye Eunst</h3>
-                <p class="card-text">
-                  'This is Crazy. This is the first time that people love my beat'
-                </p>
-                <a href="https://www.facebook.com/profile.php?id=100059675180077"><i class="bi bi-facebook text-dark mx-1"></i></a>
-                <a href="https://instagram.com/eunsoomilk?utm_medium=copy_link"><i class="bi bi-instagram text-dark mx-1"></i></a>
-              </div>
-            </div>
-          </div>
-
-          
-
-          <div class="col-md-6 col-lg-3">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img
-                  src="https://cdn.discordapp.com/attachments/823889953079427093/884438903770189864/unknown.png"
-                  class="rounded-circle mb-3"
-                  alt=""
-                />
-                <h3 class="card-title mb-3">DJ Eunsoo</h3>
-                <p class="card-text">
-                  'Finally, My beat can be used to making music!'
-                </p>
-                <a href="https://www.facebook.com/profile.php?id=100059675180077"><i class="bi bi-facebook text-dark mx-1"></i></a>
-                <a href="https://instagram.com/eunsoomilk?utm_medium=copy_link"><i class="bi bi-instagram text-dark mx-1"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    
     
   
 
