@@ -305,7 +305,7 @@
     </h2>
     <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>No, There isn't. And We don't have an idea like Money-Needed Service.</strong><br><br>
+        <strong>No, There isn't. And We don't have an idea like Money-Needed Service yet.</strong><br><br>
       </div>
     </div>
   </div>
