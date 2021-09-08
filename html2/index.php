@@ -155,7 +155,7 @@
 
   <!-- Other Sections -->
 
-  <section id='crm' class='p-5 bg-light'>
+  <section id='crm' class='p-5 bg-white'>
     <div class='container'>
       <div class='row align-items-center justify-content-center'>
       <div class='col-md'>
