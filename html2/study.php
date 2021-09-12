@@ -6,13 +6,18 @@
 	<title>Study PHP</title>
 </head>
 <body>
-
+<h1>WEB</h1>
+<ol>
+    <li><a href='study.php?id=HTML'>HTML</a></li>
+    <li><a href='study.php?id=CSS'>CSS</a></li>
+    <li><a href='study.php?id=JavaScript'>JavaScript</a></li>
+</ol>
 
     
-    
+<h2>
 <?php
-
-
+    echo $_GET['id'];
+    
 
 
 
@@ -23,8 +28,10 @@
 
 
 ?>
-
-
+</h2>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+Reprehenderit, quos nulla harum earum asperiores dolorum ea obcaecati perferendis,
+autem magnam odio officia ut enim eligendi quis porro eos totam repudiandae!
 
   
 
