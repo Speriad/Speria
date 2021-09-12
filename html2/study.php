@@ -17,7 +17,7 @@
 <h2>
 <?php
     echo $_GET['id'];
-    
+
 
 
 
@@ -29,9 +29,7 @@
 
 ?>
 </h2>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-Reprehenderit, quos nulla harum earum asperiores dolorum ea obcaecati perferendis,
-autem magnam odio officia ut enim eligendi quis porro eos totam repudiandae!
+Hello World
 
   
 
