@@ -22,7 +22,7 @@
 
 <body>
 	<!-- NAVBAR 구현 -->
-	<nav class='navbar navbar-expand-lg bg-dark navbar-dark py-3'>
+	<nav class='navbar navbar-expand-lg bg-dark navbar-dark py-3' style='position:absolute;'>
 		<div class='container'>
 			<a href='index.php' class='navbar-brand'>Lobby Page</a>
 			<button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navmenu'><span class='navbar-toggler-icon'></span></button>
@@ -57,6 +57,7 @@
           <h1><span class='text-warning'>Kanye West</span> Was Out New Album <span class='text-warning'>'DONDA'</span></h1>
           <p class='lead my-4'>Finally, He released 10th album, 'DONDA'</p>
           <a class="btn btn-danger btn-lg" href="https://youtube.com/playlist?list=PL8czsbhQP4tvew4t_V2PL-wUMbxIUdz4o" role="button">Listen in YouTube</a>
+          <p class='lead my-3' style='color: grey;'>9/26/2021 Updated</p>
         </div>
         <a href='https://www.youtube.com/watch?v=y4l85Qrnd-c'><img class='img-fluid w-200 d-none d-sm-block' src='https://lh3.googleusercontent.com/gd7qsOzpy8aoUf0SV1E-LZiUjo03QYiDNFRwSwQc3h5rBG8JHuk1P_nsB7I9A4rS_cMpyU18D8SEOA7iDw=w544-h544-l90-rj' alt='' /></a>
       </div>
