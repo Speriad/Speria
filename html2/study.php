@@ -6,7 +6,7 @@
 	<title>Study</title>
 </head>
 <body>
-<h1>WEB</h1>
+<h1>Parameter</h1>
 <ol>
     <li><a href='study.php?id=HTML'>HTML</a></li>
     <li><a href='study.php?id=CSS'>CSS</a></li>
@@ -16,20 +16,27 @@
     
 <h2>
 <?php
-    echo $_POST['id'];
-
-
-
-
-
-
-
-
-
-
+    echo $_GET['id'];
 ?>
 </h2>
 
+<h1>Function</h1>
+<?php
+$str = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+Officia unde fuga cum quo animi enim temporibus corporis beatae blanditiis! 
+Facere porro quis officia, qui sunt eum accusamus! Necessitatibus, fuga dignissimos!';
+echo $str;
+?>
+
+<h2>strlen()</h2>
+<?php
+echo strlen($str);  //문자열의 글자수를 세줌
+?>
+
+<h2>nl2br</h2>
+<?php
+echo nl2br($str); //
+?>
   
 
 
