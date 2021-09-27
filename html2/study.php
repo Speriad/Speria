@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_php_icon_130266.png" rel="shortcut icon" type="image/x-icon">
-	<title>Study PHP</title>
+	<title>Study</title>
 </head>
 <body>
 <h1>WEB</h1>
@@ -16,7 +16,7 @@
     
 <h2>
 <?php
-    echo $_GET['id'];
+    echo $_POST['id'];
 
 
 
@@ -29,7 +29,6 @@
 
 ?>
 </h2>
-Hello World
 
   
 
