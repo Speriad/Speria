@@ -21,7 +21,7 @@
 	$password = $_POST['password'];
 
 	// Database connection
-	$conn = new mysqli('localhost','root','','test');
+	$conn = new mysqli('sql206.epizy.com','epiz_29599569','8DfkA57d5o77A','epiz_29599569_php');
     mysqli_set_charset($conn,'utf8');
 	if($conn->connect_error){
 		echo "$conn->connect_error";
