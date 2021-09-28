@@ -35,7 +35,7 @@ echo strlen($str);  //문자열의 글자수를 세줌
 
 <h2>nl2br</h2>
 <?php
-echo nl2br($str); //
+echo nl2br($str);
 ?>
   
 
