@@ -33,9 +33,9 @@ echo $str;
 echo strlen($str);  //문자열의 글자수를 세줌
 ?>
 
-<h2>nl2br</h2>
+<h2>nl2br</h2> 
 <?php
-echo nl2br($str);
+echo nl2br($str);  //문자열에 포함된 개행 문자를 <br>태그로 모두 바꿔준다
 ?>
   
 
