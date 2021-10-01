@@ -7,7 +7,6 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
 	 crossorigin="anonymous">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
 	<title>MooHipGal</title>
 	<style type='text/css'>
 		body {
@@ -28,20 +27,8 @@
 			<button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navmenu'><span class='navbar-toggler-icon'></span></button>
       <div class='collapse navbar-collapse' id='navmenu'>
         <ul class='navbar-nav ms-auto'>
-          <li class='nav-item'>
-            <a href='community.php' class='nav-link'>Community</a>
-          </li>
-          <li class='nav-item'>
-            <a href='typebeat.php' class='nav-link'>Type Beat</a>
-          </li>
-          <li class='nav-item'>
-            <a href='albums.php' class='nav-link'>Albums</a>
-          </li>
-          <li class='nav-item'>
-            <a href='lyrics.php' class='nav-link'>Lyrics</a>
-          </li>
-          <li class='nav-item'>
-            <a href='index.php' class='nav-link'>Lobby Page</a>
+        <li class='nav-item'>
+            <a href='index.php' class='nav-link'>Go to Lobby Page</a>
           </li>
         </ul>
       </div>
@@ -103,11 +90,31 @@
   </div>
   </section>
 
-  
-  <section class='p-3'>
-  <div id='crm' class='container-fluid text-center bg-black text-black p-5'>
-    <h1 class='p-3 text-white'>What's the reason of moohipgal made?</h1>
-        
+  <div class='container align-left'>
+  <div class="list-group">
+  <a href="etc.php?id=MooHipGal is for..&text=It is the most practical and interactive HipHop Community in the world. Or will be.." class="list-group-item list-group-item-action active" aria-current="true">
+    What's MooHipGal for?
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+  <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+  <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+  <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
+</div>
+      </div>
+
+
+      <section class='p-3'>
+  <div id='crm' class='container-fluid text-center p-5'>
+  <h2>
+<?php
+    echo $_GET['id'];
+?>
+</h2>
+<p>
+<?php
+    echo $_GET['text']
+?>
+</p>
       </div>
   </section>
     

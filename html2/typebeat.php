@@ -29,19 +29,7 @@
       <div class='collapse navbar-collapse' id='navmenu'>
         <ul class='navbar-nav ms-auto'>
           <li class='nav-item'>
-            <a href='community.php' class='nav-link'>Community</a>
-          </li>
-          <li class='nav-item'>
-            <a href='index.php' class='nav-link'>Lobby Page</a>
-          </li>
-          <li class='nav-item'>
-            <a href='albums.php' class='nav-link'>Albums</a>
-          </li>
-          <li class='nav-item'>
-            <a href='lyrics.php' class='nav-link'>Lyrics</a>
-          </li>
-          <li class='nav-item'>
-            <a href='etc.php' class='nav-link'>etc.</a>
+            <a href='index.php' class='nav-link'>Go to Lobby Page</a>
           </li>
         </ul>
       </div>

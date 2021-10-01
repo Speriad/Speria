@@ -42,7 +42,7 @@
             <a href='lyrics.php' class='nav-link'>Lyrics</a>
           </li>
           <li class='nav-item'>
-            <a href='etc.php' class='nav-link'>etc.</a>
+            <a href='etc.php?id=Click the Button What you want to know.&text= ' class='nav-link'>etc.</a>
           </li>
         </ul>
       </div>

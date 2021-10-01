@@ -28,20 +28,8 @@
 			<button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navmenu'><span class='navbar-toggler-icon'></span></button>
       <div class='collapse navbar-collapse' id='navmenu'>
         <ul class='navbar-nav ms-auto'>
-          <li class='nav-item'>
-            <a href='community.php' class='nav-link'>Community</a>
-          </li>
-          <li class='nav-item'>
-            <a href='typebeat.php' class='nav-link'>Type Beat</a>
-          </li>
-          <li class='nav-item'>
-            <a href='index.php' class='nav-link'>Lobby Page</a>
-          </li>
-          <li class='nav-item'>
-            <a href='lyrics.php' class='nav-link'>Lyrics</a>
-          </li>
-          <li class='nav-item'>
-            <a href='etc.php' class='nav-link'>etc.</a>
+        <li class='nav-item'>
+            <a href='index.php' class='nav-link'>Go to Lobby Page</a>
           </li>
         </ul>
       </div>
