@@ -23,7 +23,7 @@
 	<!-- NAVBAR 구현 -->
 	<nav class='navbar navbar-expand-lg bg-dark navbar-dark py-3'>
 		<div class='container'>
-			<a href='etc.php' class='navbar-brand'>etc.</a>
+			<a href='etc.php?id= &text= ' class='navbar-brand'>etc.</a>
 			<button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navmenu'><span class='navbar-toggler-icon'></span></button>
       <div class='collapse navbar-collapse' id='navmenu'>
         <ul class='navbar-nav ms-auto'>
@@ -42,7 +42,7 @@
           <div class='card bg-info text-light'>
             <div class='card-body text-center'>
               <div class='h1 mb-3'>
-              <i class="bi bi-lock-fill"></i>
+              <i class="bi bi-music-note-beamed"></i>
             </div>
             <h3 class='card-title'>
               Moohipgal
@@ -90,21 +90,20 @@
   </div>
   </section>
 
-  <div class='container align-left'>
-  <div class="list-group">
-  <a href="etc.php?id=MooHipGal is for..&text=It is the most practical and interactive HipHop Community in the world. Or will be.." class="list-group-item list-group-item-action active" aria-current="true">
+
+  <div id='crm' class="list-group">
+  <a href="etc.php?id=MooHipGal is for..&text=<br>It is the most practical and interactive HipHop Community in the world. Or will be.." class="list-group-item list-group-item-action list-group-item-primary">
     What's MooHipGal for?
   </a>
-  <a href="#" class="list-group-item list-group-item-action">A second link item</a>
-  <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-  <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-  <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
+  <a href="etc.php?id=Anywhere, Anytime, Anything, Anyone..&text=<br>You can use Moohipgal just with your any devices, And If you want to use <br> more services, You have to be login to Moohipgal" class="list-group-item list-group-item-action list-group-item-primary">How can I use Moohipgal?</a>
+  <a href="etc.php?id=It's for everyone who love HipHop Music.&text=<br>You can get any information with Moohipgal. In addition, You can get Type-Beat for your own song!<br> This is so Amazing Things." class="list-group-item list-group-item-action list-group-item-primary">What's the main reason of moohipgal's Service</a>
+  <a href="etc.php?id=Moohipgal was developed By a developer who is student and loves to code.&text=<br>It was so tired to make this." class="list-group-item list-group-item-action list-group-item-primary">Who developed this Community?</a>
+  <a href="etc.php?id=You can enjoy Moohipgal without any login.&text=<br>But If you want to enjoy more services, You need to be login to moohipgal" class="list-group-item list-group-item-action list-group-item-primary">What do I have to enjoy Moohipgal?</a>
 </div>
-      </div>
 
 
       <section class='p-3'>
-  <div id='crm' class='container-fluid text-center p-5'>
+  <div class='container-fluid text-center p-5'>
   <h2>
 <?php
     echo $_GET['id'];
