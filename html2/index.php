@@ -7,6 +7,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
 	 crossorigin="anonymous">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+   <meta name="description" content="The most popular and practical HipHop Community 'Moohipgal'">
 
 	<title>MooHipGal</title>
 	<style type='text/css'>
@@ -71,7 +72,7 @@
       <div class='d-md-flex justify-content-between align-items-center'>
         <h2 class='mb-2 mb-md-0'>Report your opinion to improve our website</h2>
         <div class='input-group'>
-          <form action='condb.php' method='post'>
+          <form action='condb.php' method='get'>
           <input type='text' class='form-control'
           placeholder='NickName' aria-label='ID' aria-describedby='loginbutton' name='id' id='id'>
           <div class='input-group'>

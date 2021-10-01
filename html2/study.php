@@ -8,9 +8,9 @@
 <body>
 <h1>Parameter</h1>
 <ol>
-    <li><a href='study.php?id=HTML'>HTML</a></li>
-    <li><a href='study.php?id=CSS'>CSS</a></li>
-    <li><a href='study.php?id=JavaScript'>JavaScript</a></li>
+    <li><a href='study.php?id=HTML&text=HTML is Hyper Text Markup Language'>HTML</a></li>
+    <li><a href='study.php?id=CSS&text=CSS is design Language'>CSS</a></li>
+    <li><a href='study.php?id=JavaScript&text=JavaScript is popular'>JavaScript</a></li>
 </ol>
 
     
@@ -19,7 +19,12 @@
     echo $_GET['id'];
 ?>
 </h2>
-
+<p>
+<?php
+    echo $_GET['text']
+?>
+</p>
+<!-- --------------------------------------------------------------------- -->
 <h1>Function</h1>
 <?php
 $str = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
