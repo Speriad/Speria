@@ -72,9 +72,9 @@
       <div class='d-md-flex justify-content-between align-items-center'>
         <h2 class='mb-2 mb-md-0'>Report your opinion to improve our website</h2>
         <div class='input-group'>
-          <form action='condb.php' method='get'>
+          <form action='condb.php' method='post'>
           <input type='text' class='form-control'
-          placeholder='NickName' aria-label='ID' aria-describedby='loginbutton' name='id' id='id'>
+          placeholder='NickName' aria-label='ID' aria-describedby='loginbutton' name='nickname' id='nickname'>
           <div class='input-group'>
           <input type='text' class='form-control'
           placeholder='Say Something..' aria-label='Password' aria-describedby='loginbutton' name='password' id='password'>
