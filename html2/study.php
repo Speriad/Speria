@@ -42,6 +42,13 @@ echo strlen($str);  //문자열의 글자수를 세줌
 <?php
 echo nl2br($str);  //문자열에 포함된 개행 문자를 <br>태그로 모두 바꿔준다
 ?>
+
+<h1>Comparison Operators & Boolean data type</h1>
+<?php
+var_dump(1)
+
+
+?>
   
 
 
