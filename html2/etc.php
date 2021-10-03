@@ -90,19 +90,7 @@
   </div>
   </section>
 
-
-  <div id='crm' class="list-group">
-  <a href="etc.php?id=MooHipGal is for..&text=<br>It is the most practical and interactive HipHop Community in the world. Or will be.." class="accordion-button btn-warning collapsed">
-    What's MooHipGal for?
-  </a>
-  <a href="etc.php?id=Anywhere, Anytime, Anything, Anyone..&text=<br>You can use Moohipgal just with your any devices, And If you want to use <br> more services, You have to be login to Moohipgal" class="accordion-button btn-warning collapsed">How can I use Moohipgal?</a>
-  <a href="etc.php?id=It's for everyone who love HipHop Music.&text=<br>You can get any information with Moohipgal. In addition, You can get Type-Beat for your own song!<br> This is so Amazing Things." class="accordion-button btn-warning collapsed">What's the main reason of moohipgal's Service</a>
-  <a href="etc.php?id=You can enjoy Moohipgal without any login.&text=<br>But If you want to enjoy more services, You need to be login to moohipgal" class="accordion-button btn-warning collapsed">What do I have to enjoy Moohipgal?</a>
-  <a href="etc.php?id=Your report must be a great Feedback for MooHipGal&text=<br>Moohipgal is not a completed-project. So your help is so needed. MooHipGal can be advanced with your Report. But If your report is False and just for kidding, Your Account will be punished." class="accordion-button btn-warning collapsed">Why Moohipgal needs report?</a>
-</div>
-
-
-      <section class='p-3'>
+  <section class='p-3'>
   <div class='container-fluid text-center p-5 bg-black text-white'>
   <h2>
 <?php
@@ -118,12 +106,46 @@
     if(isset($_GET['text'])){
       echo $_GET['text'];
     }else{
-      echo 'There are many things about MooHipGal';
+      echo 'There are many things about anything';
     }
 ?>
 </p>
       </div>
   </section>
+
+
+  <div id='crm' class="list-group">
+    <h1 class='text-center'>MooHipGal</h1>
+  <a href="etc.php?id=MooHipGal is for..&text=<br>It is the most practical and interactive HipHop Community in the world. Or will be.." class="accordion-button btn-warning collapsed">
+  What's MooHipgal for?
+  </a>
+  <a href="etc.php?id=Anywhere, Anytime, Anything, Anyone..&text=<br>You can use Moohipgal just with your any devices, And If you want to use <br> more services, You have to be login to Moohipgal" class="accordion-button btn-warning collapsed">How can I use Moohipgal?</a>
+  <a href="etc.php?id=It's for everyone who love HipHop Music.&text=<br>You can get any information with Moohipgal. In addition, You can get Type-Beat for your own song!<br> This is so Amazing Things." class="accordion-button btn-warning collapsed">What's the main reason of moohipgal's Service</a>
+  <a href="etc.php?id=You can enjoy Moohipgal without any login.&text=<br>But If you want to enjoy more services, You need to be login to moohipgal" class="accordion-button btn-warning collapsed">What do I have to enjoy Moohipgal?</a>
+  <a href="etc.php?id=Your report must be a great Feedback for MooHipGal&text=<br>Moohipgal is not a completed-project. So your help is so needed. MooHipGal can be advanced with your Report. But If your report is False and just for kidding, Your Account will be punished." class="accordion-button btn-warning collapsed">Why Moohipgal needs report?</a>
+</div>
+
+  <div id='trm' class="list-group">
+  <h1 class='text-center'>CopyRight</h1>
+  <a href="etc.php?id=MooHipGal is for..&text=<br>It is the most practical and interactive HipHop Community in the world. Or will be.." class="accordion-button btn-warning collapsed">
+  What's MooHipGal for?
+  </a>
+  <a href="etc.php?id=Anywhere, Anytime, Anything, Anyone..&text=<br>You can use Moohipgal just with your any devices, And If you want to use <br> more services, You have to be login to Moohipgal" class="accordion-button btn-warning collapsed">How can I use Moohipgal?</a>
+  <a href="etc.php?id=It's for everyone who love HipHop Music.&text=<br>You can get any information with Moohipgal. In addition, You can get Type-Beat for your own song!<br> This is so Amazing Things." class="accordion-button btn-warning collapsed">What's the main reason of moohipgal's Service</a>
+  <a href="etc.php?id=You can enjoy Moohipgal without any login.&text=<br>But If you want to enjoy more services, You need to be login to moohipgal" class="accordion-button btn-warning collapsed">What do I have to enjoy Moohipgal?</a>
+  <a href="etc.php?id=Your report must be a great Feedback for MooHipGal&text=<br>Moohipgal is not a completed-project. So your help is so needed. MooHipGal can be advanced with your Report. But If your report is False and just for kidding, Your Account will be punished." class="accordion-button btn-warning collapsed">Why Moohipgal needs report?</a>
+</div>
+
+  <div id='lrm' class="list-group">
+  <h1 class='text-center p-3'>Anything...</h1>
+  <a href="etc.php?id=MooHipGal is for..&text=<br>It is the most practical and interactive HipHop Community in the world. Or will be.." class="accordion-button btn-warning collapsed">
+  What's MooHipGal for?
+  </a>
+  <a href="etc.php?id=Anywhere, Anytime, Anything, Anyone..&text=<br>You can use Moohipgal just with your any devices, And If you want to use <br> more services, You have to be login to Moohipgal" class="accordion-button btn-warning collapsed">How can I use Moohipgal?</a>
+  <a href="etc.php?id=It's for everyone who love HipHop Music.&text=<br>You can get any information with Moohipgal. In addition, You can get Type-Beat for your own song!<br> This is so Amazing Things." class="accordion-button btn-warning collapsed">What's the main reason of moohipgal's Service</a>
+  <a href="etc.php?id=You can enjoy Moohipgal without any login.&text=<br>But If you want to enjoy more services, You need to be login to moohipgal" class="accordion-button btn-warning collapsed">What do I have to enjoy Moohipgal?</a>
+  <a href="etc.php?id=Your report must be a great Feedback for MooHipGal&text=<br>Moohipgal is not a completed-project. So your help is so needed. MooHipGal can be advanced with your Report. But If your report is False and just for kidding, Your Account will be punished." class="accordion-button btn-warning collapsed">Why Moohipgal needs report?</a>
+</div>
     
     
   
