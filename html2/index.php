@@ -82,7 +82,7 @@
             <button class='btn btn-outline-warning btn-md' type='submit'
           id='loginbutton'>Send</button>
             </form>
-            <form action='#'>
+            <form action='http://hiphop.great-site.net/etc.php?id=Your%20report%20must%20be%20a%20great%20Feedback%20for%20MooHipGal&text=%3Cbr%3EMoohipgal%20is%20not%20a%20completed-project.%20So%20your%20help%20is%20so%20needed.%20MooHipGal%20can%20be%20advanced%20with%20your%20Report.%20But%20If%20your%20report%20is%20False%20and%20just%20for%20kidding,%20Your%20Account%20will%20be%20punished.'>
             <button type='submit' class='btn btn-outline-warning'>The Reason Why you should Report</button>
             </form>
           </div>
@@ -172,7 +172,7 @@
           <p class='lead'>
             Community for HipHop Fans and Musicians. Share your favorite songs!
           </p>
-          <a href='' class='btn btn-dark mt-3'>
+          <a href='community.php' class='btn btn-dark mt-3'>
             <i class='bi bi-chevron-right'>Dive into Community</i>
           </a>
         </div>
@@ -194,7 +194,7 @@
           <p class='lead text-white'>
             Type Beat for beginner! You can get it anytime.
           </p>
-          <a href='' class='btn btn-light mt-3'>
+          <a href='typebeat.php' class='btn btn-light mt-3'>
             <i class='bi bi-chevron-right'>Dive into Type Beat</i>
           </a>
         </div>
@@ -216,7 +216,7 @@
           <p class='lead text-black'>
             Find Lyrics with listening Music. It can be extreme.
           </p>
-          <a href='' class='btn btn-dark mt-3'>
+          <a href='lyrics.php' class='btn btn-dark mt-3'>
             <i class='bi bi-chevron-right'>Dive into Lyrics</i>
           </a>
         </div>

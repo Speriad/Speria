@@ -92,18 +92,18 @@
 
 
   <div id='crm' class="list-group">
-  <a href="etc.php?id=MooHipGal is for..&text=<br>It is the most practical and interactive HipHop Community in the world. Or will be.." class="list-group-item list-group-item-action list-group-item-primary">
+  <a href="etc.php?id=MooHipGal is for..&text=<br>It is the most practical and interactive HipHop Community in the world. Or will be.." class="accordion-button btn-warning collapsed">
     What's MooHipGal for?
   </a>
-  <a href="etc.php?id=Anywhere, Anytime, Anything, Anyone..&text=<br>You can use Moohipgal just with your any devices, And If you want to use <br> more services, You have to be login to Moohipgal" class="list-group-item list-group-item-action list-group-item-primary">How can I use Moohipgal?</a>
-  <a href="etc.php?id=It's for everyone who love HipHop Music.&text=<br>You can get any information with Moohipgal. In addition, You can get Type-Beat for your own song!<br> This is so Amazing Things." class="list-group-item list-group-item-action list-group-item-primary">What's the main reason of moohipgal's Service</a>
-  <a href="etc.php?id=Moohipgal was developed By a developer who is student and loves to code.&text=<br>It was so tired to make this." class="list-group-item list-group-item-action list-group-item-primary">Who developed this Community?</a>
-  <a href="etc.php?id=You can enjoy Moohipgal without any login.&text=<br>But If you want to enjoy more services, You need to be login to moohipgal" class="list-group-item list-group-item-action list-group-item-primary">What do I have to enjoy Moohipgal?</a>
+  <a href="etc.php?id=Anywhere, Anytime, Anything, Anyone..&text=<br>You can use Moohipgal just with your any devices, And If you want to use <br> more services, You have to be login to Moohipgal" class="accordion-button btn-warning collapsed">How can I use Moohipgal?</a>
+  <a href="etc.php?id=It's for everyone who love HipHop Music.&text=<br>You can get any information with Moohipgal. In addition, You can get Type-Beat for your own song!<br> This is so Amazing Things." class="accordion-button btn-warning collapsed">What's the main reason of moohipgal's Service</a>
+  <a href="etc.php?id=You can enjoy Moohipgal without any login.&text=<br>But If you want to enjoy more services, You need to be login to moohipgal" class="accordion-button btn-warning collapsed">What do I have to enjoy Moohipgal?</a>
+  <a href="etc.php?id=Your report must be a great Feedback for MooHipGal&text=<br>Moohipgal is not a completed-project. So your help is so needed. MooHipGal can be advanced with your Report. But If your report is False and just for kidding, Your Account will be punished." class="accordion-button btn-warning collapsed">Why Moohipgal needs report?</a>
 </div>
 
 
       <section class='p-3'>
-  <div class='container-fluid text-center p-5'>
+  <div class='container-fluid text-center p-5 bg-black text-white'>
   <h2>
 <?php
     if(isset($_GET['id'])){
