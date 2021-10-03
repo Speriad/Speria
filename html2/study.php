@@ -40,16 +40,26 @@ echo strlen($str);  //문자열의 글자수를 세줌
 
 <h2>nl2br</h2> 
 <?php
-echo nl2br($str);  //문자열에 포함된 개행 문자를 <br>태그로 모두 바꿔준다
+echo nl2br($str);  //문자열에 포함된 문자를 <br>태그로 모두 바꿔준다
 ?>
 
-<h1>Comparison Operators & Boolean data type</h1>
+<h2>Comparison Operators & Boolean data type</h2>
 <?php
-var_dump(1)
+var_dump(1);  //값을 출력하면서 문자열인지 숫자열인지 구별해줌
+var_dump(1>1)  //true 인지 false 인지 구별해줌
 
 
 ?>
-  
+
+<h2>IF</h2>
+<?php
+$forif = 'Drizzy Gave me a gift';
+if($forif == 'Drizzy Gave me a gift'){
+    echo 'This is one of the most true thing in the world';
+}   
+
+
+?>
 
 
 

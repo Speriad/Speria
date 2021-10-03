@@ -106,12 +106,20 @@
   <div class='container-fluid text-center p-5'>
   <h2>
 <?php
-    echo $_GET['id'];
+    if(isset($_GET['id'])){
+      echo $_GET['id'];
+    }else{
+      echo 'Welcome!';
+    }
 ?>
 </h2>
 <p>
 <?php
-    echo $_GET['text']
+    if(isset($_GET['text'])){
+      echo $_GET['text'];
+    }else{
+      echo 'There are many things about MooHipGal';
+    }
 ?>
 </p>
       </div>

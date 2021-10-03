@@ -23,7 +23,7 @@
 
 <body>
 	<!-- NAVBAR 구현 -->
-	<nav class='navbar navbar-expand-lg bg-dark navbar-dark py-3' style='position:absolute;'>
+	<nav class='navbar navbar-expand-lg bg-dark navbar-dark py-3'>
 		<div class='container'>
 			<a href='index.php' class='navbar-brand'>Lobby Page</a>
 			<button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navmenu'><span class='navbar-toggler-icon'></span></button>
