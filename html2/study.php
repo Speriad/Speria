@@ -16,12 +16,20 @@
     
 <h2>
 <?php
-    echo $_GET['id'];
+     if(isset($_GET['id'])){
+        echo $_GET['id'];
+      }else{
+        echo 'Click Anything You want to know';
+      }
 ?>
 </h2>
 <p>
 <?php
-    echo $_GET['text']
+     if(isset($_GET['text'])){
+        echo $_GET['text'];
+      }else{
+        echo 'Here is Description';
+      }
 ?>
 </p>
 <!-- --------------------------------------------------------------------- -->
@@ -60,7 +68,15 @@ if($forif == 'Drizzy Gave me a gift'){
 
 
 ?>
+<h2>Loop</h2>
+<?php
+$whilevariable = 1;
+while($whilevariable<11){
+    echo $whilevariable.'<br>';
+    $whilevariable = $whilevariable + 1;
+}
 
+?>
 
 
 
