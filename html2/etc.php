@@ -115,7 +115,9 @@
 
 
   <div id='crm' class="list-group">
+    <div class='container-fluid bg-outline-warning text-dark'>
     <h1 class='text-center'>MooHipGal</h1>
+  </div>
   <a href="etc.php?id=MooHipGal is for..&text=<br>It is the most practical and interactive HipHop Community in the world. Or will be.." class="accordion-button btn-warning collapsed">
   What's MooHipgal for?
   </a>
@@ -126,7 +128,9 @@
 </div>
 
   <div id='trm' class="list-group">
+  <div class='container-fluid bg-outline-warning text-dark'>
   <h1 class='text-center'>CopyRight</h1>
+  </div>
   <a href="etc.php?id=MooHipGal is for..&text=<br>It is the most practical and interactive HipHop Community in the world. Or will be.." class="accordion-button btn-warning collapsed">
   What's MooHipGal for?
   </a>
@@ -137,7 +141,9 @@
 </div>
 
   <div id='lrm' class="list-group">
+  <div class='container-fluid bg-outline-warning text-dark'>
   <h1 class='text-center p-3'>Anything...</h1>
+  </div>
   <a href="etc.php?id=MooHipGal is for..&text=<br>It is the most practical and interactive HipHop Community in the world. Or will be.." class="accordion-button btn-warning collapsed">
   What's MooHipGal for?
   </a>
