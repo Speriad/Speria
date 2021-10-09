@@ -77,6 +77,13 @@ while($whilevariable<11){
 }
 
 ?>
+<h2>Array</h2>
+<?php
+$arrayrappers = array('Jay-Z','Nas','Tupac','Weezy');
+echo $arrayrappers[0];
+
+
+?>
 
 
 
