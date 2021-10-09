@@ -16,7 +16,7 @@
     
 <h2>
 <?php
-     if(isset($_GET['id'])){
+     if(isset($_GET['id'])){     //isset() = 설정된지 아닌지 확인하는 함수
         echo $_GET['id'];
       }else{
         echo 'Click Anything You want to know';
@@ -81,7 +81,8 @@ while($whilevariable<11){
 <?php
 $arrayrappers = array('Jay-Z','Nas','Tupac','Weezy');
 echo $arrayrappers[0];
-
+var_dump(count($arrayrappers)); //배열에 담긴 것의 개수를 출력
+array_push($arrayrappers, 'Kendrick'); //배열에 값을 넣음
 
 ?>
 
