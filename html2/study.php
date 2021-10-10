@@ -90,7 +90,7 @@ function func($arg1,$arg2){
   echo $arg1+$arg2;
 }
 func(3,2);
-
+func(2,1);
 
 
 ?>
