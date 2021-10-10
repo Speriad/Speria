@@ -84,6 +84,16 @@ echo $arrayrappers[0];
 var_dump(count($arrayrappers)); //배열에 담긴 것의 개수를 출력
 array_push($arrayrappers, 'Kendrick'); //배열에 값을 넣음
 ?>
+<h2>Define Function</h2>
+<?php
+function func(arg1,arg2){
+  echo arg1+arg2;
+}
+func(3,2);
+
+
+
+?>
 
 
 
