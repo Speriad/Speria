@@ -83,8 +83,8 @@ $arrayrappers = array('Jay-Z','Nas','Tupac','Weezy');
 echo $arrayrappers[0];
 var_dump(count($arrayrappers)); //배열에 담긴 것의 개수를 출력
 array_push($arrayrappers, 'Kendrick'); //배열에 값을 넣음
-
 ?>
+
 
 
 
