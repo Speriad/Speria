@@ -18,17 +18,17 @@
 
 <?php
 	$nickname = $_POST['nickname'];
-	$password = $_POST['password'];
+	$say = $_POST['say'];
 
 	// Database connection
-	$conn = new mysqli('sql206.epizy.com','epiz_29599569','8DfkA57d5o77A','epiz_29599569_php');
+	$conn = new mysqli('localhost','root','','test');
     mysqli_set_charset($conn,'utf8');
 	if($conn->connect_error){
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
-		$stmt = $conn->prepare("insert into registration(nickname ,password) values(?, ?)");
-		$stmt->bind_param("ss", $nickname, $password);
+		$stmt = $conn->prepare("insert into registration(nickname ,say) values(?, ?)");
+		$stmt->bind_param("ss", $nickname, $say);
 		$execval = $stmt->execute();
 		echo $execval;
 		$stmt->close();

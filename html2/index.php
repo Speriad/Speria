@@ -77,7 +77,7 @@
           placeholder='NickName' aria-label='ID' aria-describedby='loginbutton' name='nickname' id='nickname'>
           <div class='input-group'>
           <input type='text' class='form-control'
-          placeholder='Say Something..' aria-label='Password' aria-describedby='loginbutton' name='password' id='password'>
+          placeholder='Say Something..' aria-label='say' aria-describedby='loginbutton' name='say' id='say'>
           <div class='input-group'>
             <button class='btn btn-outline-warning btn-md' type='submit'
           id='loginbutton'>Send</button>
