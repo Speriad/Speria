@@ -1,13 +1,20 @@
+<title>MySQL</title>
 <?php
 $conn = mysqli_connect('localhost','root','','test');
 
-$query = 'INSERT into registration(nickname,say) 
-VALUE ("Testing","Hello World!")';
+$title = $_POST['nickname'];
+$saysomething = $_POST['say'];
 
-$result = mysqli_query($conn,$query);
-if($result === false){
-    echo mysqil_error($conn);
-}
+$puttodb = "INSERT into registration(nickname,say)
+VALUE ( '{$_POST['nickname']}' , '{$_POST['say']}' )";
+
+
+mysqli_query($conn,$puttodb);
+
+echo $title.'<br>';
+echo '<br>'.$saysomething;
+echo '<br>'.$puttodb
+
 
 
 
