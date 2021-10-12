@@ -20,7 +20,9 @@
 	$conn = mysqli_connect('localhost','root','','test');
 
 	$lessgotodb = "INSERT into registration(nickname, say) 
-	values('{$_POST['nickname']}','{$_POST['say']}')"
+	values('{$_POST['nickname']}','{$_POST['say']}')";
+
+	mysqli_query($conn, $lessgotodb);
 ?>
 
 <meta http-equiv="Refresh" content="0; url='index.php'" />
