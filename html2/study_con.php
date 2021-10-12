@@ -32,9 +32,6 @@ mysqli_query($conn,$puttodb);
 
 echo '<br><br><h1 style="text-align: center;">'.$title.'</h1>';
 echo '<br><h3 style="text-align: center;">'.$sometosay.'</h3>';
-echo '<br><p style="text-align: center;">'.$gettitle.'</p>';
-echo '<br><p style="text-align: center;">'.$getsay.'</p>';
-
 
 
 

@@ -17,10 +17,10 @@
   </style>
 </head>
 <body>
-<h1>글쓰기</h1><br>
+<br><h1 style='text-align: center;'>글쓰기</h1><br>
 <form action='study_con.php' method='post'>
-<input type='text' name = 'nickname' placeholder='TITLE'>
-<br><br><textarea name='say' placeholder='Say Something..'></textarea>
+<input type='text' class= 'form-control' name = 'nickname' placeholder='TITLE'>
+<br><br><textarea class= 'form-control' rows='5' name='say' placeholder='Say Something..'></textarea>
 <br><br><button role='submit' class='btn btn-outline-warning'>올리기</button> 
 </form>
 
