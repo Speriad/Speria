@@ -22,10 +22,16 @@
 <?php
 $conn = mysqli_connect('localhost','root','','test');
 
+$title = $_POST['nickname']; 
+$sometosay = $_POST['say'];
+
 $puttodb = "INSERT into registration(nickname,say)
 VALUE ( '{$_POST['nickname']}' , '{$_POST['say']}' )";
 
 mysqli_query($conn,$puttodb);
+
+echo '<br><br><h1 style="text-align: center;">'.$title.'</h1>';
+echo '<br><h3 style="text-align: center;">'.$sometosay.'</h3>';
 
 
 
@@ -56,6 +62,9 @@ mysqli_query($conn,$puttodb);
 
 
 ?>
+<form action='study.php' method='POST'>
+<button class='btn btn-outline-warning' style='text-align: center;' role='submit'>글쓰기로 돌아가기</button>
+</form>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
 	 crossorigin="anonymous">
 	</script>

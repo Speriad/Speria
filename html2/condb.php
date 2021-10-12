@@ -12,36 +12,23 @@
 <body>
 <nav class='navbar navbar-expand-lg bg-dark navbar-dark py-3'>
 		<div class='container'>
-			<a class='navbar-brand'>Sent Successfully</a>
-  </nav>
+		<a class='navbar-brand'>Sent Successfully</a>
+</nav>
 
 
 <?php
-	$nickname = $_POST['nickname'];
-	$say = $_POST['say'];
+	$conn = mysqli_connect('localhost','root','','test');
 
-	// Database connection
-	$conn = new mysqli('localhost','root','','test');
-    mysqli_set_charset($conn,'utf8');
-	if($conn->connect_error){
-		echo "$conn->connect_error";
-		die("Connection Failed : ". $conn->connect_error);
-	} else {
-		$stmt = $conn->prepare("insert into registration(nickname ,say) values(?, ?)");
-		$stmt->bind_param("ss", $nickname, $say);
-		$execval = $stmt->execute();
-		echo $execval;
-		$stmt->close();
-		$conn->close();
-	}
+	$lessgotodb = "INSERT into registration(nickname, say) 
+	values('{$_POST['nickname']}','{$_POST['say']}')"
 ?>
-개의 메시지가 전달되었습니다.
-<meta http-equiv="Refresh" content="2; url='index.php'" />
+
+<meta http-equiv="Refresh" content="0; url='index.php'" />
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
 	 crossorigin="anonymous">
 	</script>
 </body>
 </html>
 
-<!-- $conn = new mysqli('sql206.epizy.com','epiz_29599569','8DfkA57d5o77A','epiz_29599569_php'); -->
-<!-- $conn = new mysqli('localhost','root','','test'); -->
+<!-- $conn = mysqli_connect('sql206.epizy.com','epiz_29599569','8DfkA57d5o77A','epiz_29599569_php'); -->
+<!-- $conn = mysqli_connect('localhost','root','','test'); -->

@@ -17,7 +17,7 @@
   </style>
 </head>
 <body>
-<h1>글쓰기</h1>
+<h1>글쓰기</h1><br>
 <form action='study_con.php' method='post'>
 <input type='text' name = 'nickname' placeholder='TITLE'>
 <br><br><textarea name='say' placeholder='Say Something..'></textarea>
