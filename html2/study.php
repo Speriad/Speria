@@ -22,8 +22,8 @@ $conn = mysqli_connect('localhost','root','','test');
 <body>
 <br><h1 style='text-align: center;'>글쓰기</h1><br>
 <form action='study_con.php' method='post'>
-<input type='text' class= 'form-control' name = 'nickname' placeholder='TITLE'>
-<br><br><textarea class= 'form-control' rows='5' name='say' placeholder='Say Something..'></textarea>
+<input type='text' class= 'form-control' name = 'nickname' placeholder='Artist'>
+<br><br><textarea class= 'form-control' rows='5' name='say' placeholder='Album Name'></textarea>
 <br><br><button role='submit' class='btn btn-outline-warning'>올리기</button> 
 </form>
 
@@ -36,7 +36,7 @@ $conn = mysqli_connect('localhost','root','','test');
 $sql = 'SELECT * FROM registration';
 $result = mysqli_query($conn, $sql);
 while($row = mysqli_fetch_array($result)){
-  echo "<li>{$row['say']}</li>";
+  echo "<li><a href=\"study.php?name={$row['nickname']}\">{$row['say']}</a></li>";
 };
     ?>
 </ol>
