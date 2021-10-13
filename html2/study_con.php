@@ -4,6 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
 	 crossorigin="anonymous">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_php_icon_130266.png" rel="shortcut icon" type="image/x-icon">
 	<title>MySQL</title>
   <style>
@@ -18,7 +19,7 @@
 </head>
 <body>
 
-
+<h1 style='text-align:center;'>작성 완료</h1><br>
 <?php
 $conn = mysqli_connect('localhost','root','','test');
 
@@ -30,8 +31,8 @@ VALUE ( '{$_POST['nickname']}' , '{$_POST['say']}' )";
 
 mysqli_query($conn,$puttodb);
 
-echo '<br><br><h1 style="text-align: center;">'.$title.'</h1>';
-echo '<br><h3 style="text-align: center;">'.$sometosay.'</h3>';
+echo '<br><br><h1 style="text-align: center;">아티스트 : '.$title.'</h1>';
+echo '<br><h3 style="text-align: center;">앨범 : '.$sometosay.'</h3>';
 
 
 
