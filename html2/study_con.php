@@ -22,6 +22,7 @@
 <h1 style='text-align:center;'>작성 완료</h1><br>
 <?php
 $conn = mysqli_connect('localhost','root','','test');
+mysqli_set_charset($conn,'utf8');
 
 $title = $_POST['nickname']; 
 $sometosay = $_POST['say'];

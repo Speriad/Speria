@@ -18,6 +18,7 @@
 
 <?php
 	$conn = mysqli_connect('localhost','root','','test');
+	mysqli_set_charset($conn,'utf8');
 
 	$lessgotodb = "INSERT into registration(nickname, say) 
 	values('{$_POST['nickname']}','{$_POST['say']}')";

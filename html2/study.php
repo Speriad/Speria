@@ -1,4 +1,5 @@
 <?php
+ mysqli_set_charset($conn,'utf8');
 $conn = mysqli_connect('localhost','root','','test');
 ?>
 <!doctype html>
@@ -43,14 +44,19 @@ $conn = mysqli_connect('localhost','root','','test');
 $sql = 'SELECT * FROM registration';
 $result = mysqli_query($conn, $sql);
 while($row = mysqli_fetch_array($result)){
-  echo "<li><a href=\"study.php?name={$row['say']}\">{$row['nickname']}</a></li>";
+  echo "<li><a href=\"study.php?id={$row[0]}\">{$row['nickname']}</a></li>";
 };
+$article = array('nickname' => '', 'say' => '');
   ?>
 </ul>
 
 <?php
-if(isset($_GET['name'])){
-  echo '<br>'.$_GET['name'];
+if(isset($_GET['id'])){
+  $filtered_id = mysqli_real_escape_string($conn, $_GET['id']);
+  $sql = "SELECT * FROM registration where id={$filtered_id}";
+  $result = mysqli_query($conn, $sql);
+  $row = mysqli_fetch_array($result);
+  echo $row['say'];
 }else{
   echo '';
 }
