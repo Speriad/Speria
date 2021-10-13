@@ -31,8 +31,8 @@ VALUE ( '{$_POST['nickname']}' , '{$_POST['say']}' )";
 
 mysqli_query($conn,$puttodb);
 
-echo '<br><br><h1 style="text-align: center;">아티스트 : '.$title.'</h1>';
-echo '<br><h3 style="text-align: center;">앨범 : '.$sometosay.'</h3>';
+echo '<br><br><h1 style="text-align: center;">제목 : '.$title.'</h1>';
+echo '<br><h3 style="text-align: center;">글 : '.$sometosay.'</h3>';
 
 
 

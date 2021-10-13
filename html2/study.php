@@ -11,24 +11,28 @@ $conn = mysqli_connect('localhost','root','','test');
     <link href="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_php_icon_130266.png" rel="shortcut icon" type="image/x-icon">
 	<title>Study</title>
   <style>
+    ul{
+   list-style:none;
+      }  
     body{
       background-color: black;
       color: white;
     }
     a{
       color: yellow;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-<br><h1 style='text-align: center;'>글쓰기</h1><br>
+<br><h1 style='text-align: center;'>커뮤니티</h1><br>
 <form action='study_con.php' method='post'>
-<input type='text' class= 'form-control' name = 'nickname' placeholder='아티스트 명'>
-<br><br><textarea class= 'form-control' rows='5' name='say' placeholder='앨범의 이름을 입력해주세요'></textarea>
+<input type='text' class= 'form-control' name = 'nickname' placeholder='제목'>
+<br><br><textarea class= 'form-control' rows='5' name='say' placeholder='내용'></textarea>
 <br><br><button role='submit' class='btn btn-outline-warning'>올리기</button> 
 </form><br>
 
-<h1>ALBUM</h1>
+<h1>글</h1>
 <br>
 <ul style='text-align:center;'>
     <?php
@@ -39,14 +43,14 @@ $conn = mysqli_connect('localhost','root','','test');
 $sql = 'SELECT * FROM registration';
 $result = mysqli_query($conn, $sql);
 while($row = mysqli_fetch_array($result)){
-  echo "<li><a href=\"study.php?name={$row['nickname']}\">{$row['say']}</a></li>";
+  echo "<li><a href=\"study.php?name={$row['say']}\">{$row['nickname']}</a></li>";
 };
   ?>
 </ul>
 
 <?php
 if(isset($_GET['name'])){
-  echo "{$_GET['name']}"."의 앨범이다.";
+  echo '<br>'.$_GET['name'];
 }else{
   echo '';
 }
