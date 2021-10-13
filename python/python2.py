@@ -324,4 +324,3 @@ def q8():
       print(column, end = '  ')
       
     print("")
-
