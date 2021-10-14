@@ -19,14 +19,21 @@
 </head>
 <body>
 
-<h1 style='text-align:center;'>작성 완료</h1><br>
+<h1 style='text-align:center;'>글</h1><br>
 <?php
 $conn = mysqli_connect('localhost','root','','test');
 mysqli_set_charset($conn,'utf8');
 
-$puttodb = "INSERT into registration(nickname,say)
-VALUE ( '{$_POST['nickname']}' , '{$_POST['say']}' )";
-mysqli_query($conn,$puttodb);
+if(isset($_GET['id'])){
+  $filtered_id = mysqli_real_escape_string($conn, $_GET['id']);
+  $sql = "SELECT * FROM registration where id={$filtered_id}";
+  $result = mysqli_query($conn, $sql);
+  $row = mysqli_fetch_array($result);
+  echo '<br><br><h1 style="text-align: center;">'.$row[1].'</h1>';
+  echo '<br><br><h3 style="text-align: center;">'.$row[2].'</h3>';
+}else{
+  echo '';
+}
 
 
 
@@ -55,9 +62,8 @@ mysqli_query($conn,$puttodb);
 
 
 ?>
-<meta http-equiv="Refresh" content="0; url='study.php'" />
 <form action='study.php' method='POST'>
-<button class='btn btn-outline-warning' style='text-align: center;' role='submit'>글쓰기로 돌아가기</button>
+<button class='btn btn-outline-warning' style='text-align: center;' role='submit'>커뮤니티로 돌아가기</button>
 </form>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
 	 crossorigin="anonymous">

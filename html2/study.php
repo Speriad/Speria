@@ -44,13 +44,13 @@
 $sql = 'SELECT * FROM registration';
 $result = mysqli_query($conn, $sql);
 while($row = mysqli_fetch_array($result)){
-  echo "<li><a href=\"study.php?id={$row[0]}\">{$row[1]}</a></li>";
+  echo "<li><a href=\"study_show.php?id={$row[0]}\">{$row[1]}</a></li>";
 };
-$article = array('nickname' => '', 'say' => '');
   ?>
 </ul>
 
 <?php
+$article = array('nickname' => '', 'say' => '');
 if(isset($_GET['id'])){
   $filtered_id = mysqli_real_escape_string($conn, $_GET['id']);
   $sql = "SELECT * FROM registration where id={$filtered_id}";
