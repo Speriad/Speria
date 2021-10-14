@@ -21,6 +21,7 @@
 
 
 <?php
+//입력한 값을 테이블에 넣음
 $conn = mysqli_connect('localhost','root','','test');
 mysqli_set_charset($conn,'utf8');
 

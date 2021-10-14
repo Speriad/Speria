@@ -21,6 +21,7 @@
 
 <br>
 <?php
+//해당 id에 포함되는 각 컬럼의 값들을 보여줌
 $conn = mysqli_connect('localhost','root','','test');
 mysqli_set_charset($conn,'utf8');
 

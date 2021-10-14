@@ -37,6 +37,7 @@
 <br>
 <ul style='text-align:center;'>
     <?php
+//여태까지 입력됬던것들을 보여줌
 $sql = 'SELECT * FROM registration';
 $result = mysqli_query($conn, $sql);
 while($row = mysqli_fetch_array($result)){
