@@ -19,7 +19,7 @@
 </head>
 <body>
 
-<h1 style='text-align:center;'>글</h1><br>
+<br>
 <?php
 $conn = mysqli_connect('localhost','root','','test');
 mysqli_set_charset($conn,'utf8');
