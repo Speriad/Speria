@@ -37,10 +37,6 @@
 <br>
 <ul style='text-align:center;'>
     <?php
-// DB 연결후, 셀렉트, 쿼리, 로우지정 순서대로 간다
-// mysqli fetch array 함수는 컬럼을 하나씩 리턴 해주는 함수임
-// [0] = id, [1] = nickname, [2] = say 이며
-// while($row = mysqli_fetch_array($result)) : row라는 변수가 테이블의 SELECT들을 모두 불러오는동안 
 $sql = 'SELECT * FROM registration';
 $result = mysqli_query($conn, $sql);
 while($row = mysqli_fetch_array($result)){
