@@ -49,19 +49,6 @@ while($row = mysqli_fetch_array($result)){
   ?>
 </ul>
 
-<?php
-$article = array('nickname' => '', 'say' => '');
-if(isset($_GET['id'])){
-  $filtered_id = mysqli_real_escape_string($conn, $_GET['id']);
-  $sql = "SELECT * FROM registration where id={$filtered_id}";
-  $result = mysqli_query($conn, $sql);
-  $row = mysqli_fetch_array($result);
-  echo $row[2];
-}else{
-  echo '';
-}
-?>
-
 
 
 
