@@ -24,7 +24,7 @@
 $conn = mysqli_connect('localhost','root','','test');
 mysqli_set_charset($conn,'utf8');
 
-$updatefromdb = "UPDATE registration set nickname={$_POST['nickname']}, say={$_POST['say']} where id={$_GET['id']}";
+$updatefromdb = "UPDATE registration set nickname='{$_POST['nickname']}', say='{$_POST['say']}' where id={$_GET['id']}";
 mysqli_query($conn, $updatefromdb);
 
 
@@ -56,6 +56,7 @@ mysqli_query($conn, $updatefromdb);
 
 
 ?>
+<meta http-equiv="Refresh" content="0; url='study.php'" />
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
 	 crossorigin="anonymous">
 	</script>

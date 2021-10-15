@@ -31,7 +31,7 @@ $lessgotoupdate = "<form action=".$idtoupdate_link." method='post'>
 <input type='text' class= 'form-control' name = 'nickname' placeholder='수정할 제목'>
 <br><br><textarea class= 'form-control' rows='5' name='say' placeholder='수정할 내용'></textarea>
 <br><br><button role='submit' class='btn btn-outline-warning'>수정하기</button> 
-</form><br>";
+</form><br><br><form action='study.php'><button role='submit' class='btn btn-outline-warning'>커뮤니티로 돌아가기</button></form>";
 echo $lessgotoupdate;
 ?>
 
