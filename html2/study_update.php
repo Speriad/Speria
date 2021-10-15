@@ -19,24 +19,17 @@
 </head>
 <body>
 
-<br>
+
 <?php
-//해당 id에 포함되는 각 컬럼의 값들을 보여줌'
 $conn = mysqli_connect('localhost','root','','test');
 mysqli_set_charset($conn,'utf8');
 
-$idtoupdate = $_GET['id'];
-$idtoupdate_link = "study_update_show.php?id=".$idtoupdate;
+$updatefromdb = "UPDATE registration set nickname={$_POST['nickname']}, say={$_POST['say']} where id={$_GET['id']}";
+mysqli_query($conn, $updatefromdb);
 
-if(isset($_GET['id'])){
-  $filtered_id = mysqli_real_escape_string($conn, $_GET['id']);
-  $sql = "SELECT * FROM registration where id={$filtered_id}";
-  $result = mysqli_query($conn, $sql);
-  $row = mysqli_fetch_array($result);
-  echo '<br><br><h1 style="text-align: center;">'.$row[1].'</h1>';
-  echo '<br><br><h3 style="text-align: center;">'.$row[2].'</h3>';
-  $update_link = "<form action=".$idtoupdate_link." method='POST'><button class='btn btn-outline-primary'>수정하기</button></form>";
-};
+
+
+
 
 
 
@@ -63,12 +56,6 @@ if(isset($_GET['id'])){
 
 
 ?>
-<br><br>
-<form action='study.php' method='POST'>
-<button class='btn btn-outline-warning' style='text-align: center;' role='submit'>커뮤니티로 돌아가기</button>
-</form>
-<br>
-<?=$update_link?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
 	 crossorigin="anonymous">
 	</script>
