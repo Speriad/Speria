@@ -19,24 +19,52 @@
 </head>
 <body>
 
-<br><h1 style='text-align: center;'>글 수정</h1><br>
+<br>
 <?php
+//해당 id에 포함되는 각 컬럼의 값들을 보여줌
 include 'connvar.php';
 
 $idtoupdate = $_GET['id'];
-$idtoupdate_link = "study_update.php?id=".$idtoupdate;
-$gotoshow = "study_show.php?id=".$idtoupdate;
+$idtoupdate_link = "study_update_show.php?id=".$idtoupdate;
+$idtodelete_link = "study_delete.php?id=".$idtoupdate;
 
-$lessgotoupdate = "<form action=".$idtoupdate_link." method='post'>
-<input type='text' class= 'form-control' name = 'nickname' placeholder='수정할 제목' required>
-<br><br><textarea class= 'form-control' rows='5' name='say' placeholder='수정할 내용' required></textarea>
-<br><br><button role='submit' class='btn btn-outline-warning'>수정하기</button> 
-</form><br><br>";
-$getbacktoshow = "<form action='study.php'><button role='submit' class='btn btn-outline-warning'>커뮤니티로 돌아가기</button></form>";
-echo $lessgotoupdate;
-echo $getbacktoshow;
+if(isset($_GET['id'])){
+  $filtered_id = mysqli_real_escape_string($conn, $_GET['id']);
+  $sql = "SELECT * FROM registration where id={$filtered_id}";
+  $result = mysqli_query($conn, $sql);
+  $row = mysqli_fetch_array($result);
+  echo '<br><br><h1 style="text-align: center;">'.$row[1].'</h1>';
+  echo '<br><br><h3 style="text-align: center;">'.$row[2].'</h3>';
+  $update_link = "<form action=".$idtoupdate_link." method='POST'><button class='btn btn-outline-primary'>수정하기</button></form>";
+  $delete_link = "<form action=".$idtodelete_link." method='POST'><button class='btn btn-outline-primary'>삭제하기</button></form>";
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ?>
-
+<meta http-equiv="Refresh" content="0; url='study.php'" />
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
 	 crossorigin="anonymous">
 	</script>
