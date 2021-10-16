@@ -21,15 +21,14 @@
 
 <br><h1 style='text-align: center;'>글 수정</h1><br>
 <?php
-$conn = mysqli_connect('localhost','root','','test');
-mysqli_set_charset($conn,'utf8');
+include 'connvar.php';
 
 $idtoupdate = $_GET['id'];
 $idtoupdate_link = "study_update.php?id=".$idtoupdate;
 
 $lessgotoupdate = "<form action=".$idtoupdate_link." method='post'>
-<input type='text' class= 'form-control' name = 'nickname' placeholder='수정할 제목'>
-<br><br><textarea class= 'form-control' rows='5' name='say' placeholder='수정할 내용'></textarea>
+<input type='text' class= 'form-control' name = 'nickname' placeholder='수정할 제목' required>
+<br><br><textarea class= 'form-control' rows='5' name='say' placeholder='수정할 내용' required></textarea>
 <br><br><button role='submit' class='btn btn-outline-warning'>수정하기</button> 
 </form><br><br><form action='study.php'><button role='submit' class='btn btn-outline-warning'>커뮤니티로 돌아가기</button></form>";
 echo $lessgotoupdate;

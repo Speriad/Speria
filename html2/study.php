@@ -1,6 +1,5 @@
 <?php
- $conn = mysqli_connect('localhost','root','','test');
- mysqli_set_charset($conn,'utf8');
+ include 'connvar.php';
 ?>
 <!doctype html>
 
@@ -26,10 +25,11 @@
   </style>
 </head>
 <body>
+
 <br><h1 style='text-align: center;'>커뮤니티</h1><br>
 <form action='study_con.php' method='post'>
-<input type='text' class= 'form-control' name = 'nickname' placeholder='제목'>
-<br><br><textarea class= 'form-control' rows='5' name='say' placeholder='내용'></textarea>
+<input type='text' class= 'form-control' name = 'nickname' placeholder='제목' required>
+<br><br><textarea class= 'form-control' rows='5' name='say' placeholder='내용' required></textarea>
 <br><br><button role='submit' class='btn btn-outline-warning'>올리기</button> 
 </form><br>
 

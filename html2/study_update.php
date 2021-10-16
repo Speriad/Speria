@@ -21,8 +21,7 @@
 
 
 <?php
-$conn = mysqli_connect('localhost','root','','test');
-mysqli_set_charset($conn,'utf8');
+include 'connvar.php';
 
 $updatefromdb = "UPDATE registration set nickname='{$_POST['nickname']}', say='{$_POST['say']}' where id={$_GET['id']}";
 mysqli_query($conn, $updatefromdb);

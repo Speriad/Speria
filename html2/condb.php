@@ -17,8 +17,7 @@
 
 
 <?php
-	$conn = mysqli_connect('localhost','root','','test');
-	mysqli_set_charset($conn,'utf8');
+	include 'connvar.php';
 
 	$lessgotodb = "INSERT into registration(nickname, say) 
 	values('{$_POST['nickname']}','{$_POST['say']}')";
@@ -32,6 +31,3 @@
 	</script>
 </body>
 </html>
-
-<!-- $conn = mysqli_connect('sql206.epizy.com','epiz_29599569','8DfkA57d5o77A','epiz_29599569_php'); -->
-<!-- $conn = mysqli_connect('localhost','root','','test'); -->
