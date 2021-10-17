@@ -22,6 +22,9 @@
       color: yellow;
       text-decoration: none;
     }
+    hr{
+      margin: 7px;
+    }
   </style>
 </head>
 <body>
@@ -43,7 +46,7 @@
 $sql = 'SELECT * FROM registration';
 $result = mysqli_query($conn, $sql);
 while($row = mysqli_fetch_array($result)){
-  echo "<li><a href=\"study_show.php?id={$row[0]}\">{$row[1]}</a></li>";
+  echo "<li><a href=\"study_show.php?id={$row[0]}\">{$row[1]}</a></li><hr style='border: solid 1px white;'>";
 };
   ?>
 </ul>
