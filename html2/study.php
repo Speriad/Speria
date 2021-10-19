@@ -36,7 +36,7 @@
 <br><br><button role='submit' class='btn btn-outline-warning'>올리기</button> 
 </form><br>
 
-<h1>글</h1>
+<h1 style='text-align: center;'>글</h1>
 <br>
 <ul style='text-align:center;'>
     <?php
