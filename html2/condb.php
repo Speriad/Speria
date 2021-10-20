@@ -23,14 +23,14 @@
 	// values('{$_POST['nickname']}','{$_POST['say']}')";
 
 	// mysqli_query($conn, $lessgotodb);
-	if (isset($_POST['nickname'])){
 		$lessgonick = "SELECT * from registration where nickname = '{$_POST['nickname']}'";
 		$resultin = mysqli_query($conn, $lessgonick);
 		$rows = mysqli_fetch_array($resultin);
+		if(isset($rows[1])){
 		$nick = $rows[1];
-	}else{
-		$nick = null;
-	}
+		}else{
+			$nick = null;
+		}
 ?>
 
 <meta http-equiv="Refresh" content="0; url='index.php'" />

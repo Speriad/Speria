@@ -69,8 +69,6 @@
 
   <?php
     include 'study/connvar.php';
-    include 'regi.php';
-    include 'condb.php';
     $notlogin = "<section class='bg-primary text-light p-4'>
     <div class='container'>
       <div class='d-md-flex justify-content-between align-items-center'>
