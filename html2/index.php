@@ -66,13 +66,10 @@
   </section>
 
   <!-- Newsletter 구현 -->
-
-  <?php
-    include 'study/connvar.php';
-    $notlogin = "<section class='bg-primary text-light p-4'>
+  <section class='bg-primary text-light p-4'>
     <div class='container'>
       <div class='d-md-flex justify-content-between align-items-center'>
-        <h2 class='mb-2 mb-md-0'>Report your opinion to improve our website</h2>
+        <h2 class='mb-2 mb-md-0'>Log-In to Enjoy MooHipGal with more service!</h2>
         <div class='input-group'>
           <form action='condb.php' method='post'>
           <input type='text' class='form-control'
@@ -82,7 +79,7 @@
           placeholder='Password' aria-label='say' aria-describedby='loginbutton' name='say' id='say'>
           <div class='input-group'>
             <button class='btn btn-outline-warning btn-md' type='submit'
-          id='loginbutton'>Send</button>
+          id='loginbutton'>LogIn</button>
             </form>
             <form action='regi.php'>
             <button type='submit' class='btn btn-outline-warning'>Registration</button>
@@ -95,30 +92,10 @@
   </section>
   <section>
   <div class='alert alert-warning alert-dismissible fade show' role='alert'>
-  Report is sent to Developer directly.
+  This is testing Log-In System.
   <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
   </div>
-  </section>";
-  $belogin = "<section class='bg-primary text-light p-4'>
-  <div class='container'>
-    <div class='d-md-flex justify-content-between align-items-center'>
-      <h2 class='mb-2 mb-md-0'>Log-In Completed!</h2>\
-    </div>
-  </div>
-</section>
-
-<section>
-<div class='alert alert-warning alert-dismissible fade show' role='alert'>
-Report is sent to Developer directly.
-<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
-</div>
-</section>";
-if(isset($nick)){
-  echo $belogin;
-}else{
-  echo $notlogin;
-}
-  ?>
+  </section>
 
   <!-- Making BOXES -->
 
