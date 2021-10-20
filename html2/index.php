@@ -82,7 +82,7 @@
             <button class='btn btn-outline-warning btn-md' type='submit'
           id='loginbutton'>Send</button>
             </form>
-            <form action='etc.php'>
+            <form action='regi.php'>
             <button type='submit' class='btn btn-outline-warning'>Registration</button>
             </form>
           </div>
