@@ -67,7 +67,11 @@
 
   <!-- Newsletter 구현 -->
 
-  <section class='bg-primary text-light p-4'>
+  <?php
+    include 'study/connvar.php';
+    include 'regi.php';
+    include 'condb.php';
+    $notlogin = "<section class='bg-primary text-light p-4'>
     <div class='container'>
       <div class='d-md-flex justify-content-between align-items-center'>
         <h2 class='mb-2 mb-md-0'>Report your opinion to improve our website</h2>
@@ -92,11 +96,31 @@
     </div>
   </section>
   <section>
-  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <div class='alert alert-warning alert-dismissible fade show' role='alert'>
   Report is sent to Developer directly.
-  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
   </div>
-  </section>
+  </section>";
+  $belogin = "<section class='bg-primary text-light p-4'>
+  <div class='container'>
+    <div class='d-md-flex justify-content-between align-items-center'>
+      <h2 class='mb-2 mb-md-0'>Log-In Completed!</h2>\
+    </div>
+  </div>
+</section>
+
+<section>
+<div class='alert alert-warning alert-dismissible fade show' role='alert'>
+Report is sent to Developer directly.
+<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+</div>
+</section>";
+if(isset($nick)){
+  echo $belogin;
+}else{
+  echo $notlogin;
+}
+  ?>
 
   <!-- Making BOXES -->
 
