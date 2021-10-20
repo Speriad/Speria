@@ -17,12 +17,17 @@
 
 
 <?php
-	include 'connvar.php';
+	include 'study/connvar.php';
 
-	$lessgotodb = "INSERT into registration(nickname, say) 
-	values('{$_POST['nickname']}','{$_POST['say']}')";
+	// $lessgotodb = "INSERT into registration(nickname, say) 
+	// values('{$_POST['nickname']}','{$_POST['say']}')";
 
-	mysqli_query($conn, $lessgotodb);
+	// mysqli_query($conn, $lessgotodb);
+	if isset($_POST['nickname']){
+		$lessgonick = "SELECT * from registration where nickname = '{$_POST['nickname']}'";
+		$resultin = mysqli_query($conn, $lessgonick);
+		
+	};
 ?>
 
 <meta http-equiv="Refresh" content="0; url='index.php'" />
