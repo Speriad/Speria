@@ -15,7 +15,6 @@
 		}
         a{
             text-decoration: none;
-            color:white;
         }
 	</style>
 </head>
@@ -35,6 +34,23 @@
       </div>
     </div>
   </nav>
+  <nav class='navbar navbar-expand-lg bg-dark navbar-dark py-3'>
+		<div class='container'>
+			<h2 style='color: white;'>Here is community for users</h2>
+			<button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navmenu'><span class='navbar-toggler-icon'></span></button>
+      <div class='collapse navbar-collapse' id='navmenu'>
+        <ul class='navbar-nav ms-auto'>
+        <li class='nav-item'>
+            <a href='index.php' class='nav-link'>Go to Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <container class=>
+
+	</container>
 
     
     

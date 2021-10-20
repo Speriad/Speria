@@ -74,16 +74,16 @@
         <div class='input-group'>
           <form action='condb.php' method='post'>
           <input type='text' class='form-control'
-          placeholder='NickName' aria-label='ID' aria-describedby='loginbutton' name='nickname' id='nickname'>
+          placeholder='UserName' aria-label='ID' aria-describedby='loginbutton' name='nickname' id='nickname'>
           <div class='input-group'>
           <input type='text' class='form-control'
-          placeholder='Say Something..' aria-label='say' aria-describedby='loginbutton' name='say' id='say'>
+          placeholder='Password' aria-label='say' aria-describedby='loginbutton' name='say' id='say'>
           <div class='input-group'>
             <button class='btn btn-outline-warning btn-md' type='submit'
           id='loginbutton'>Send</button>
             </form>
             <form action='etc.php'>
-            <button type='submit' class='btn btn-outline-warning'>The Reason Why you should Report</button>
+            <button type='submit' class='btn btn-outline-warning'>Registration</button>
             </form>
           </div>
         </div>
