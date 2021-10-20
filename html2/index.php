@@ -76,7 +76,7 @@
           <input type='text' class='form-control'
           placeholder='UserName' aria-label='ID' aria-describedby='loginbutton' name='nickname' id='nickname'>
           <div class='input-group'>
-          <input type='text' class='form-control'
+          <input type='password' class='form-control'
           placeholder='Password' aria-label='say' aria-describedby='loginbutton' name='say' id='say'>
           <div class='input-group'>
             <button class='btn btn-outline-warning btn-md' type='submit'
