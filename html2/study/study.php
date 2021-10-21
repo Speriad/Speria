@@ -33,7 +33,7 @@
 <form action='study_con.php' method='post'>
 <input type='text' class= 'form-control' name = 'nickname' placeholder='제목' required>
 <br><br><textarea class= 'form-control' rows='5' name='say' placeholder='내용' required></textarea>
-<br><br><input type='password' class= 'form-control' name = 'password' placeholder='비밀번호 (삭제 또는 수정 할때 필요함)' required>
+<br><br><input type='password' class= 'form-control' name = 'pw' placeholder='비밀번호 (삭제 또는 수정 할때 필요함)' required>
 <br><br><button role='submit' class='btn btn-outline-warning'>올리기</button> 
 </form><br>
 

@@ -23,15 +23,12 @@
 <?php
 include 'connvar.php';
 
-$getpw = $_POST['password'];
-$getpwfromdb = "SELECT password from registration where nickname='{$_POST['nickname']}'";
+$getpw = $_POST['pw'];
+$getpwfromdb = "SELECT pw from registration where id=".$_GET['id'];
 
 if($getpw = $getpwfromdb){
   $updatefromdb = "UPDATE registration set nickname='{$_POST['nickname']}', say='{$_POST['say']}' where id={$_GET['id']}";
   mysqli_query($conn, $updatefromdb);
-}else{
-  $getback = "<meta http-equiv='Refresh' content='0; url='study.php'' />";
-  echo $getback;
 };
 
 

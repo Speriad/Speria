@@ -24,8 +24,15 @@
 //해당 id에 포함되는 각 컬럼의 값들을 보여줌
 include 'connvar.php';
 
-$deletefromdb = "DELETE from registration where id=".$_GET['id'];
-mysqli_query($conn,$deletefromdb);
+$getpw = $_POST['pw'];
+$getpwfromdb = "SELECT pw from registration where id=".$_GET['id'];
+
+if($getpw = $getpwfromdb){
+  $deletefromdb = "DELETE from registration where id=".$_GET['id'];
+  mysqli_query($conn,$deletefromdb);
+};
+
+
 
 //study_delete_show.php 만들고 패스워드 입력칸 추가후 여기에 맞는지 아닌지 확인
 

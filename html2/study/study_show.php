@@ -26,7 +26,7 @@ include 'connvar.php';
 
 $idtoupdate = $_GET['id'];
 $idtoupdate_link = "study_update_show.php?id=".$idtoupdate;
-$idtodelete_link = "study_delete.php?id=".$idtoupdate;
+$idtodelete_link = "study_delete_show.php?id=".$idtoupdate;
 
 if(isset($_GET['id'])){
   $filtered_id = mysqli_real_escape_string($conn, $_GET['id']);
