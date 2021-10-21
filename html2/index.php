@@ -71,7 +71,7 @@
       <div class='d-md-flex justify-content-between align-items-center'>
         <h2 class='mb-2 mb-md-0'>Log-In to Enjoy MooHipGal with more service!</h2>
         <div class='input-group'>
-          <form action='condb.php' method='post'>
+          <form action='#' method='post'>
           <input type='text' class='form-control'
           placeholder='UserName' aria-label='ID' aria-describedby='loginbutton' name='nickname' id='nickname'>
           <div class='input-group'>
