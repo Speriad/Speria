@@ -23,8 +23,20 @@
 <?php
 include 'connvar.php';
 
-$updatefromdb = "UPDATE registration set nickname='{$_POST['nickname']}', say='{$_POST['say']}' where id={$_GET['id']}";
-mysqli_query($conn, $updatefromdb);
+$getpw = $_POST['password'];
+$getpwfromdb = "SELECT password from registration where nickname='{$_POST['nickname']}'";
+
+if($getpw = $getpwfromdb){
+  $updatefromdb = "UPDATE registration set nickname='{$_POST['nickname']}', say='{$_POST['say']}' where id={$_GET['id']}";
+  mysqli_query($conn, $updatefromdb);
+}else{
+  $getback = "<meta http-equiv='Refresh' content='0; url='study.php'' />";
+  echo $getback;
+};
+
+
+
+//얻은 패스워드가 맞는지 확인 아니면 변수값으로 리프레쉬 지정후 에코
 
 
 

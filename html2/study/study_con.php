@@ -24,9 +24,11 @@
 //입력한 값을 테이블에 넣음
 include 'connvar.php';
 
-$puttodb = "INSERT into registration(nickname,say)
-VALUE ( '{$_POST['nickname']}' , '{$_POST['say']}' )";
+$puttodb = "INSERT into registration(nickname,say, password)
+VALUE ( '{$_POST['nickname']}' , '{$_POST['say']}' , '{$_POST['password']}' )";
 mysqli_query($conn,$puttodb);
+
+//Password 넣어야함
 
 
 
