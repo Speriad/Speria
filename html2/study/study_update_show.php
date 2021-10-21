@@ -19,7 +19,7 @@
 </head>
 <body>
 
-<br><h1 style='text-align: center;'>글 수정</h1><br>
+<br><h1 style='text-align: center;'>글 수정 (비밀번호가 틀리면 수정되지 않습니다)</h1><br>
 <?php
 include 'connvar.php';
 

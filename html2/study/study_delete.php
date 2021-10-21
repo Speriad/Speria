@@ -27,7 +27,7 @@ include 'connvar.php';
 $getpw = $_POST['pw'];
 $getpwfromdb = "SELECT pw from registration where id=".$_GET['id'];
 
-if($getpw = $getpwfromdb){
+if($getpw == $getpwfromdb){
   $deletefromdb = "DELETE from registration where id=".$_GET['id'];
   mysqli_query($conn,$deletefromdb);
 };
