@@ -71,12 +71,12 @@
       <div class='d-md-flex justify-content-between align-items-center'>
         <h2 class='mb-2 mb-md-0'>Log-In to Enjoy MooHipGal with more service!</h2>
         <div class='input-group'>
-          <form action='#' method='post'>
+          <form action='condb.php' method='post'>
           <input type='text' class='form-control'
           placeholder='UserName' aria-label='ID' aria-describedby='loginbutton' name='nickname' id='nickname'>
           <div class='input-group'>
           <input type='password' class='form-control'
-          placeholder='Password' aria-label='say' aria-describedby='loginbutton' name='say' id='say'>
+          placeholder='Password' aria-label='pw' aria-describedby='loginbutton' name='pw' id='pw'>
           <div class='input-group'>
             <button class='btn btn-outline-warning btn-md' type='submit'
           id='loginbutton'>LogIn</button>

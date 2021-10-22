@@ -19,10 +19,19 @@
 <?php
 	include 'study/connvar.php';
 
-	$lessgotodb = "INSERT into registration(nickname, say) 
-	values('{$_POST['nickname']}','{$_POST['say']}')";
-
-	mysqli_query($conn, $lessgotodb);
+	$getnick = $_POST['nickname'];
+	$getpw = $_POST['pw'];
+	$dbnick = "SELECT nickname from registration where nickname='{$_POST['nickname']}'";
+	$dbpw = "SELECT pw from registration where pw='{$_POST['pw']}'";
+	if($getnick == $dbnick){
+		if($getpw == $dbpw){
+			$getbacktoindex = "<meta http-equiv='Refresh' content='0; url='index.php?nickname='{$_POST['nickname']}''' />";
+			echo $getbacktoindex;
+		}else{
+			$alertpw = "<script>alert('잘못된 비밀번호입니다')</script>";
+			echo $alertpw;
+		}
+	};
 ?>
 
 <meta http-equiv="Refresh" content="0; url='index.php'" />
