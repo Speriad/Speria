@@ -17,7 +17,7 @@
 
 
 <?php
-	include 'study/connvar.php';
+	include 'connvar.php';
 
 	$getnick = $_POST['nickname'];
 	$getpw = $_POST['pw'];
@@ -31,7 +31,10 @@
 			$alertpw = "<script>alert('잘못된 비밀번호입니다')</script>";
 			echo $alertpw;
 		}
-	};
+	}else{
+		$alertnick = "<script>alert('잘못된 아이디입니다')</script>";
+		echo $alertnick;
+	}
 ?>
 
 <meta http-equiv="Refresh" content="0; url='index.php'" />

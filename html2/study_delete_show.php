@@ -27,7 +27,7 @@ $idtodelete_link = "study_delete.php?id=".$idtodelete;
 
 $lessgo = "<br><h1 style='text-align: center;'>비밀번호 입력 (비밀번호가 틀리면 삭제되지 않습니다)</h1><br>
 <form action=".$idtodelete_link." method='post'>
-<br><br><input type='pw' class= 'form-control' name = 'password' placeholder='비밀번호 (삭제 또는 수정 할때 필요함)' required>
+<br><br><input type='password' class= 'form-control' name = 'pw' placeholder='비밀번호 (삭제 또는 수정 할때 필요함)' required>
 <br><br><button role='submit' class='btn btn-outline-warning'>삭제 하기</button> 
 </form><br>";
 
