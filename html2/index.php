@@ -68,26 +68,15 @@
   <!-- Newsletter 구현 -->
   <section class='bg-primary text-light p-4'>
     <div class='container'>
-      <div class='d-md-flex justify-content-between align-items-center'>
-        <h2 class='mb-2 mb-md-0'>Log-In to Enjoy MooHipGal with more service!</h2>
-        <div class='input-group'>
-          <form action='condb.php' method='post'>
-          <input type='text' name='nickname' class='form-control'
-          placeholder='UserName' aria-describedby='loginbutton'>
-          <div class='input-group'>
-          <input type='password'  name='pw' class='form-control'
-          placeholder='Password' aria-describedby='loginbutton'>
-          <div class='input-group'>
-            <button class='btn btn-outline-warning btn-md' type='submit'
-          id='loginbutton'>LogIn</button>
-            </form>
-            <form action='regi.php'>
-            <button type='submit' class='btn btn-outline-warning'>Registration</button>
-            </form>
-          </div>
-        </div>
-        </div>
-      </div>
+    <br><h1 style='text-align: center;'>Log-In to Enjoy More services!</h1><br>
+<form action='condb.php' method='post'>
+<input type='text' class= 'form-control' name = 'nickname' placeholder='USERNAME' required>
+<br><input type='password' class= 'form-control' name = 'pw' placeholder='PASSWORD' required>
+<br><button role='submit' class='btn btn-outline-warning'>LogIn</button> 
+</form>
+<form action=regi_show.php method='post'>
+<button role='submit' class='btn btn-outline-warning'>Registration</button>
+  </form>
     </div>
   </section>
   <section>

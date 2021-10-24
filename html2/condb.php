@@ -10,37 +10,30 @@
 	<title>정보 전송 완료</title>
 </head>
 <body>
-<nav class='navbar navbar-expand-lg bg-dark navbar-dark py-3'>
-		<div class='container'>
-		<a class='navbar-brand'>Sent Successfully</a>
-</nav>
 
 
 <?php
+	error_reporting(E_ALL^ E_WARNING); 
 	include 'connvar.php';
 
-	$getnick = $_POST['nickname'];
-	$getpw = $_POST['pw'];
-	$dbnick = "SELECT nickname from registration where nickname='{$_POST['nickname']}'";
-	$dbpw = "SELECT pw from registration where pw='{$_POST['pw']}'";
-	if($getnick = $dbnick){
-		if($getpw = $dbpw){
-			$getbacktoindex = "<meta http-equiv='Refresh' content='0; url='index.php?nickname='{$_POST['nickname']}''' />";
-			echo $getbacktoindex;
-		}else{
-			$alertpw = "<script>alert('잘못된 비밀번호입니다')</script>";
-			$backto = "<meta http-equiv='Refresh' content='0; url='index.php'' />";
-			echo $alertpw;
-			echo $backto;
-		}
-	}else{
-		$alertnick = "<script>alert('잘못된 아이디입니다')</script>";
-		$backto = "<meta http-equiv='Refresh' content='0; url='index.php'' />";
-		echo $alertnick;
-		echo $backto;
-	};
-?>
+	 $getnick = $_POST['nickname'];
+	 $dbnick = "SELECT * from registration where nickname='{$_POST['nickname']}'";
+	 $resultnick = mysqli_query($conn, $dbnick);
+	 $rownick = mysqli_fetch_array($resultnick);
 
+	if($_POST['nickname'] == $rownick[1]){
+		if($_POST['pw'] == $rownick[3]){
+			echo '로그인 성공';
+		}else{
+			echo '아이디는 맞지만 비밀번호가 틀렸습니다';
+		};
+	}else{
+		echo '아이디가 틀렸습니다';
+	};
+
+
+?>
+<meta http-equiv='Refresh' content="5; url='index.php'" />
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
 	 crossorigin="anonymous">
 	</script>
