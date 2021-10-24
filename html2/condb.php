@@ -23,21 +23,24 @@
 	$getpw = $_POST['pw'];
 	$dbnick = "SELECT nickname from registration where nickname='{$_POST['nickname']}'";
 	$dbpw = "SELECT pw from registration where pw='{$_POST['pw']}'";
-	if($getnick == $dbnick){
-		if($getpw == $dbpw){
+	if($getnick = $dbnick){
+		if($getpw = $dbpw){
 			$getbacktoindex = "<meta http-equiv='Refresh' content='0; url='index.php?nickname='{$_POST['nickname']}''' />";
 			echo $getbacktoindex;
 		}else{
 			$alertpw = "<script>alert('잘못된 비밀번호입니다')</script>";
+			$backto = "<meta http-equiv='Refresh' content='0; url='index.php'' />";
 			echo $alertpw;
+			echo $backto;
 		}
 	}else{
 		$alertnick = "<script>alert('잘못된 아이디입니다')</script>";
+		$backto = "<meta http-equiv='Refresh' content='0; url='index.php'' />";
 		echo $alertnick;
-	}
+		echo $backto;
+	};
 ?>
 
-<meta http-equiv="Refresh" content="0; url='index.php'" />
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
 	 crossorigin="anonymous">
 	</script>

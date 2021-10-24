@@ -27,10 +27,15 @@ include 'connvar.php';
 $getpw = $_POST['pw'];
 $getpwfromdb = "SELECT pw from registration where id=".$_GET['id'];
 
-if($getpw == $getpwfromdb){
+echo $getpw.'<br>';
+echo $getpwfromdb;
+
+if($getpw = $getpwfromdb){
   $deletefromdb = "DELETE from registration where id=".$_GET['id'];
   mysqli_query($conn,$deletefromdb);
-};
+}else{
+  echo "<script>alert('Wrong Password Try Again')</script>";
+}
 
 
 
@@ -60,7 +65,7 @@ if($getpw == $getpwfromdb){
 
 
 ?>
-<meta http-equiv="Refresh" content="0; url='study.php'" />
+<meta http-equiv="Refresh" content="100; url='study.php'" />
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
 	 crossorigin="anonymous">
 	</script>
