@@ -29,7 +29,7 @@
 	if($_POST['nickname'] == $rownick[1]){
 		if($_POST['pw'] == $rownick[2]){
 			echo '로그인 성공<br>';
-			$button = "<form action='index.php' method='post'><input type='hidden' name='nickname' value='{$_POST['nickname']}'><input type='hidden' name='pw' value='{$_POST['pw']}'><button role='submit' class='btn btn-outline-warning'>무힙갤로 돌아가기</button></form>";
+			$button = "<form action='index.php' method='POST'><input type='hidden' name='nickname' value='{$_POST['nickname']}'><button role='submit' class='btn btn-outline-warning'>무힙갤로 돌아가기</button></form>";
 			echo $button;
 		}else{
 			echo '아이디는 맞지만 비밀번호가 틀렸습니다';
