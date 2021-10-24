@@ -23,13 +23,8 @@
 <?php
 include 'connvar.php';
 
-$getpw = $_POST['pw'];
-$getpwfromdb = "SELECT pw from registration where id=".$_GET['id'];
-
-if($getpw = $getpwfromdb){
-  $updatefromdb = "UPDATE registration set nickname='{$_POST['nickname']}', say='{$_POST['say']}' , pw='{$_POST['pw']}' where id={$_GET['id']}";
-  mysqli_query($conn, $updatefromdb);
-};  
+$updatefromdb = "UPDATE com set title='{$_POST['title']}', say='{$_POST['say']}' where id={$_GET['id']}";
+  mysqli_query($conn, $updatefromdb);  
 
 
 

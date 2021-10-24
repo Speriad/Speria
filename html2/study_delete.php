@@ -24,13 +24,9 @@
 //해당 id에 포함되는 각 컬럼의 값들을 보여줌
 include 'connvar.php';
 
-$getpw = $_POST['pw'];
-$getpwfromdb = "SELECT pw from registration where id=".$_GET['id'];
+$deletefromdb = "DELETE from com where id=".$_GET['id'];
+mysqli_query($conn,$deletefromdb);
 
-if($getpw = $getpwfromdb){
-  $deletefromdb = "DELETE from registration where id=".$_GET['id'];
-  mysqli_query($conn,$deletefromdb);
-}
 
 
 

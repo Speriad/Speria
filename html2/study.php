@@ -31,9 +31,8 @@
 
 <br><h1 style='text-align: center;'>커뮤니티</h1><br>
 <form action='study_con.php' method='post'>
-<input type='text' class= 'form-control' name = 'nickname' placeholder='제목' required>
+<input type='text' class= 'form-control' name = 'title' placeholder='제목' required>
 <br><br><textarea class= 'form-control' rows='5' name='say' placeholder='내용' required></textarea>
-<br><br><input type='password' class= 'form-control' name = 'pw' placeholder='비밀번호 (삭제 또는 수정 할때 필요함)' required>
 <br><br><button role='submit' class='btn btn-outline-warning'>올리기</button> 
 </form><br>
 
@@ -44,10 +43,10 @@
 //여태까지 입력됬던것들을 보여줌
 //mysqli_fetch_array : $result를 배열의 형식으로 만들어줌
 //$row = mysqli_fetch_array($result) = [id, nickname, say]
-$sql = 'SELECT * FROM registration';
+$sql = 'SELECT * FROM com';
 $result = mysqli_query($conn, $sql);
 while($row = mysqli_fetch_array($result)){
-  echo "<li><a href=\"study_show.php?id={$row[0]}\">{$row[1]}</a></li><hr style='border: solid 1px white;'>";
+  echo "<li><a href='study_show.php?id={$row[0]}'>{$row[1]}</a></li><hr style='border: solid 1px white;'>";
 };
   ?>
 </ul>

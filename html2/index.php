@@ -86,9 +86,9 @@
   This is testing Log-In System.
   <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>";
 
-    $belogin = "<br><h1 style='text-align: center;'>Welcome! {$_POST['user']}</h1><br><div style='text-align: center;'>You are the family of MooHipGal!</div>";
+    $belogin = "<br><h1 style='text-align: center;'>Welcome! {$_POST['nickname']}</h1><br><div style='text-align: center;'>You are the family of MooHipGal!</div>";
 
-    if(isset($_POST['user'])){
+    if(isset($_POST['nickname'])){
       echo $belogin;
     }else{
       echo $notlogin;

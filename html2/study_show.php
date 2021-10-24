@@ -26,11 +26,11 @@ include 'connvar.php';
 
 $idtoupdate = $_GET['id'];
 $idtoupdate_link = "study_update_show.php?id=".$idtoupdate;
-$idtodelete_link = "study_delete_show.php?id=".$idtoupdate;
+$idtodelete_link = "study_delete.php?id=".$idtoupdate;
 
 if(isset($_GET['id'])){
   $filtered_id = mysqli_real_escape_string($conn, $_GET['id']);
-  $sql = "SELECT * FROM registration where id={$filtered_id}";
+  $sql = "SELECT * FROM com where id={$filtered_id}";
   $result = mysqli_query($conn, $sql);
   $row = mysqli_fetch_array($result);
   echo '<br><br><h1 style="text-align: center;">'.$row[1].'</h1>';
