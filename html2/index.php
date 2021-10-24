@@ -68,7 +68,9 @@
   <!-- Newsletter 구현 -->
   <section class='bg-primary text-light p-4'>
     <div class='container'>
-    <br><h1 style='text-align: center;'>Log-In to Enjoy More services!</h1><br>
+    <?php
+    error_reporting(E_ALL^ E_WARNING); 
+    $notlogin = "<br><h1 style='text-align: center;'>Log-In to Enjoy More services!</h1><br>
 <form action='condb.php' method='post'>
 <input type='text' class= 'form-control' name = 'nickname' placeholder='USERNAME' required>
 <br><input type='password' class= 'form-control' name = 'pw' placeholder='PASSWORD' required>
@@ -82,7 +84,16 @@
   <section>
   <div class='alert alert-warning alert-dismissible fade show' role='alert'>
   This is testing Log-In System.
-  <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+  <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>";
+
+    $belogin = "<br><h1 style='text-align: center;'>Welcome! {$_POST['user']}</h1><br><div style='text-align: center;'>You are the family of MooHipGal!</div>";
+
+    if(isset($_POST['user'])){
+      echo $belogin;
+    }else{
+      echo $notlogin;
+    };
+  ?>
   </div>
   </section>
 

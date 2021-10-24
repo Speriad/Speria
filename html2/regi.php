@@ -27,18 +27,18 @@
 	$rownick = mysqli_fetch_array($resultnick);
 
     if($_POST['nickname'] == $rownick[1]){
-		echo '<br>이미 존재하는 아이디입니다<br>5초 후 무힙갤로 돌아갑니다..';
+		echo "<script>alert('이미 존재하는 아이디입니다')</script>";
 	}else{
 		$success = "INSERT into registration(nickname,pw) values('{$_POST['nickname']}','{$_POST['pw']}')";
         mysqli_query($conn, $success);
-        echo '<br>회원가입 성공<br>5초 후 무힙갤로 돌아갑니다';
+        echo "<script>alert('회원가입이 완료되었습니다')</script>";
 	};
     
 	 
 
 
 ?>
-<meta http-equiv='Refresh' content="5; url='index.php'" />
+<meta http-equiv='Refresh' content="0; url='index.php'" />
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
 	 crossorigin="anonymous">
 	</script>
