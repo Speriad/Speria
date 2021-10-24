@@ -15,8 +15,8 @@
    list-style:none;
       }  
     body{
-      background-color: black;
-      color: white;
+      background-color: white;
+      color: black;
     }
     a{
       color: yellow;
@@ -29,27 +29,17 @@
 </head>
 <body>
 
-<br><h1 style='text-align: center;'>커뮤니티</h1><br>
-<form action='study_con.php' method='post'>
-<input type='text' class= 'form-control' name = 'title' placeholder='제목' required>
-<br><br><textarea class= 'form-control' rows='5' name='say' placeholder='내용' required></textarea>
-<br><br><button role='submit' class='btn btn-outline-warning'>올리기</button> 
-</form><br>
 
-<h1 style='text-align: center;'>글</h1>
-<br>
-<ul style='text-align:center;'>
-    <?php
-//여태까지 입력됬던것들을 보여줌
-//mysqli_fetch_array : $result를 배열의 형식으로 만들어줌
-//$row = mysqli_fetch_array($result) = [id, nickname, say]
-$sql = 'SELECT * FROM com';
-$result = mysqli_query($conn, $sql);
-while($row = mysqli_fetch_array($result)){
-  echo "<li><a href='com_show.php?id={$row[0]}'>{$row[1]}</a></li><hr style='border: solid 1px white;'>";
-};
-  ?>
-</ul>
+<?php
+include 'connvar.php';
+$send = "<br><h1 style='text-align: center;'>Create a Post</h1><br>
+<form action='com_con.php' method='post'>
+<input type='text' class= 'form-control' name = 'title' placeholder='TITLE' required>
+<br><br><textarea class= 'form-control' rows='5' name='say' placeholder='Say Something....' required></textarea><input type='hidden' name='nickname' value='{$_POST['nickname']}'><br><br><button role='submit' class='btn btn-outline-warning'>Create a Post</button> 
+</form><br>";
+echo $send;
+?>
+
 
 
 

@@ -10,12 +10,19 @@
 
 	<title>MooHipGal</title>
 	<style type='text/css'>
-		body {
-			background-color: white;
-		}
-        a{
-            text-decoration: none;
-        }
+		ul{
+   list-style:none;
+      }  
+    body{
+      background-color: white;
+    }
+    a{
+      color: black;
+      text-decoration: none;
+    }
+    hr{
+      margin: 7px;
+    }
 	</style>
 </head>
 
@@ -53,14 +60,34 @@
           <?php
 			if(isset($_POST['nickname'])){
 				echo "<h2>Hello, {$_POST['nickname']}!</h2>";
+				$createapost = "<div class='text-right'>
+				<form action='com_create.php' method='post'><input type='hidden' name='nickname' value='{$_POST['nickname']}'><button role='submit' class='btn btn-outline-warning'>Create a Post</button></form>
+			</div>";
+			echo $createapost;
 			}else{
-				echo '<h2>Hello, Guest!</h2>';
+				echo '<h2>Hello, Guest! You can\'t create a post without login</h2>';
 			};
 		  ?>
         </div>
       </div>
     </div>
   </section>
+  <ul style='text-align:center;'>
+    <?php
+$sql = 'SELECT * FROM com';
+$result = mysqli_query($conn, $sql);
+
+if(isset($_POST['nickname'])){
+while($row = mysqli_fetch_array($result)){
+	  echo "<br><form action = 'com_show.php' method='post'><input type='hidden' name='nickname' value='{$_POST['nickname']}'><input type='hidden' name='id' value='{$row[0]}'><button role='submit' class='btn btn-light'>{$row[1]}</button></form><br><hr style='border: solid 100% black;'>";
+  };
+}else{
+	while($row = mysqli_fetch_array($result)){
+		echo "<br><form action = 'com_show.php' method='post'><input type='hidden' name='id' value='{$row[0]}'><button role='submit' class='btn btn-light'>{$row[1]}</button></form><br><hr style='border: solid 100% black;'>";
+  };
+};
+  ?>
+</ul>
 
     
     
