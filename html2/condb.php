@@ -28,18 +28,18 @@
 
 	if($_POST['nickname'] == $rownick[1]){
 		if($_POST['pw'] == $rownick[2]){
-			echo '로그인 성공<br>';
-			$button = "<form action='index.php' method='POST'><input type='hidden' name='nickname' value='{$_POST['nickname']}'><button role='submit' class='btn btn-outline-warning'>무힙갤로 돌아가기</button></form>";
+			echo "<h1 style='text-align: center;'>로그인 성공<br>";
+			$button = "<form action='index.php' method='POST' class='text-center'><input type='hidden' name='nickname' value='{$_POST['nickname']}'><button role='submit' class='btn btn-outline-warning'>무힙갤로 돌아가기</button></form>";
 			echo $button;
 		}else{
-			echo '아이디는 맞지만 비밀번호가 틀렸습니다';
-			$button = "<form action='index.php'><button role='submit' class='btn btn-outline-warning'>무힙갤로 돌아가기</button></form>";
-			echo $button;
+			echo "<h1 style='text-align: center;'>존재하지 않는 계정입니다</h1>";
+				$button = "<br><form action='index.php' class='text-center'><button role='submit' class='btn btn-outline-warning'>무힙갤로 돌아가기</button></form>";
+				echo $button;	
 		};
 	}else{
-		echo '아이디가 틀렸습니다';
-		$button = "<form action='index.php'><button role='submit' class='btn btn-outline-warning'>무힙갤로 돌아가기</button></form>";
-		echo $button;
+		echo "<h1 style='text-align: center;'>존재하지 않는 계정입니다</h1>";
+			$button = "<br><form action='index.php' class='text-center'><button role='submit' class='btn btn-outline-warning'>무힙갤로 돌아가기</button></form>";
+			echo $button;
 		
 	};
 

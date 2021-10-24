@@ -22,19 +22,30 @@
 
 <body>
 	<!-- NAVBAR 구현 -->
-	<nav class='navbar navbar-expand-lg bg-dark navbar-dark py-3'>
-		<div class='container'>
-			<a href='albums.php' class='navbar-brand'>Albums</a>
-			<button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navmenu'><span class='navbar-toggler-icon'></span></button>
-      <div class='collapse navbar-collapse' id='navmenu'>
-        <ul class='navbar-nav ms-auto'>
-        <li class='nav-item'>
-            <a href='index.php' class='nav-link'>Go to Lobby Page</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+  <div class="container">
+    <a class="navbar-brand" href="index.php">Albums</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#content" aria-controls="content" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="content">   
+      <?php
+      include 'connvar.php';
+	  if(isset($_POST['nickname'])){
+        $button1 = "<form action='index.php' method='post' class='d-flex p-2'><input type='hidden' name='nickname' value='{$_POST['nickname']}'>
+        <button class='btn btn-outline-primary' type='submit'>Go To Lobby Page</button>
+        </form>";
+        echo $button1;
+	  }else{
+		$button1 = "<form action='index.php' class='d-flex p-2'>
+        <button class='btn btn-outline-primary' type='submit'>Go To Lobby Page</button>
+        </form>";
+        echo $button1;
+	  };
+      ?>
+  </div>
+  </div>
+</nav>
 
     
     
