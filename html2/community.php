@@ -23,7 +23,7 @@
 	<!-- NAVBAR 구현 -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
   <div class="container">
-    <a class="navbar-brand" href="index.php">Community</a>
+    <a class="navbar-brand">Community</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#content" aria-controls="content" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -46,15 +46,21 @@
   </div>
 </nav>
 
-  <?php
-	include 'connvar.php';
-
-	if(isset($_POST['nickname'])){
-		echo "{$_POST['nickname']}";
-	}else{
-		echo 'Hello Guest!';
-	};
-  ?>
+<section class='bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start'>
+    <div class='container'>
+      <div class='d-sm-flex align-items-center justify-content-between'>
+        <div>
+          <?php
+			if(isset($_POST['nickname'])){
+				echo "<h2>Hello, {$_POST['nickname']}!</h2>";
+			}else{
+				echo '<h2>Hello, Guest!</h2>';
+			};
+		  ?>
+        </div>
+      </div>
+    </div>
+  </section>
 
     
     

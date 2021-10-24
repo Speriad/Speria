@@ -25,7 +25,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
   <div class="container">
-    <a class="navbar-brand" href="index.php">Lobby of MooHipGal</a>
+    <a class="navbar-brand">Lobby of MooHipGal</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#content" aria-controls="content" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
