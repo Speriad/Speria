@@ -21,6 +21,18 @@
 	error_reporting(E_ALL^ E_WARNING); 
 	include 'connvar.php';
 
+    $getnick = $_POST['nickname'];
+    $dbnick = "SELECT * from registration where nickname='{$_POST['nickname']}'";
+    $resultnick = mysqli_query($conn, $dbnick);
+	$rownick = mysqli_fetch_array($resultnick);
+
+    if($_POST['nickname'] == $rownick[1]){
+		echo '<br>이미 존재하는 아이디입니다<br>5초 후 무힙갤로 돌아갑니다..';
+	}else{
+		$success = "INSERT into registration(nickname,pw) values('{$_POST['nickname']}','{$_POST['pw']}')";
+        mysqli_query($conn, $success);
+        echo '<br>회원가입 성공<br>5초 후 무힙갤로 돌아갑니다';
+	};
     
 	 
 
