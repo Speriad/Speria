@@ -163,16 +163,16 @@
           <img src='https://i.pinimg.com/originals/01/1b/24/011b24f9cb707b842aeb862ef9d54e5a.gif' class='img-fluid' alt=''>
         </div>
         <div class='col-md p-5'>
-          <h2>Gather With your HipHop Friends!</h2>
+          <h2>당신과 같이 힙합을 좋아하는 사람들과 모이세요!</h2>
           <p class='lead'>
-            If you want to talk with your same-taste friends or share your favorite songs with them, 
-            Here is the best one! Find your hidden taste or not-famous but, well-made songs. 
+            같은 취향의 친구들과 서로 좋아하는 곡과 앨범 또는 아티스트를 공유하세요. 그들과 함께
+            곡을 공유하며 당신의 숨겨진 취향의 곡 또는 아티스트를 발견할 수도 있습니다.
           </p>
           <p class='lead'>
-            Community for HipHop Fans and Musicians. Share your favorite songs!
+            힙합팬을 위한 커뮤니티 당신의 곡을 공유해보기도 하세요!
           </p>
           <a href='community.php' class='btn btn-dark mt-3'>
-            <i class='bi bi-chevron-right'>Dive into Community</i>
+            <i class='bi bi-chevron-right'>커뮤니티로 들어가기</i>
           </a>
         </div>
       </div>
@@ -185,16 +185,16 @@
           <img src='https://i.pinimg.com/originals/7e/3b/50/7e3b5074bfb8f14f0d68d6851b56447b.jpg' class='img-fluid' alt=''>
         </div>
         <div class='col-md p-5 text-white'>
-          <h2>Get Your Type Beat that fits!</h2>
+          <h2>당신의 음악과 맞는 타입 비트를 얻어보세요!</h2>
           <p class='lead text-white'>
-            If you want to talk with your same-taste friends or share your favorite songs with them, 
-            Here is the best one! Find your hidden taste or not-famous but, well-made songs. 
+            여러 사람들과 당신의 타입 비트를 공유해보기도 하고, 당신이 찾는 타입 비트를 바로 얻어보세요!
+            생각보다 무힙갤에 빨리 빠질겁니다.
           </p>
           <p class='lead text-white'>
-            Type Beat for beginner! You can get it anytime.
+            초보자를 위한 타입비트도 바로 얻을수 있습니다
           </p>
           <a href='typebeat.php' class='btn btn-light mt-3'>
-            <i class='bi bi-chevron-right'>Dive into Type Beat</i>
+            <i class='bi bi-chevron-right'>타입 비트로 들어가기</i>
           </a>
         </div>
       </div>
@@ -207,16 +207,15 @@
           <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_B_fuU2qhoWCCgblAuozsKAdVZashFLfbinvp1GuZ-j9gGR2xY9NXDPHM1l7vfPQygjc&usqp=CAU' class='img-fluid' alt=''>
         </div>
         <div class='col-md p-5 text-black'>
-          <h2>Get your favorite songs' Lyrics!</h2>
+          <h2>당신이 가장 좋아하는 래퍼의 가사를 찾아보세요!</h2>
           <p class='lead text-black'>
-           You can find your favorite songs' Lyrics Anytime. Users can write lyrics and comment about lyrics! Share your
-           Lyrics with Hip-Hop Fans!
+           언제나 당신이 좋아하는 곡의 가사를 찾을수 있습니다. 가사를 보며 노래를 따라 불러보기도 하세요!
           </p>
           <p class='lead text-black'>
-            Find Lyrics with listening Music. It can be extreme.
+            가사 수정 또는 만드는것을 제안 하는 기능도 만들어 질것입니다.
           </p>
           <a href='lyrics.php' class='btn btn-dark mt-3'>
-            <i class='bi bi-chevron-right'>Dive into Lyrics</i>
+            <i class='bi bi-chevron-right'>가사로 들어가기</i>
           </a>
         </div>
       </div>
@@ -226,7 +225,7 @@
 
   <section id='questions' class='p-5'>
     <div class='container'>
-      <h2 class='text-center mb-4'>FAQ (Frequently Asked Questions)</h2>
+      <h2 class='text-center mb-4'>자주 물어보는 질문</h2>
       <div class="accordion" id="questions">
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
