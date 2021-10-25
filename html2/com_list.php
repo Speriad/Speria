@@ -44,7 +44,7 @@
         <div>
           <?php
 			if(isset($_SESSION['nickname'])){
-				echo "<h2>{$_SESSION['nickname']}, 환영합니다!</h2>썼던 글들이 아래에 나타납니다<br><br>";
+				echo "<h2>{$_SESSION['nickname']}, 환영합니다!</h2>썼던 글들이 아래에 나타납니다<br><br><form action='community.php'><button role='submit' class='btn btn-outline-warning'>커뮤니티로 돌아가기</button></form><br><br>";
 			}else{
 				echo '<h2>로그인을 하지 않아 글 기록을 볼수 없습니다</h2>';
                 echo "<meta http-equiv='Refresh' content='0; url='community.php'' />";

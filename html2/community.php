@@ -44,7 +44,7 @@
         <div>
           <?php
 			if(isset($_SESSION['nickname'])){
-				echo "<h2>{$_SESSION['nickname']}, 환영합니다!</h2>";
+				echo "<h2>{$_SESSION['nickname']}, 환영합니다!</h2><br>";
 				$createapost = "<div class='text-right'>
 				<form action='com_create.php' method='post'><button role='submit' class='btn btn-outline-warning'>글 쓰기</button></form><form action='com_list.php'><button role='submit' class='btn btn-outline-warning'>내가 작성한 글</button>
 			</div>";
