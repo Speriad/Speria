@@ -71,8 +71,7 @@ $sql = 'SELECT * FROM com';
 $result = mysqli_query($conn, $sql);
 
 while($row = mysqli_fetch_array($result)){
-	  echo "<br><form action = 'com_show.php' method='post'><button role='submit' class='btn btn-white'>{$row[1]}</button></form><br><hr style='border: solid 100% black;'>";
-    $_SESSION['id'] = $row[0];  
+	  echo "<br><form action = 'com_show.php' method='post'><input type='hidden' name='id' value='{$row[0]}'><button role='submit' class='btn btn-white'>{$row[1]}</button></form><br><hr style='border: solid 100% black;'>";
     };
     
   ?>

@@ -33,7 +33,7 @@
  $resultwritten = mysqli_query($conn, $writtendb);
  $rowwritten = mysqli_fetch_array($resultwritten);
 
-if($_SESSION['nickname'] = $rowwritten[2]){
+if($_SESSION['nickname'] == $rowwritten[2]){
     $send = "<br><h1 style='text-align: center;'>Create a Post</h1><br>
 <form action='com_update.php' method='post'>
 <input type='text' class= 'form-control' name = 'title' placeholder='TITLE' required>
@@ -43,11 +43,11 @@ echo $send;
     $back = "<form action='community.php' method='post'><button role='submit' class='btn btn-warning'>Get back to Community</button></form>";
     echo $back;
 }elseif(isset($_SESSION['nickname'])){
-    echo "글 작성자의 정보와 일치 하지 않아 수청할수 없습니다";
+    echo "글 작성자의 정보와 일치 하지 않아 수정할 수 없습니다";
     $back = "<form action='community.php'><button role='submit' class='btn btn-warning'>Get back to Community</button></form>";
     echo $back;
     }else{
-        echo "글 작성자의 정보와 일치 하지 않아 수청할수 없습니다";
+        echo "글 작성자의 정보와 일치 하지 않아 수정할 수 없습니다";
     $back = "<form action='community.php'><button role='submit' class='btn btn-warning'>Get back to Community</button></form>";
     echo $back;
     };
