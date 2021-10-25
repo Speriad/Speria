@@ -55,7 +55,7 @@
 				echo "<h2>Hello, {$_SESSION['nickname']}!</h2>";
 				$createapost = "<div class='text-right'>
 				<form action='com_create.php' method='post'><button role='submit' class='btn btn-outline-warning'>Create a Post</button></form>
-			</div><br><br><div class='text-light'>You are now about to witness the strength of street knowledge<br>-Dr. Dre</div>";
+			</div><br><br><div class='text-light'>You are now about to witness the strength of street knowledge<br>-Dr. Dre</div><br>";
 			echo $createapost;
 			}else{
 				echo '<h2>Hello, Guest! You can\'t create a post without login</h2><br><br><div class="text-light">You are now about to witness the strength of street knowledge<br>-Dr. Dre</div>';
@@ -71,7 +71,7 @@ $sql = 'SELECT * FROM com';
 $result = mysqli_query($conn, $sql);
 
 while($row = mysqli_fetch_array($result)){
-	  echo "<br><form action = 'com_show.php' method='post'><input type='hidden' name='id' value='{$row[0]}'><button role='submit' class='btn btn-white'>{$row[1]}</button></form><br><hr style='border: solid 100% black;'>";
+	  echo "<a href='com_show.php?id={$row[0]}'>{$row[1]}</a><br><hr>";
     };
     
   ?>
