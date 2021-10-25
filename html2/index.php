@@ -16,7 +16,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
   <div class="container">
-    <a class="navbar-brand">Lobby of MooHipGal</a>
+    <a class="navbar-brand">로비</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#content" aria-controls="content" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -54,10 +54,10 @@
     <div class='container'>
       <div class='d-sm-flex align-items-center justify-content-between'>
         <div>
-          <h1><span class='text-warning'>Kanye West</span> Was Out New Album <span class='text-warning'>'DONDA'</span></h1>
-          <p class='lead my-4'>Finally, He released 10th album, 'DONDA'</p>
-          <a class="btn btn-danger btn-lg" href="https://youtube.com/playlist?list=PL8czsbhQP4tvew4t_V2PL-wUMbxIUdz4o" role="button">Listen in YouTube</a>
-          <p class='lead my-3' style='color: grey;'>9/26/2021 Updated</p>
+          <h1><span class='text-warning'>칸예 웨스트가</span><span class='text-warning'>'DONDA'</span> 를 발매했습니다</h1>
+          <p class='lead my-4'>드디어 칸예 웨스트의 10집 '돈다' 가 공개되었습니다</p>
+          <a class="btn btn-danger btn-lg" href="https://youtube.com/playlist?list=PL8czsbhQP4tvew4t_V2PL-wUMbxIUdz4o" role="button">유튜브에서 듣기</a>
+          <p class='lead my-3' style='color: grey;'>2021/9/26 업데이트 됨</p>
         </div>
         <a href='https://www.youtube.com/watch?v=y4l85Qrnd-c'><img class='img-fluid w-200 d-none d-sm-block' src='https://lh3.googleusercontent.com/gd7qsOzpy8aoUf0SV1E-LZiUjo03QYiDNFRwSwQc3h5rBG8JHuk1P_nsB7I9A4rS_cMpyU18D8SEOA7iDw=w544-h544-l90-rj' alt='' /></a>
       </div>
@@ -68,24 +68,24 @@
   <section class='bg-primary text-light p-4'>
     <div class='container'>
     <?php
-    $notlogin = "<br><h1 style='text-align: center;'>Log-In to Enjoy More services!</h1><br>
+    $notlogin = "<br><h1 style='text-align: center;'>로그인</h1><br>
 <form action='condb.php' method='post'>
-<input type='text' class= 'form-control' name = 'nickname' placeholder='USERNAME' required>
-<br><input type='password' class= 'form-control' name = 'pw' placeholder='PASSWORD' required>
-<br><button role='submit' class='btn btn-outline-warning'>LogIn</button> 
+<input type='text' class= 'form-control' name = 'nickname' placeholder='유저네임' required>
+<br><input type='password' class= 'form-control' name = 'pw' placeholder='비밀번호' required>
+<br><button role='submit' class='btn btn-outline-warning'>로그인</button> 
 </form>
 <form action=regi_show.php method='post'>
-<button role='submit' class='btn btn-outline-warning'>Registration</button>
+<button role='submit' class='btn btn-outline-warning'>회원가입</button>
   </form>
     </div>
   </section>
   <section>
   <div class='alert alert-warning alert-dismissible fade show' role='alert'>
-  Your Information will safely be saved.
+  모든 유저의 정보는 안전하게 저장됩니다.
   <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>";
 
     $belogin = "<br><h1 style='text-align: center;'>Welcome! {$_SESSION['nickname']}</h1><br><div style='text-align: center;'>You are the family of MooHipGal!</div><br><form action='remove_session.php' class='text-center'><button role='submit' class='btn btn-outline-warning'>Log-Out</button></form>
-    <form action='delete_ac_show.php'><button role='submit' class='btn btn-outline-warning'></form>";
+    <form action='delete_ac_show.php' class='text-center'><button role='submit' class='btn btn-outline-warning'>계정 삭제</button></form>";
 
     if(isset($_SESSION['nickname'])){
       echo $belogin;
@@ -109,12 +109,12 @@
               <i class="bi bi-chat-fill"></i>
             </div>
             <h3 class='card-title'>
-              Community
+              커뮤니티
             </h3>
             <p class='card-text'>
-              Most intuitive HipHop Community
+              가장 직관적인 힙합 커뮤니티
             </p>
-            <a href='#crm' class='btn btn-outline-warning'>Read More</a>
+            <a href='#crm' class='btn btn-outline-warning'>더 알아보기</a>
             </div>
           </div>
         </div>
@@ -125,12 +125,12 @@
               <i class="bi bi-file-earmark-music-fill"></i>
             </div>
             <h3 class='card-title'>
-              Type Beat
+              타입 비트
             </h3>
             <p class='card-text'>
-              Get your type beat for free
+              무료로 타입비트를 공유해보세요
             </p>
-            <a href='#trm' class='btn btn-outline-warning'>Read More</a>
+            <a href='#trm' class='btn btn-outline-warning'>더 알아보기</a>
             </div>
           </div>
         </div>
@@ -141,12 +141,12 @@
               <i class="bi bi-justify-left"></i>
             </div>
             <h3 class='card-title'>
-              Lyrics
+              가사
             </h3>
             <p class='card-text'>
-              Find your songs' Lyrics
+              여러분이 가장 좋아하는 노래의 가사를 찾아보세요!
             </p>
-            <a href='#lrm' class='btn btn-outline-warning'>Read More</a>
+            <a href='#lrm' class='btn btn-outline-warning'>더 알아보기</a>
             </div>
           </div>
         </div>

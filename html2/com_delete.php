@@ -29,12 +29,12 @@
           if($_SESSION['nickname'] == $rowwritten[3]){
             $deletefromdb = "DELETE from com where id=".$_SESSION['id'];
             mysqli_query($conn,$deletefromdb);
-            echo '<script>alert("A Post has been removed successfully")</script>';
+            echo '<script>alert("성공적으로 글이 삭제되었습니다")</script>';
           }else{
-            echo "<script>alert('Only Writer of this post can remove this post')</script>";
+            echo "<script>alert('글 작성자만 게시글을 삭제 할수 있습니다')</script>";
           };
         }else{
-            echo '<script>alert("Guest Can\'t remove a post")</script>';
+            echo '<script>alert("로그인 없이는 이 게시글을 삭제 할수 없습니다")</script>';
             };
     ?>
 

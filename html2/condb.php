@@ -8,13 +8,12 @@
       color: white;
     }
     </style>
-	<title>정보 전송 완료</title>
 </head>
 <body>
 
 
 <?php
-
+	$_SESSION['nickname'] =null;
 	 $getnick = $_POST['nickname'];
 	 $dbnick = "SELECT * from registration where nickname='{$_POST['nickname']}'";
 	 $resultnick = mysqli_query($conn, $dbnick);
