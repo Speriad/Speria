@@ -86,8 +86,8 @@
 
     $belogin = "<br><h1 style='text-align: center;'>Welcome! {$_SESSION['nickname']}</h1><br><div style='text-align: center;'>
     You are the family of MooHipGal!</div><br><div class='text-center'><div class='container mt-3'>
-    <div class='btn-group btn-group-lg'><form action='remove_session.php'><button role='submit' class='btn btn-outline-warning'>로그 아웃</button>
-    <form action='update_ac_show.php'><button role='submit' class='btn btn-outline-warning'>정보 수정</button>";
+    <div class='btn-group btn-group-lg'><form action='remove_session.php'><button role='submit' class='btn btn-outline-warning'>로그 아웃</form></button>
+    <form action='update_ac_show.php'><button role='submit' class='btn btn-outline-warning'>정보 수정</button></div></div></div>";
 
     if(isset($_SESSION['nickname'])){
       echo $belogin;
