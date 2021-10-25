@@ -29,22 +29,30 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#content" aria-controls="content" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="content">  
-        <form action='community.php' class='d-flex p-2'>
+    <div class="collapse navbar-collapse" id="content">   
+      <?php
+      include 'connvar.php';
+        $button1 = "<form action='community.php' class='d-flex p-2'>
         <button class='btn btn-outline-primary' type='submit'>Community</button>
-        </form>
-        <form action='typebeat.php' class='d-flex p-2'>
+        </form>";
+        $button2 = "<form action='typebeat.php' class='d-flex p-2'>
         <button class='btn btn-outline-primary' type='submit'>Type Beat</button>
-        </form>
-        <form action='albums.php' class='d-flex p-2'>
+        </form>";
+        $button3 = "<form action='albums.php' class='d-flex p-2'>
         <button class='btn btn-outline-primary' type='submit'>Albums</button>
-        </form>
-        <form action='lyrics.php' class='d-flex p-2'>
+        </form>";
+        $button4 = "<form action='lyrics.php' class='d-flex p-2'>
         <button class='btn btn-outline-primary' type='submit'>Lyrics</button>
-        </form>
-        <form action='news.php' class='d-flex p-2'>
+        </form>";
+        $button5 = "<form action='news.php' class='d-flex p-2'>
         <button class='btn btn-outline-primary' type='submit'>News</button>
-        </form>
+        </form>";
+        echo $button1;
+        echo $button2;
+        echo $button3;
+        echo $button4;
+        echo $button5;
+      ?>
   </div>
   </div>
 </nav>
