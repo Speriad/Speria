@@ -31,15 +31,20 @@
         include 'connvar.php';
         $writtendb = "SELECT written from com where id=".$_POST['id'];
 
-        if($writtendb == $_POST['nickname']){
+        if(isset($_POST['nickname'])){
+          if($writtendb = $_POST['nickname']){
             $deletefromdb = "DELETE from com where id=".$_POST['id'];
             mysqli_query($conn,$deletefromdb);
             echo '성공적으로 삭제되었습니다';
             echo "<br><form action = 'community.php' method='post'><input type='hidden' name='nickname' value='{$_POST['nickname']}'><button role='submit' class='btn btn-outline-warning'>Get back to community</button></form>";
+          }else{
+            echo '글을 쓴사람과 정보가 일치하지 않습니다';
+            echo "<br><form action = 'community.php'><input type='hidden' name='nickname' value='{$_POST['nickname']}'><button role='submit' class='btn btn-outline-warning'>Get Back To Community</button></form>";
+          };
         }else{
-            echo '글쓴이와 정보가 일치하지 않습니다';
+            echo '글을 쓴사람과 정보가 일치하지 않습니다';
             echo "<br><form action = 'community.php'><button role='submit' class='btn btn-outline-warning'>Get Back To Community</button></form>";
-        };
+            };
     ?>
 	
     
