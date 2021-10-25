@@ -23,7 +23,7 @@
 	<!-- NAVBAR 구현 -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
   <div class="container">
-    <a class="navbar-brand">Community</a>
+    <a class="navbar-brand">글 기록</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#content" aria-controls="content" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -44,14 +44,11 @@
         <div>
           <?php
 			if(isset($_SESSION['nickname'])){
-				echo "<h2>Hello, {$_SESSION['nickname']}!</h2>";
-				$createapost = "<div class='text-right'>
-				<form action='com_create.php' method='post'><button role='submit' class='btn btn-outline-warning'>Create a Post</button></form><form action='com_list.php'><button role='submit' class='btn btn-outline-warning'>내가 작성한 글</button>
-			</div><br><br><div class='text-light'>You are now about to witness the strength of street knowledge<br>-Dr. Dre</div><br>";
-			echo $createapost;
+				echo "<h2>반갑습니다, {$_SESSION['nickname']}!</h2>썼던 글들이 아래에 나타납니다<br><br>";
 			}else{
-				echo '<h2>Hello, Guest! You can\'t create a post without login</h2><br><br><div class="text-light">You are now about to witness the strength of street knowledge<br>-Dr. Dre</div>';
-			};
+				echo '<h2>Hello, Guest! You can\'t create a post without login</h2>';
+                echo "<meta http-equiv='Refresh' content='0; url='community.php'' />";
+            };
 		  ?>
         </div>
       </div>
@@ -59,7 +56,7 @@
   </section>
   <ul style='text-align:center;'>
     <?php
-$sql = 'SELECT * FROM com';
+$sql = "SELECT * FROM com where written='{$_SESSION['nickname']}'";
 $result = mysqli_query($conn, $sql);
 
 while($row = mysqli_fetch_array($result)){
