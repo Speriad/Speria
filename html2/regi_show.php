@@ -49,6 +49,7 @@
 <form action='regi.php' method='post'>
 <input type='text' class= 'form-control' name = 'nickname' placeholder='USERNAME' required>
 <br><input type='password' class= 'form-control' name = 'pw' placeholder='PASSWORD' required>
+<br><input type='password' class= 'form-control' name = 're-pw' placeholder=' WRITE PASSWORD AGAIN' required>
 <br><button role='submit' class='btn btn-outline-warning'>Send Registration Request</button> 
 </form>
 <form action='index.php'>
