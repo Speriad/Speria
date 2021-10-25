@@ -34,20 +34,19 @@
         $rowwritten = mysqli_fetch_array($resultwritten);
 
         if(isset($_SESSION['nickname'])){
-          if($_SESSION['nickname'] == $rowwritten[2]){
+          if($_SESSION['nickname'] == $rowwritten[3]){
             $deletefromdb = "DELETE from com where id=".$_SESSION['id'];
             mysqli_query($conn,$deletefromdb);
-            echo '성공적으로 삭제되었습니다';
-            echo "<br><form action = 'community.php'><button role='submit' class='btn btn-warning'>Get back to community</button></form>";
+            echo '<script>alert("A Post has been removed successfully")</script>';
           }else{
-            echo '글을 쓴사람과 정보가 일치하지 않습니다';
-            echo "<br><form action = 'community.php'><button role='submit' class='btn btn-warning'>Get Back To Community</button></form>";
+            echo "<script>alert('Only Writer of this post can remove this post')</script>";
           };
         }else{
-            echo '게스트는 글을 삭제 할 수 없습니다.';
-            echo "<br><form action = 'community.php'><button role='submit' class='btn btn-warning'>Get Back To Community</button></form>";
+            echo '<script>alert("Guest Can\'t remove a post")</script>';
             };
     ?>
+
+<meta http-equiv="Refresh" content="0; url='community.php'" />
 	
     
     

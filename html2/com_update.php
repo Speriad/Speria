@@ -23,9 +23,7 @@ include 'connvar.php';
 $updatefromdb = "UPDATE com set title='{$_POST['title']}', say='{$_POST['say']}' where id={$_SESSION['id']}";
   mysqli_query($conn, $updatefromdb);  
 
-  echo '<h1>성공적으로 수정되었습니다</h1>';
-  $back = "<form action='community.php'><button role='submit' class='btn btn-warning'>Get back to Community</button></form>";
-    echo $back;
+  echo '<script>alert("Success fully updated")</script>';
 
 
 
@@ -60,6 +58,7 @@ $updatefromdb = "UPDATE com set title='{$_POST['title']}', say='{$_POST['say']}'
 
 
 ?>
+<meta http-equiv="Refresh" content="0; url='community.php'" />
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
 	 crossorigin="anonymous">
 	</script>

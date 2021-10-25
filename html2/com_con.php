@@ -27,11 +27,8 @@ if(isset($_SESSION['nickname'])){
 $puttodb = "INSERT into com(title ,say, written)
 VALUES ( '{$_POST['title']}' , '{$_POST['say']}' , '{$_SESSION['nickname']}' )";
 mysqli_query($conn,$puttodb);
+echo "<script>alert('Created A Post successfully')</script>";
 };
-
-echo "<h1 style='text-align: center;'>Created A Post successfully</h1>";
-$backbutton = "<form action='community.php' method='post'><button role='submit' class='btn btn-warning'>Get Back to Community</button></form>";
-echo $backbutton;
 
 
 
@@ -61,6 +58,7 @@ echo $backbutton;
 
 
 ?>
+<meta http-equiv="Refresh" content="0; url='community.php'" />
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
 	 crossorigin="anonymous">
 	</script>

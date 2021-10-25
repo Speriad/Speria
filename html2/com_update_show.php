@@ -33,23 +33,21 @@
  $resultwritten = mysqli_query($conn, $writtendb);
  $rowwritten = mysqli_fetch_array($resultwritten);
 
-if($_SESSION['nickname'] == $rowwritten[2]){
-    $send = "<br><h1 style='text-align: center;'>Create a Post</h1><br>
+if($_SESSION['nickname'] == $rowwritten[3]){
+    $send = "<br><h1 style='text-align: center;'>Update a Post</h1><br>
 <form action='com_update.php' method='post'>
-<input type='text' class= 'form-control' name = 'title' placeholder='TITLE' required>
-<br><br><textarea class= 'form-control' rows='5' name='say' placeholder='Say Something....' required></textarea><br><br><button role='submit' class='btn btn-warning'>Update a Post</button> 
+<input type='text' class= 'form-control' name = 'title' placeholder='TITLE TO BE UPDATED' required>
+<br><br><textarea class= 'form-control' rows='5' name='say' placeholder='SOMETHING TO SAY TO BE UPDATED' required></textarea><br><br><button role='submit' class='btn btn-warning'>Update a Post</button> 
 </form><br>";
 echo $send;
-    $back = "<form action='community.php' method='post'><button role='submit' class='btn btn-warning'>Get back to Community</button></form>";
+    $back = "<br><div class='text-center'><form action='community.php' method='post'><button role='submit' class='btn btn-warning'>Get Back to Community</button></form></div>";
     echo $back;
 }elseif(isset($_SESSION['nickname'])){
-    echo "글 작성자의 정보와 일치 하지 않아 수정할 수 없습니다";
-    $back = "<form action='community.php'><button role='submit' class='btn btn-warning'>Get back to Community</button></form>";
-    echo $back;
+    echo "<script>alert('Only Writer of this post can remove this post')</script>";
+    echo '<meta http-equiv="Refresh" content="0; url=\'community.php\'" />';
     }else{
-        echo "글 작성자의 정보와 일치 하지 않아 수정할 수 없습니다";
-    $back = "<form action='community.php'><button role='submit' class='btn btn-warning'>Get back to Community</button></form>";
-    echo $back;
+        echo "<script>alert('Guest Can\'t remove a post')</script>";
+        echo '<meta http-equiv="Refresh" content="0; url=\'community.php\'" />';
     };
 ?>
 
@@ -59,7 +57,7 @@ echo $send;
 
 
 
-
+<meta http-equiv="Refresh" content="0; url='community.php'" />
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
 	 crossorigin="anonymous">
 	</script>

@@ -29,23 +29,18 @@
 	if($_POST['nickname'] == $rownick[1]){
 		if($_POST['pw'] == $rownick[2]){
 			$_SESSION['nickname'] = $_POST['nickname'];
-			echo "<h1 style='text-align: center;'>로그인 성공<br>";
-			$button = "<form action='index.php' method='POST' class='text-center'><button role='submit' class='btn btn-outline-warning'>무힙갤로 돌아가기</button></form>";
-			echo $button;
+			echo "<script>alert('로그인에 성공했습니다')</script>";
 		}else{
-			echo "<h1 style='text-align: center;'>존재하지 않는 계정입니다</h1>";
-				$button = "<br><form action='index.php' class='text-center'><button role='submit' class='btn btn-outline-warning'>무힙갤로 돌아가기</button></form>";
-				echo $button;	
+			echo "<script>alert('존재하지 않는 계정입니다')</script>";
 		};
 	}else{
-		echo "<h1 style='text-align: center;'>존재하지 않는 계정입니다</h1>";
-			$button = "<br><form action='index.php' class='text-center'><button role='submit' class='btn btn-outline-warning'>무힙갤로 돌아가기</button></form>";
-			echo $button;
+		echo "<script>alert('존재하지 않는 계정입니다')</script>";
 		
 	};
 
 
 ?>
+<meta http-equiv="Refresh" content="0; url='index.php'" />
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
 	 crossorigin="anonymous">
 	</script>
