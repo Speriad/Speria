@@ -53,7 +53,7 @@
 				echo '<h2>당신은 게스트 상태입니다. 글을 보는것만 가능합니다</h2>';
 			};
 		  ?>
-        <br><br><div class='text-light'>You are now about to witness the strength of street knowledge<br>-Dr. Dre</div><br>
+        <br><br><div class='text-light'>너희는 지금부터 길거리 지식의 힘을 느끼게 될거다<br>-닥터 드레</div><br>
         </div>
       </div>
     </div>

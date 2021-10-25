@@ -84,8 +84,10 @@
   모든 유저의 정보는 안전하게 저장됩니다.
   <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>";
 
-    $belogin = "<br><h1 style='text-align: center;'>Welcome! {$_SESSION['nickname']}</h1><br><div style='text-align: center;'>You are the family of MooHipGal!</div><br><form action='remove_session.php' class='text-center'><button role='submit' class='btn btn-outline-warning'>Log-Out</button></form>
-    <form action='delete_ac_show.php' class='text-center'><button role='submit' class='btn btn-outline-warning'>계정 삭제</button></form>";
+    $belogin = "<br><h1 style='text-align: center;'>Welcome! {$_SESSION['nickname']}</h1><br><div style='text-align: center;'>
+    You are the family of MooHipGal!</div><br><div class='text-center'><div class='container mt-3'>
+    <div class='btn-group btn-group-lg'><form action='remove_session.php'><button role='submit' class='btn btn-outline-warning'>로그 아웃</button>
+    <form action='update_ac_show.php'><button role='submit' class='btn btn-outline-warning'>정보 수정</button>";
 
     if(isset($_SESSION['nickname'])){
       echo $belogin;
