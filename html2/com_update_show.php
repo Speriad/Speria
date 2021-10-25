@@ -40,7 +40,7 @@ if($_SESSION['nickname'] == $rowwritten[3]){
 <br><br><textarea class= 'form-control' rows='5' name='say' placeholder='SOMETHING TO SAY TO BE UPDATED' required></textarea><br><br><button role='submit' class='btn btn-warning'>Update a Post</button> 
 </form><br>";
 echo $send;
-    $back = "<br><div class='text-center'><form action='community.php' method='post'><button role='submit' class='btn btn-warning'>Get Back to Community</button></form></div>";
+    $back = "<br><div><form action='community.php' method='post'><button role='submit' class='btn btn-warning'>Get Back to Community</button></form></div>";
     echo $back;
 }elseif(isset($_SESSION['nickname'])){
     echo "<script>alert('Only Writer of this post can remove this post')</script>";
@@ -57,7 +57,6 @@ echo $send;
 
 
 
-<meta http-equiv="Refresh" content="0; url='community.php'" />
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
 	 crossorigin="anonymous">
 	</script>

@@ -36,8 +36,8 @@ if(isset($_SESSION['id'])){
   $row2 = mysqli_fetch_array($result);
   echo '<br><br><h1 style="text-align: center;">'.$row2[1].'</h1>';
   echo '<br><br><h3 style="text-align: center;">'.$row2[2].'</h3>';
-  $update_link = "<form action=".$idtoupdate_link." method='POST'><button role='submit' class='btn btn-outline-warning'>수정하기</button></form>";
-  $delete_link = "<form action=".$idtodelete_link." method='POST'><button class='btn btn-outline-danger'>삭제하기</button></form>";
+  $update_link = "<form action=".$idtoupdate_link." method='POST'><button role='submit' class='btn btn-warning'>수정하기</button></form>";
+  $delete_link = "<form action=".$idtodelete_link." method='POST'><button class='btn btn-danger'>삭제하기</button></form>";
 
   echo $update_link;
   echo $delete_link;
@@ -70,19 +70,12 @@ if(isset($_SESSION['id'])){
 ?>
 <br><br>
 <?php
-if(isset($_SESSION['nickname'])){
-$back = "<form action='community.php' method='POST'><input type='hidden' value='{$_SESSION['nickname']}' name='nickname'>
-<button class='btn btn-outline-warning' role='submit'>커뮤니티로 돌아가기</button>
+
+$back = "<form action='community.php' method='POST'>
+<button class='btn btn-warning' role='submit'>커뮤니티로 돌아가기</button>
 </form>";
 
 echo $back;
-}else{
-    $back = "<form action='community.php'>
-    <button class='btn btn-outline-warning' role='submit'>커뮤니티로 돌아가기</button>
-    </form>";
-
-    echo $back;
-};
 ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
 	 crossorigin="anonymous">
