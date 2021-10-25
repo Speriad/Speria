@@ -54,7 +54,7 @@
     <div class='container'>
       <div class='d-sm-flex align-items-center justify-content-between'>
         <div>
-          <h1><span class='text-warning'>칸예 웨스트가</span><span class='text-warning'>'DONDA'</span> 를 발매했습니다</h1>
+          <h1><span class='text-warning'>칸예 웨스트가</span><span class='text-warning'> 'DONDA'</span> 를 발매했습니다</h1>
           <p class='lead my-4'>드디어 칸예 웨스트의 10집 '돈다' 가 공개되었습니다</p>
           <a class="btn btn-danger btn-lg" href="https://youtube.com/playlist?list=PL8czsbhQP4tvew4t_V2PL-wUMbxIUdz4o" role="button">유튜브에서 듣기</a>
           <p class='lead my-3' style='color: grey;'>2021/9/26 업데이트 됨</p>
