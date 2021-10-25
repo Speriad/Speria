@@ -29,13 +29,8 @@ VALUES ( '{$_POST['title']}' , '{$_POST['say']}' , '{$_SESSION['nickname']}' )";
 mysqli_query($conn,$puttodb);
 echo "<script>alert('Created A Post successfully')</script>";
 }else{
-  echo "<script>alert('You can't create a post without login')</script>"
-}
-
-
-
-
-
+  echo "<script>alert('You can't create a post without login')</script>";
+};
 
 
 
