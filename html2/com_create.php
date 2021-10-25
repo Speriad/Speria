@@ -35,7 +35,7 @@ include 'connvar.php';
 $send = "<br><h1 style='text-align: center;'>Create a Post</h1><br>
 <form action='com_con.php' method='post'>
 <input type='text' class= 'form-control' name = 'title' placeholder='TITLE' required>
-<br><br><textarea class= 'form-control' rows='5' name='say' placeholder='Say Something....' required></textarea><input type='hidden' name='nickname' value='{$_POST['nickname']}'><br><br><button role='submit' class='btn btn-outline-warning'>Create a Post</button> 
+<br><br><textarea class= 'form-control' rows='5' name='say' placeholder='Say Something....' required></textarea><br><br><button role='submit' class='btn btn-outline-warning'>Create a Post</button> 
 </form><br>";
 echo $send;
 ?>

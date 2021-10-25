@@ -20,11 +20,11 @@
 <?php
 include 'connvar.php';
 
-$updatefromdb = "UPDATE com set title='{$_POST['title']}', say='{$_POST['say']}' where id={$_POST['id']}";
+$updatefromdb = "UPDATE com set title='{$_POST['title']}', say='{$_POST['say']}' where id={$_SESSION['id']}";
   mysqli_query($conn, $updatefromdb);  
 
   echo '<h1>성공적으로 수정되었습니다</h1>';
-  $back = "<form action='community.php' method='post'><input type='hidden' value='{$_POST['nickname']}' name='nickname'><button role='submit' class='btn btn-outline-warning'>Get back to Community</button></form>";
+  $back = "<form action='community.php'><button role='submit' class='btn btn-warning'>Get back to Community</button></form>";
     echo $back;
 
 

@@ -23,12 +23,14 @@
 <?php
 include 'connvar.php';
 
+if(isset($_SESSION['nickname'])){
 $puttodb = "INSERT into com(title ,say, written)
-VALUES ( '{$_POST['title']}' , '{$_POST['say']}' , '{$_POST['nickname']}' )";
+VALUES ( '{$_POST['title']}' , '{$_POST['say']}' , '{$_SESSION['nickname']}' )";
 mysqli_query($conn,$puttodb);
+};
 
 echo "<h1 style='text-align: center;'>Created A Post successfully</h1>";
-$backbutton = "<form action='community.php' method='post'><input type='hidden' value='{$_POST['nickname']}' name='nickname'><button role='submit' class='btn btn-outline-warning'>Get Back to Community</button></form>";
+$backbutton = "<form action='community.php' method='post'><button role='submit' class='btn btn-warning'>Get Back to Community</button></form>";
 echo $backbutton;
 
 

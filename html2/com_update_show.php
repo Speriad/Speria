@@ -1,6 +1,3 @@
-<?php
- include 'connvar.php';
-?>
 <!doctype html>
 
 <head>
@@ -31,30 +28,29 @@
 
 
 <?php
-include 'connvar.php';
+ include 'connvar.php';
+ $writtendb = "SELECT * from com where id=".$_SESSION['id'];
+ $resultwritten = mysqli_query($conn, $writtendb);
+ $rowwritten = mysqli_fetch_array($resultwritten);
 
-$writtendb = "SELECT written from com where id=".$_POST['id'];
-
-if($writtendb = $_POST['nickname']){
+if($_SESSION['nickname'] = $rowwritten[2]){
     $send = "<br><h1 style='text-align: center;'>Create a Post</h1><br>
 <form action='com_update.php' method='post'>
 <input type='text' class= 'form-control' name = 'title' placeholder='TITLE' required>
-<br><br><textarea class= 'form-control' rows='5' name='say' placeholder='Say Something....' required></textarea><input type='hidden' name='nickname' value='{$_POST['nickname']}'><input type='hidden' name='id' value='{$_POST['id']}'><br><br><button role='submit' class='btn btn-outline-warning'>Update a Post</button> 
+<br><br><textarea class= 'form-control' rows='5' name='say' placeholder='Say Something....' required></textarea><br><br><button role='submit' class='btn btn-warning'>Update a Post</button> 
 </form><br>";
 echo $send;
-    $back = "<form action='community.php' method='post'><input type='hidden' value='{$_POST['nickname']}' name='nickname'><button role='submit' class='btn btn-outline-warning'>Get back to Community</button></form>";
+    $back = "<form action='community.php' method='post'><button role='submit' class='btn btn-warning'>Get back to Community</button></form>";
     echo $back;
-}else{
-    if(isset($_POST['nickname'])){
+}elseif(isset($_SESSION['nickname'])){
     echo "글 작성자의 정보와 일치 하지 않아 수청할수 없습니다";
-    $back = "<form action='community.php'><input type='hidden' value='{$_POST['nickname']}' name='nickname'><button role='submit' class='btn btn-outline-warning'>Get back to Community</button></form>";
+    $back = "<form action='community.php'><button role='submit' class='btn btn-warning'>Get back to Community</button></form>";
     echo $back;
     }else{
         echo "글 작성자의 정보와 일치 하지 않아 수청할수 없습니다";
-    $back = "<form action='community.php'><button role='submit' class='btn btn-outline-warning'>Get back to Community</button></form>";
+    $back = "<form action='community.php'><button role='submit' class='btn btn-warning'>Get back to Community</button></form>";
     echo $back;
-    }
-};
+    };
 ?>
 
 

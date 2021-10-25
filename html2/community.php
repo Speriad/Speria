@@ -37,35 +37,28 @@
     <div class="collapse navbar-collapse" id="content">   
       <?php
       include 'connvar.php';
-	  if(isset($_POST['nickname'])){
-        $button1 = "<form action='index.php' method='post' class='d-flex p-2'><input type='hidden' name='nickname' value='{$_POST['nickname']}'>
+        $button1 = "<form action='index.php' method='post' class='d-flex p-2'>
         <button class='btn btn-outline-primary' type='submit'>Go To Lobby Page</button>
         </form>";
         echo $button1;
-	  }else{
-		$button1 = "<form action='index.php' class='d-flex p-2'>
-        <button class='btn btn-outline-primary' type='submit'>Go To Lobby Page</button>
-        </form>";
-        echo $button1;
-	  };
       ?>
   </div>
   </div>
 </nav>
 
-<section class='bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start'>
+<section class='bg-dark text-white p-5 p-lg-0 pt-lg-5 text-center text-sm-start'>
     <div class='container'>
       <div class='d-sm-flex align-items-center justify-content-between'>
         <div>
           <?php
-			if(isset($_POST['nickname'])){
-				echo "<h2>Hello, {$_POST['nickname']}!</h2>";
+			if(isset($_SESSION['nickname'])){
+				echo "<h2>Hello, {$_SESSION['nickname']}!</h2>";
 				$createapost = "<div class='text-right'>
-				<form action='com_create.php' method='post'><input type='hidden' name='nickname' value='{$_POST['nickname']}'><button role='submit' class='btn btn-outline-warning'>Create a Post</button></form>
-			</div>";
+				<form action='com_create.php' method='post'><button role='submit' class='btn btn-outline-warning'>Create a Post</button></form>
+			</div><br><br><div class='text-light'>You are now about to witness the strength of street knowledge<br>-Dr. Dre</div>";
 			echo $createapost;
 			}else{
-				echo '<h2>Hello, Guest! You can\'t create a post without login</h2>';
+				echo '<h2>Hello, Guest! You can\'t create a post without login</h2><br><br><div class="text-light">You are now about to witness the strength of street knowledge<br>-Dr. Dre</div>';
 			};
 		  ?>
         </div>
@@ -77,15 +70,11 @@
 $sql = 'SELECT * FROM com';
 $result = mysqli_query($conn, $sql);
 
-if(isset($_POST['nickname'])){
 while($row = mysqli_fetch_array($result)){
-	  echo "<br><form action = 'com_show.php' method='post'><input type='hidden' name='nickname' value='{$_POST['nickname']}'><input type='hidden' name='id' value='{$row[0]}'><button role='submit' class='btn btn-light'>{$row[1]}</button></form><br><hr style='border: solid 100% black;'>";
-  };
-}else{
-	while($row = mysqli_fetch_array($result)){
-		echo "<br><form action = 'com_show.php' method='post'><input type='hidden' name='id' value='{$row[0]}'><button role='submit' class='btn btn-light'>{$row[1]}</button></form><br><hr style='border: solid 100% black;'>";
-  };
-};
+	  echo "<br><form action = 'com_show.php' method='post'><button role='submit' class='btn btn-white'>{$row[1]}</button></form><br><hr style='border: solid 100% black;'>";
+    $_SESSION['id'] = $row[0];  
+    };
+    
   ?>
 </ul>
 

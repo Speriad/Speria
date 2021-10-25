@@ -28,8 +28,9 @@
 
 	if($_POST['nickname'] == $rownick[1]){
 		if($_POST['pw'] == $rownick[2]){
+			$_SESSION['nickname'] = $_POST['nickname'];
 			echo "<h1 style='text-align: center;'>로그인 성공<br>";
-			$button = "<form action='index.php' method='POST' class='text-center'><input type='hidden' name='nickname' value='{$_POST['nickname']}'><button role='submit' class='btn btn-outline-warning'>무힙갤로 돌아가기</button></form>";
+			$button = "<form action='index.php' method='POST' class='text-center'><button role='submit' class='btn btn-outline-warning'>무힙갤로 돌아가기</button></form>";
 			echo $button;
 		}else{
 			echo "<h1 style='text-align: center;'>존재하지 않는 계정입니다</h1>";

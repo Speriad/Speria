@@ -32,28 +32,6 @@
     <div class="collapse navbar-collapse" id="content">   
       <?php
       include 'connvar.php';
-        if(isset($_POST['nickname'])){
-        $button1 = "<form action='community.php' method='post' class='d-flex p-2'><input type='hidden' name='nickname' value='{$_POST['nickname']}'>
-        <button class='btn btn-outline-primary' type='submit'>Community</button>
-        </form>";
-        $button2 = "<form action='typebeat.php' method='post' class='d-flex p-2'><input type='hidden' name='nickname' value='{$_POST['nickname']}'>
-        <button class='btn btn-outline-primary' type='submit'>Type Beat</button>
-        </form>";
-        $button3 = "<form action='albums.php' method='post' class='d-flex p-2'><input type='hidden' name='nickname' value='{$_POST['nickname']}'>
-        <button class='btn btn-outline-primary' type='submit'>Albums</button>
-        </form>";
-        $button4 = "<form action='lyrics.php' method='post' class='d-flex p-2'><input type='hidden' name='nickname' value='{$_POST['nickname']}'>
-        <button class='btn btn-outline-primary' type='submit'>Lyrics</button>
-        </form>";
-        $button5 = "<form action='news.php' method='post' class='d-flex p-2'><input type='hidden' name='nickname' value='{$_POST['nickname']}'>
-        <button class='btn btn-outline-primary' type='submit'>News</button>
-        </form>";
-        echo $button1;
-        echo $button2;
-        echo $button3;
-        echo $button4;
-        echo $button5;
-        }else{
         $button1 = "<form action='community.php' class='d-flex p-2'>
         <button class='btn btn-outline-primary' type='submit'>Community</button>
         </form>";
@@ -74,7 +52,6 @@
         echo $button3;
         echo $button4;
         echo $button5;
-        };
       ?>
   </div>
   </div>
@@ -117,9 +94,9 @@
   Your Information will safely be saved.
   <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>";
 
-    $belogin = "<br><h1 style='text-align: center;'>Welcome! {$_POST['nickname']}</h1><br><div style='text-align: center;'>You are the family of MooHipGal!</div><br><form action='index.php' method='post' class='text-center'><button role='submit' class='btn btn-outline-warning'>Log-Out</button></form>";
+    $belogin = "<br><h1 style='text-align: center;'>Welcome! {$_SESSION['nickname']}</h1><br><div style='text-align: center;'>You are the family of MooHipGal!</div><br><form action='index.php' method='post' class='text-center'><button role='submit' class='btn btn-outline-warning'>Log-Out</button></form>";
 
-    if(isset($_POST['nickname'])){
+    if(isset($_SESSION['nickname'])){
       echo $belogin;
     }else{
       echo $notlogin;
