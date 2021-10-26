@@ -59,7 +59,7 @@
           <a class="btn btn-danger btn-lg" href="https://youtube.com/playlist?list=PL8czsbhQP4tvew4t_V2PL-wUMbxIUdz4o" role="button">유튜브에서 듣기</a>
           <p class='lead my-3' style='color: grey;'>2021/9/26 업데이트 됨</p>
         </div>
-        <a href='https://www.youtube.com/watch?v=y4l85Qrnd-c'><img class='img-fluid w-200 d-none d-sm-block' src='https://lh3.googleusercontent.com/gd7qsOzpy8aoUf0SV1E-LZiUjo03QYiDNFRwSwQc3h5rBG8JHuk1P_nsB7I9A4rS_cMpyU18D8SEOA7iDw=w544-h544-l90-rj' alt='' /></a>
+        <a href='https://youtube.com/playlist?list=PL8czsbhQP4tvew4t_V2PL-wUMbxIUdz4o'><img class='img-fluid w-200 d-none d-sm-block' src='https://lh3.googleusercontent.com/gd7qsOzpy8aoUf0SV1E-LZiUjo03QYiDNFRwSwQc3h5rBG8JHuk1P_nsB7I9A4rS_cMpyU18D8SEOA7iDw=w544-h544-l90-rj' alt='' /></a>
       </div>
     </div>
   </section>
@@ -85,7 +85,7 @@
   <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>";
 
     $belogin = "<br><h1 style='text-align: center;'>Welcome! {$_SESSION['nickname']}</h1><br><div style='text-align: center;'>
-    You are the family of MooHipGal!</div><br><div class='text-center'><div class='container mt-3'>
+    무힙갤의 모든 서비스를 이용할수 있습니다</div><br><div class='text-center'><div class='container mt-3'>
     <div class='btn-group btn-group-lg'><form action='remove_session.php'><button role='submit' class='btn btn-outline-warning'>로그 아웃</form></button>
     <form action='update_ac_show.php'><button role='submit' class='btn btn-outline-warning'>정보 수정</button></div></div></div>";
 
