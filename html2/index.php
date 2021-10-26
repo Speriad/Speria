@@ -92,8 +92,8 @@
     if(isset($_SESSION['nickname'])){
       echo $belogin;
     }else{
-      echo $notlogin;
       $_SESSION['nickname']=null;
+      echo $notlogin;
     };
   ?>
   </div>
