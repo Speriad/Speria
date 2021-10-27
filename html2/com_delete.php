@@ -28,7 +28,9 @@
         if(isset($_SESSION['nickname'])){
           if($_SESSION['nickname'] == $rowwritten[3]){
             $deletefromdb = "DELETE from com where id=".$_SESSION['id'];
+            $deletefromdb2 = "DELETE from com where type='r' and title={$_SESSION['id']}";
             mysqli_query($conn,$deletefromdb);
+            mysqli_query($conn,$deletefromdb2);
             echo '<script>alert("성공적으로 글이 삭제되었습니다")</script>';
           }else{
             echo "<script>alert('글 작성자만 게시글을 삭제 할수 있습니다')</script>";
