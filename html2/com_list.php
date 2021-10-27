@@ -30,7 +30,7 @@
     <div class="collapse navbar-collapse" id="content">   
       <?php
         $button1 = "<form action='index.php' method='post' class='d-flex p-2'>
-        <button class='btn btn-outline-primary' type='submit'>로비로 돌아가기</button>
+        <button class='btn btn-outline-primary' type='submit'>로비 페이지로 돌아가기</button>
         </form>";
         echo $button1;
       ?>

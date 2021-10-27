@@ -18,6 +18,12 @@ $head = "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
 <title>MooHipGal</title>
 <style>a{text-decoration:none;}</style>";
 echo $head;
+
+if(isset($_SESSION['nickname'])){
+	
+}else{
+	$_SESSION['nickname'] = null;
+}
 ?>
 <!-- $conn = mysqli_connect('sql206.epizy.com','epiz_29599569','8DfkA57d5o77A','epiz_29599569_php'); -->
 <!-- $conn = mysqli_connect('localhost','root','','test'); -->
