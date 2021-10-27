@@ -60,14 +60,19 @@ echo "<br><div class='text-center'><div class='container mt-3'><div class='btn b
 
 echo "<br><br><h3>댓글</h3><hr>";
 if(isset($_SESSION['nickname'])){
-  $commentbutton = "<div class='text-center'><div class='container mt-3'><div class='btn btn-group btn-group-lg><form action='com_show_re.php'><button role='submit' class='btn btn-warning'>댓글 쓰기</button></form></div></div></div>";
+  $commentbutton = "<div class='text-center'><div class='container mt-3'><div class='btn btn-group btn-group-lg'><form action='com_show_re.php'><button role='submit' class='btn btn-warning'>댓글 쓰기</button></form></div></div></div><hr>";
   echo $commentbutton;
 };
 
 ?>
 <ul style='text-align: center;'>
 <?php
+$sqlcomment = "SELECT * FROM com where type='r'";
+$resultcomment = mysqli_query($conn, $sqlcomment);
 
+while($rowcomment = mysqli_fetch_array($resultcomment)){
+	  echo "<a>{$rowcomment[1]}<span style='color: gray;'> - {$rowcomment[3]} 에 의해 작성됨</span></a><br><hr>";
+    };
 
 
 
