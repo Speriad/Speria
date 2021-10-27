@@ -54,7 +54,7 @@ $sqlcomment = "SELECT * FROM com where type='r'";
 $resultcomment = mysqli_query($conn, $sqlcomment);
 
 while($rowcomment = mysqli_fetch_array($resultcomment)){
-	  echo "<a>{$rowcomment[1]}<span style='color: gray;'> - {$rowcomment[3]} 에 의해 작성됨</span></a><br><hr>";
+	  echo "<a>{$rowcomment[2]}<span style='color: gray;'> - {$rowcomment[3]} 에 의해 작성됨</span></a><br><hr>";
     };
 
 
