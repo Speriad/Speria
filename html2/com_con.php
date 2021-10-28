@@ -18,8 +18,8 @@
 <?php
 
 if(isset($_SESSION['nickname'])){
-$puttodb = "INSERT into com(title ,say, written, method)
-VALUES ( '{$_POST['title']}' , '{$_POST['say']}' , '{$_SESSION['nickname']}' , '{$_POST['method']}')";
+$puttodb = "INSERT into com(title ,say, written, method, good, hate)
+VALUES ( '{$_POST['title']}' , '{$_POST['say']}' , '{$_SESSION['nickname']}' , '{$_POST['method']}'), 0, 0";
 mysqli_query($conn,$puttodb);
 echo "<script>alert('성공적으로 작성되었습니다')</script>";
 }else{
