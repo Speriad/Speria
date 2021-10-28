@@ -67,7 +67,7 @@ if(isset($_SESSION['nickname'])){
 ?>
 <ul style='text-align: center;'>
 <?php
-$sqlcomment = "SELECT * FROM com where type='r' AND title={$_SESSION['id']}";
+$sqlcomment = "SELECT * FROM com where method='r' AND title={$_SESSION['id']}";
 $resultcomment = mysqli_query($conn, $sqlcomment);
 
 while($rowcomment = mysqli_fetch_array($resultcomment)){

@@ -56,7 +56,7 @@
   </section>
   <ul style='text-align:center;'>
     <?php
-$sql = "SELECT * FROM com where written='{$_SESSION['nickname']}'";
+$sql = "SELECT * FROM com where method='p' and written='{$_SESSION['nickname']}'";
 $result = mysqli_query($conn, $sql);
 
 while($row = mysqli_fetch_array($result)){

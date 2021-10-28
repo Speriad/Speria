@@ -44,6 +44,7 @@
 if($_SESSION['nickname'] == $rowwritten[3]){
     $send = "<br><h1 style='text-align: center;'>Update a Post</h1><br>
 <form action='com_update.php' method='post'>
+<input type='hidden' class= 'form-control' name = 'method' value='p'>
 <input type='text' class= 'form-control' name = 'title' placeholder='수정할 제목' required>
 <br><br><textarea class= 'form-control' rows='5' name='say' placeholder='수정할 내용' required></textarea><br><br><button role='submit' class='btn btn-warning'>글 수정하기</button> 
 </form><br>";

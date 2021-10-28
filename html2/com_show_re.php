@@ -39,7 +39,7 @@ echo '<br><h3>'.$row2[2].'</h3>';
 echo "<br><br><h3>댓글</h3><hr>";
 
 $form = "<form action='com_re.php' method='post'>
-<input type='hidden' name='type' value='r'>
+<input type='hidden' name='method' value='r'>
 <input type='hidden' name='title' value={$_SESSION['id']}>
 <textarea class='form-control' rows='5' name='say' placeholder='댓글을 작성해주세요' required></textarea>
 <button role='submit' class='btn btn-warning'>댓글 달기</button>
@@ -50,7 +50,7 @@ echo $form;
 ?>
 <ul style='text-align: center;'>
 <?php
-$sqlcomment = "SELECT * FROM com where type='r'";
+$sqlcomment = "SELECT * FROM com where method='r'";
 $resultcomment = mysqli_query($conn, $sqlcomment);
 
 while($rowcomment = mysqli_fetch_array($resultcomment)){

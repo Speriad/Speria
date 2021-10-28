@@ -60,7 +60,7 @@
   </section>
   <ul style='text-align:center;'>
     <?php
-$sql = "SELECT * FROM com where type='p'";
+$sql = "SELECT * FROM com where method='p'";
 $result = mysqli_query($conn, $sql);
 
 while($row = mysqli_fetch_array($result)){
