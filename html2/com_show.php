@@ -41,7 +41,7 @@ $result = mysqli_query($conn, $sql);
 $row2 = mysqli_fetch_array($result);
 echo '<h1 style="text-align: center;">'.$row2[1]."<span style='color: gray;'> - ".$row2[3]." 에 의해 작성됨</span></h1>";
 echo '<hr>';
-echo '<br><h3>'.$row2[2].'</h3>';
+echo '<br><h3 style="text-align: center;">'.$row2[2].'</h3><br><br><br><br><br>';
 
 if(isset($_SESSION['nickname'])){
 if($_SESSION['nickname'] == $row2[3]){
@@ -60,8 +60,15 @@ echo "<br><div class='text-center'><div class='container mt-3'><div class='btn b
 
 echo "<br><br><h3>댓글</h3><hr>";
 if(isset($_SESSION['nickname'])){
-  $commentbutton = "<div class='text-center'><div class='container mt-3'><div class='btn btn-group btn-group-lg'><form action='com_show_re.php'><button role='submit' class='btn btn-warning'>댓글 쓰기</button></form></div></div></div><hr>";
-  echo $commentbutton;
+
+$form = "<form action='com_re.php' method='post'>
+<input type='hidden' name='method' value='r'>
+<input type='hidden' name='title' value={$_SESSION['id']}>
+<textarea class='form-control' rows='5' name='say' placeholder='댓글을 작성해주세요' required></textarea>
+<button role='submit' class='btn btn-warning'>댓글 달기</button>
+</form>";
+
+echo $form;
 };
 
 ?>
