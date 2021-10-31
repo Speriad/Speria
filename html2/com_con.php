@@ -47,8 +47,7 @@ echo "<script>alert('성공적으로 작성되었습니다')</script>";
 
 
 
-
 ?>
-<meta http-equiv="Refresh" content="0; url='community.php'" />
+<meta http-equiv="Refresh" content="10; url='community.php'" />
 </body>
 </html>
