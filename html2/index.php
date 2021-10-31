@@ -54,12 +54,12 @@
     <div class='container'>
       <div class='d-sm-flex align-items-center justify-content-between'>
         <div>
-          <h1><span class='text-warning'>칸예 웨스트가</span><span class='text-warning'> 'DONDA'</span> 를 발매했습니다</h1>
-          <p class='lead my-4'>드디어 칸예 웨스트의 10집 '돈다' 가 공개되었습니다</p>
-          <a class="btn btn-danger btn-lg" href="https://youtube.com/playlist?list=PL8czsbhQP4tvew4t_V2PL-wUMbxIUdz4o" role="button">유튜브에서 듣기</a>
-          <p class='lead my-3' style='color: grey;'>2021/9/26 업데이트 됨</p>
+          <h1><span class='text-warning'>에이셉 라키</span> 가<span class='text-warning'> 'LIVE.LOVE.A$AP'</span> 을 스트리밍으로 공개하였습니다</h1>
+          <p class='lead my-4'>드디어 에이셉 라키의 첫번째 믹스테입인, 'LIVE.LOVE.A$AP' 을 발매 10주년을 맞아 스트리밍으로 공개하였습니다.</p>
+          <a class="btn btn-danger btn-lg" href="https://www.youtube.com/playlist?list=OLAK5uy_ky73s1LA5b56qAAgxAbpeHfeJ0GO0bv4w" role="button">유튜브에서 듣기</a>
+          <p class='lead my-3' style='color: grey;'>2021/10/31 업데이트 됨</p>
         </div>
-        <a href='https://youtube.com/playlist?list=PL8czsbhQP4tvew4t_V2PL-wUMbxIUdz4o'><img class='img-fluid w-200 d-none d-sm-block' src='https://lh3.googleusercontent.com/gd7qsOzpy8aoUf0SV1E-LZiUjo03QYiDNFRwSwQc3h5rBG8JHuk1P_nsB7I9A4rS_cMpyU18D8SEOA7iDw=w544-h544-l90-rj' alt='' /></a>
+        <a href='https://www.youtube.com/playlist?list=OLAK5uy_ky73s1LA5b56qAAgxAbpeHfeJ0GO0bv4w'><img class='img-fluid w-200 d-none d-sm-block' src='https://lh3.googleusercontent.com/mV0gvtK2ZDSl7Fm3fw2Y3gHyUlQQye7L7qw_PK6_Z4OSiy6ZvOyP0NEuQCN2z8aW83QLp43hR6KoiRKN=w544-h544-l90-rj' alt='' /></a>
       </div>
     </div>
   </section>
