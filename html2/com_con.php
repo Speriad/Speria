@@ -18,8 +18,14 @@
 <?php
 
 if(isset($_SESSION['nickname'])){
-$puttodb = "INSERT into com(title ,say, written, method, good, hate)
+if(isset($_POST['photo'])){
+  $photo = $_FILES['photo']['name'];
+  $puttodb = "INSERT into com(title ,say, written, method, good, hate, photo)
+VALUES ( '{$_POST['title']}' , '{$_POST['say']}' , '{$_SESSION['nickname']}' , '{$_POST['method']}' , 0 , 0, '$photo')";
+}else{
+  $puttodb = "INSERT into com(title ,say, written, method, good, hate)
 VALUES ( '{$_POST['title']}' , '{$_POST['say']}' , '{$_SESSION['nickname']}' , '{$_POST['method']}' , 0 , 0)";
+};
 mysqli_query($conn,$puttodb);
 echo "<script>alert('성공적으로 작성되었습니다')</script>";
 }else{
@@ -48,6 +54,6 @@ echo "<script>alert('성공적으로 작성되었습니다')</script>";
 
 
 ?>
-<meta http-equiv="Refresh" content="10; url='community.php'" />
+<meta http-equiv="Refresh" content="0; url='community.php'" />
 </body>
 </html>
