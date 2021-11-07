@@ -28,19 +28,11 @@
         $button2 = "<form action='typebeat.php' class='d-flex p-2'>
         <button class='btn btn-outline-primary' type='submit'>Type Beat</button>
         </form>";
-        $button3 = "<form action='albums.php' class='d-flex p-2'>
-        <button class='btn btn-outline-primary' type='submit'>Albums</button>
-        </form>";
-        $button4 = "<form action='lyrics.php' class='d-flex p-2'>
-        <button class='btn btn-outline-primary' type='submit'>Lyrics</button>
-        </form>";
         $button5 = "<form action='news.php' class='d-flex p-2'>
         <button class='btn btn-outline-primary' type='submit'>News</button>
         </form>";
         echo $button1;
         echo $button2;
-        echo $button3;
-        echo $button4;
         echo $button5;
       ?>
   </div>
