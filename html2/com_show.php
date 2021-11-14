@@ -41,7 +41,7 @@ $row2 = mysqli_fetch_array($result);
 echo '<h1 style="text-align: center;">'.$row2[1]."<span style='color: gray;'> - ".$row2[3]." 에 의해 작성됨</span></h1>";
 echo '<hr>';
 if(isset($row2[7])){
-  echo "<img src='com/".$row2['photo']."' >";
+  echo "<img src='com/{$row2[7]}'>";
 };
 echo '<br><h3 style="text-align: center;">'.$row2[2].'</h3><br><br><br><br><br>';
 
