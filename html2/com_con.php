@@ -18,7 +18,7 @@
 <?php
 
 if(isset($_SESSION['nickname'])){
-if(isset($_POST['photo'])){
+if(isset($_FILES['photo'])){
   $photo = $_FILES['photo']['name'];
   $puttodb = "INSERT into com(title ,say, written, method, good, hate, photo)
 VALUES ( '{$_POST['title']}' , '{$_POST['say']}' , '{$_SESSION['nickname']}' , '{$_POST['method']}' , 0 , 0, '$photo')";

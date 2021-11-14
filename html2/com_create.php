@@ -41,7 +41,7 @@
 
 <?php
 $send = "<br><h1 style='text-align: center;'>Create a Post</h1><br>
-<form action='com_con.php' method='POST'  enctype='multipart/form-data'>
+<form action='com_con.php' method='POST' enctype='multipart/form-data'>
 <input type='text' class= 'form-control' name = 'title' placeholder='제목' required>
 <input type='hidden' class= 'form-control' name = 'method' value='p'>
 <br><br><textarea class= 'form-control' rows='5' name='say' placeholder='내용을 작성해주세요' required></textarea>

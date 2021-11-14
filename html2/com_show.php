@@ -35,14 +35,13 @@ $_SESSION['id'] = $_GET['id'];
 $idtoupdate = $_SESSION['id'];
 $idtoupdate_link = "com_update_show.php";
 $idtodelete_link = "com_delete.php";
-$filtered_id = mysqli_real_escape_string($conn, $_SESSION['id']);
-$sql = "SELECT * FROM com where id={$filtered_id}";
+$sql = "SELECT * FROM com where id={$_SESSION['id']}";
 $result = mysqli_query($conn, $sql);
 $row2 = mysqli_fetch_array($result);
 echo '<h1 style="text-align: center;">'.$row2[1]."<span style='color: gray;'> - ".$row2[3]." 에 의해 작성됨</span></h1>";
 echo '<hr>';
 if(isset($row2[7])){
-    echo "<img src='com/".$row2[7]."' ><br><br>";
+  echo "<img src='com/".$row2['photo']."' >";
 };
 echo '<br><h3 style="text-align: center;">'.$row2[2].'</h3><br><br><br><br><br>';
 
