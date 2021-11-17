@@ -32,7 +32,6 @@
 <?php
 
 $_SESSION['id'] = $_GET['id'];
-$idtoupdate = $_SESSION['id'];
 $idtoupdate_link = "com_update_show.php";
 $idtodelete_link = "com_delete.php";
 $sql = "SELECT * FROM com where id={$_SESSION['id']}";
@@ -41,7 +40,7 @@ $row2 = mysqli_fetch_array($result);
 echo '<h1 style="text-align: center;">'.$row2[1]."<span style='color: gray;'> - ".$row2[3]." 에 의해 작성됨</span></h1>";
 echo '<hr>';
 if(isset($row2[7])){
-  echo "<img src='com/{$row2[7]}'>";
+  echo "<img src='{$row2[7]}'>";
 };
 echo '<br><h3 style="text-align: center;">'.$row2[2].'</h3><br><br><br><br><br>';
 
