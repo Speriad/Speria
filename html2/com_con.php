@@ -26,7 +26,6 @@ if(isset($_FILES['photo'])){
 
   $puttodb = "INSERT into com(title ,say, written, method, good, hate, photo)
 VALUES ( '{$_POST['title']}' , '{$_POST['say']}' , '{$_SESSION['nickname']}' , '{$_POST['method']}' , 0 , 0, '$photo')";
-move_uploaded_file($phototemp, $folder.$photo);
 }else{
   $puttodb = "INSERT into com(title ,say, written, method, good, hate)
 VALUES ( '{$_POST['title']}' , '{$_POST['say']}' , '{$_SESSION['nickname']}' , '{$_POST['method']}' , 0 , 0)";

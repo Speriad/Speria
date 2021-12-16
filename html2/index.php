@@ -1,7 +1,11 @@
 <!doctype html>
 
 <head>
-  <?php include 'connvar.php'; ?>
+  <?php include 'connvar.php'; 
+    if(isset($_POST['logout'])){
+      $_SESSION['nickname'] = null;
+    };
+  ?>
 	<style type='text/css'>
 		body {
 			background-color: white;
@@ -78,8 +82,8 @@
 
     $belogin = "<br><h1 style='text-align: center;'>Welcome! {$_SESSION['nickname']}</h1><br><div style='text-align: center;'>
     무힙갤의 모든 서비스를 이용할수 있습니다</div><br><div class='text-center'><div class='container mt-3'>
-    <div class='btn-group btn-group-lg'><form action='remove_session.php'><button role='submit' class='btn btn-outline-warning'>로그 아웃</form></button>
-    <form action='update_ac_show.php'><button role='submit' class='btn btn-outline-warning'>정보 수정</button></div></div></div>";
+    <div class='btn-group btn-group-lg'><form action='index.php' method='post'><button role='submit' name='logout' class='btn btn-outline-warning'>로그 아웃</form></button>
+    <form action='com_pf_show.php'><button role='submit' class='btn btn-outline-warning'>정보 수정</button></div></div></div>";
 
     if(isset($_SESSION['nickname'])){
       echo $belogin;
