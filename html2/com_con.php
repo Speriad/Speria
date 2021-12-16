@@ -55,6 +55,6 @@ mysqli_query($conn,$puttodb);
 
 
 ?>
-<meta http-equiv="Refresh" content="100; url='community.php'" />
+<meta http-equiv="Refresh" content="0; url='community.php'" />
 </body>
 </html>

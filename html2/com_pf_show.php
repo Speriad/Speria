@@ -52,7 +52,8 @@ $send2 = "
 <form action='com_pf.php' method='post'>
 <input type='text' name='new_nickname' class='form-control' placeholder='변경 하고 싶은 닉네임을 입력해주세요' required>
 <br><input type='password' name='new_pw' class='form-control' placeholder='변경 하고 싶은 비밀번호를 입력해주세요' required>
-<br><br><button role='submit' class='btn btn-warning'>정보 수정하기</button> 
+<br><br><button role='submit' name='update' class='btn btn-warning'>정보 수정하기</button> 
+<button role='submit' name='remove' class='btn btn-danger'>계정 삭제하기</button> 
 </form><br><br><div><form action='index.php' method='post'><button role='submit' class='btn btn-warning'>로비로 돌아가기</button></form></div>";
 
 if(isset($_POST['check_pw'])){
