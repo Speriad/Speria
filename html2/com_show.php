@@ -36,16 +36,13 @@ $idtoupdate_link = "com_update_show.php";
 $idtodelete_link = "com_delete.php";
 $sql = "SELECT * FROM com where id={$_SESSION['id']}";
 $result = mysqli_query($conn, $sql);
-$row2 = mysqli_fetch_array($result);
-echo '<h1 style="text-align: center;">'.$row2[1]."<span style='color: gray;'> - ".$row2[3]." 에 의해 작성됨</span></h1>";
+$row = mysqli_fetch_array($result);
+echo '<h1 style="text-align: center;">'.$row[1]."<span style='color: gray;'> - ".$row[3]." 에 의해 작성됨</span></h1>";
 echo '<hr>';
-if(isset($row2[7])){
-  echo "<img src='com/{$row2[7]}'>";
-};
-echo '<br><h3 style="text-align: center;">'.$row2[2].'</h3><br><br><br><br><br>';
+echo '<br><h3 style="text-align: center;">'.$row[2].'</h3><br><br><br><br><br>';
 
 if(isset($_SESSION['nickname'])){
-if($_SESSION['nickname'] == $row2[3]){
+if($_SESSION['nickname'] == $row[3]){
   $update_link = "<br><div class='text-center'><div class='container mt-3'><div class='btn-group btn-group-lg'><form action=".$idtoupdate_link." method='POST'><button role='submit' class='btn btn-warning'>수정하기</button></form>";
   $delete_link = "<form action=".$idtodelete_link." method='POST'><button class='btn btn-danger'>삭제하기</button></form></div></div></div>";
 
@@ -55,8 +52,8 @@ if($_SESSION['nickname'] == $row2[3]){
 };
 
 echo "<br><div class='text-center'><div class='container mt-3'><div class='btn btn-group btn-group-lg'>
-<form action='com_like.php' method='post'><button role='submit' class='btn btn-primary'><i class='bi bi-hand-thumbs-up-fill'></i> {$row2[4]}</button></form>
-<form action='com_hate.php' method='post'><button role='submit' class='btn btn-primary'><i class='bi bi-hand-thumbs-down-fill'></i> {$row2[5]}</button></form>
+<form action='com_like.php' method='post'><button role='submit' class='btn btn-primary'><i class='bi bi-hand-thumbs-up-fill'></i> {$row[4]}</button></form>
+<form action='com_hate.php' method='post'><button role='submit' class='btn btn-primary'><i class='bi bi-hand-thumbs-down-fill'></i> {$row[5]}</button></form>
 </div></div></div>";
 
 echo "<br><br><h3>댓글</h3><hr>";
