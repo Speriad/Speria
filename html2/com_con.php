@@ -38,7 +38,7 @@ $msg = "";
 //   $folder = "com/";
 
 //   $puttodb = "INSERT into com(title ,say, written, method, good, hate, image)
-// VALUES ( '{$_POST['title']}' , '{$_POST['say']}' , '{$_SESSION['nickname']}' , '{$_POST['method']}' , 0 , 0, '$photo')";
+// VALUES ( '{$_POST['title']}' , '{$_POST['say']}'  , '{$_SESSION['nickname']}' , '{$_POST['method']}' , 0 , 0, '$photo')";
 // }else{
 //   $puttodb = "INSERT into com(title ,say, written, method, good, hate)
 // VALUES ( '{$_POST['title']}' , '{$_POST['say']}' , '{$_SESSION['nickname']}' , '{$_POST['method']}' , 0 , 0)";
