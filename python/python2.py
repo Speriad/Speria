@@ -25,4 +25,3 @@ while SB == 0:
     pygame.display.flip() #업데이트하기 (안쓰면 저장안됨)
 
 pygame.quit()
-
