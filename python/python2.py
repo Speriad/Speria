@@ -1,27 +1,54 @@
-import pygame
+from tkinter import * 
+from tkinter import messagebox
+import time
+import random
 
-pygame.init()
+win = Tk()
+win.title("Speria's tkinter")
+win.geometry("500x500")
 
-size = [1200 , 800]
-screen = pygame.display.set_mode(size)
+def now():
+  rightnow = time.time()
+  tm = time.localtime(rightnow)
+  tm2 = str(tm.tm_hour + 9) + ' : ' + str(tm.tm_min) + ' : ' + str(tm.tm_sec)
+  button.config(text = tm2)
 
-white = (255,255,255)
-screen.fill(white)
+hello = Label(win , text="This is Speria's tkinter Program")
+hello.pack()
+button = Button(win, text='What time is it now?', command = now)
+button.pack()
+passing = Label(win, text="")
+passing.pack()
 
-title = "Eunsoo's KeumChun Adventure"
-pygame.display.set_caption(title)
+blank = Entry(win)
+blank.pack()
 
-clock = pygame.time.Clock()
-ss = pygame.image.load('C:/무겸/Programming/Speria/python/ak.PNG').convert_alpha()
-ss = pygame.transform.scale(ss, (88.665, 250))   #ss의 크기 변경
-screen.blit(ss, (550, 550))     #스크린에 ss를 (x, y)에 표시
+def blankget():
+  whatisblank = blank.get()
+  button2.config(text = whatisblank)
 
-SB = 0
-while SB == 0:
-    clock.tick(60) #FPS 설정
-    for event in pygame.event.get():   #이벤트 받기
-        if event.type == pygame.QUIT:    #(만약 게임을 끈다면)
-            SB = 1
-    pygame.display.flip() #업데이트하기 (안쓰면 저장안됨)
+writesomethingandclickthisbutton = Label(text = "Write Something and click this button")
+writesomethingandclickthisbutton.pack()
+button2 = Button(win, text='Change This Button\'s name', command = blankget)
+button2.pack()
+passing = Label(win, text="")
+passing.pack()
 
-pygame.quit()
+getlotto = Label(text = "Get Lotto Numbers")
+getlotto.pack()
+
+def lotto():
+  lottonumber = random.sample(range(1,46),6)
+  lottonumber.sort()
+  lottotext.config(text = lottonumber)
+    
+button3 = Button(win, text = "Get Number", command = lotto)
+button3.pack()
+lottotext = Label(win, text = "")
+lottotext.pack()
+passing = Label(win, text="")
+passing.pack()
+
+  
+
+win.mainloop()
