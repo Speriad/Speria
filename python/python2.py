@@ -10,7 +10,7 @@ win.geometry("500x500")
 def now():
   rightnow = time.time()
   tm = time.localtime(rightnow)
-  tm2 = str(tm.tm_hour + 9) + ' : ' + str(tm.tm_min) + ' : ' + str(tm.tm_sec)
+  tm2 = str(tm.tm_hour) + ' : ' + str(tm.tm_min) + ' : ' + str(tm.tm_sec)
   button.config(text = tm2)
 
 hello = Label(win , text="This is Speria's tkinter Program")
@@ -48,7 +48,5 @@ lottotext = Label(win, text = "")
 lottotext.pack()
 passing = Label(win, text="")
 passing.pack()
-
-  
 
 win.mainloop()
