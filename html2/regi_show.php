@@ -42,6 +42,7 @@
 <input type='text' class= 'form-control' name = 'nickname' placeholder='유저네임을 입력해주세요' required>
 <br><input type='password' class= 'form-control' name = 'pw' placeholder='비밀번호를 입력해주세요' required>
 <br><input type='password' class= 'form-control' name = 're-pw' placeholder='비밀번호를 다시 입력해주세요' required>
+<input type='hidden' class= 'form-control' name = 'partner' value='n'>
 <br><button role='submit' class='btn btn-outline-warning'>회원가입 요청하기</button> 
 </form>
 <form action='index.php'>
