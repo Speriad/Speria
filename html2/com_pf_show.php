@@ -43,6 +43,7 @@
 $sql = "SELECT * FROM registration where nickname='{$_SESSION['nickname']}'";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_array($result);
+
 $send = "
 <form action='com_pf_show.php' method='post'>
 <input type='password' class= 'form-control' name = 'pw' placeholder='본인임을 확인하기위해 비밀번호를 입력해주세요' required>
@@ -56,10 +57,21 @@ $send2 = "
 <button role='submit' name='remove' class='btn btn-danger'>계정 삭제하기</button> 
 </form><br><br><form action='com_create.php' method='post'><button role='submit' class='btn btn-success' name='partner'>파트너쉽 신청하기</button></form>
 <br><br><div><form action='index.php' method='post'><button role='submit' class='btn btn-warning'>로비로 돌아가기</button></form></div>";
+$sendpartner = "
+<form action='com_pf.php' method='post'>
+<input type='text' name='new_nickname' class='form-control' placeholder='변경 하고 싶은 닉네임을 입력해주세요' required>
+<br><input type='password' name='new_pw' class='form-control' placeholder='변경 하고 싶은 비밀번호를 입력해주세요' required>
+<br><br><button role='submit' name='update' class='btn btn-warning'>정보 수정하기</button> 
+<button role='submit' name='remove' class='btn btn-danger'>계정 삭제하기</button> 
+</form><br><br><div><form action='index.php' method='post'><button role='submit' class='btn btn-warning'>로비로 돌아가기</button></form></div>";
 
 if(isset($_POST['check_pw'])){
     if($row['pw'] == $_POST['pw']){
-        echo $send2;
+        if($row[3] == 'y'){
+          echo $send3;
+        }else{
+          echo $send2;
+        };
     }else{
         echo "<script>alert('비밀번호가 틀렸습니다')</script>";
         echo $send;
@@ -67,6 +79,7 @@ if(isset($_POST['check_pw'])){
 }else{
     echo $send;
 };
+#비밀번호를 입력했는가, 입력한 비밀번호가 맞는가, 파트너쉽이 있는가
 ?>
     </div>
   </section>
