@@ -68,7 +68,7 @@ $sendpartner = "
 if(isset($_POST['check_pw'])){
     if($row['pw'] == $_POST['pw']){
         if($row[3] == 'y'){
-          echo $send3;
+          echo $sendpartner;
         }else{
           echo $send2;
         };
