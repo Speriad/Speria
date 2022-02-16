@@ -5,6 +5,9 @@
     if(isset($_POST['logout'])){
       $_SESSION['nickname'] = null;
     };
+    if($row[1] = null){
+      $_SESSION['nickname'] = null;
+    }
   ?>
 	<style type='text/css'>
 		body {
