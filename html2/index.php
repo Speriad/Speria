@@ -7,7 +7,7 @@
     };
     if($row[1] = null){
       $_SESSION['nickname'] = null;
-    }
+    };
   ?>
 	<style type='text/css'>
 		body {
