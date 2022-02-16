@@ -50,12 +50,12 @@
     <div class='container'>
       <div class='d-sm-flex align-items-center justify-content-between'>
         <div>
-          <h1><span class='text-warning'>에이셉 라키</span> 가<span class='text-warning'> 'LIVE.LOVE.A$AP'</span> 을 스트리밍으로 공개하였습니다</h1>
-          <p class='lead my-4'>드디어 에이셉 라키의 첫번째 믹스테입인, 'LIVE.LOVE.A$AP' 을 발매 10주년을 맞아 스트리밍으로 공개하였습니다.</p>
-          <a class="btn btn-danger btn-lg" href="https://www.youtube.com/playlist?list=OLAK5uy_ky73s1LA5b56qAAgxAbpeHfeJ0GO0bv4w" role="button">유튜브에서 듣기</a>
-          <p class='lead my-3' style='color: grey;'>2021/10/31 업데이트 됨</p>
+          <h1><span class='text-warning'>프랭크 오션</span>의<span class='text-warning'> 'Blonde'</span> 는 최고입니다.</h1>
+          <p class='lead my-4'>피치포크 선정 2010년대 최고의 앨범인, 'Blonde' 가 너무 마음에 듭니다.</p>
+          <a class="btn btn-danger btn-lg" href="https://www.youtube.com/playlist?list=PLzoqV_VvWIwGzYTcm3r1JwqgQOBXTvKyd" role="button">유튜브에서 감상하기</a>
+          <p class='lead my-3' style='color: grey;'>2022/02/16 업데이트 됨</p>
         </div>
-        <a href='https://www.youtube.com/playlist?list=OLAK5uy_ky73s1LA5b56qAAgxAbpeHfeJ0GO0bv4w'><img class='img-fluid w-200 d-none d-sm-block' src='https://lh3.googleusercontent.com/mV0gvtK2ZDSl7Fm3fw2Y3gHyUlQQye7L7qw_PK6_Z4OSiy6ZvOyP0NEuQCN2z8aW83QLp43hR6KoiRKN=w544-h544-l90-rj' alt='' /></a>
+        <a href='https://www.youtube.com/playlist?list=PLzoqV_VvWIwGzYTcm3r1JwqgQOBXTvKyd'><img class='img-fluid d-none d-sm-block' src='https://lh3.googleusercontent.com/TWBi2M7D8gIwoo3NmhGfoVKI-PuzDunLVYpmLCbeP8Uw2YWpnjttlxmVvpVaO8uSjmLPjHgy6iGXxlPF=w544-h544-l90-rj' alt='' /></a>
       </div>
     </div>
   </section>
@@ -101,6 +101,8 @@
       echo $partnerlogin;
     }elseif(isset($_SESSION['nickname'])){
       echo $belogin;
+    }elseif($row2[1] = null){
+      echo $notlogin; 
     }else{
       echo $notlogin;
     };
