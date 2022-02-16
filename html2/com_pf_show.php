@@ -17,7 +17,7 @@
 	<!-- NAVBAR 구현 -->
 	<nav class='navbar navbar-expand-lg bg-dark navbar-dark py-3'>
 		<div class='container'>
-			<a href='regi_show.php' class='navbar-brand'>정보 수정</a>
+			<a href='#' class='navbar-brand'>정보 수정</a>
     </div>
   </nav>
 

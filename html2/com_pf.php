@@ -15,6 +15,7 @@ if(isset($_POST['remove'])){
     $remove2 = "DELETE from com where written='{$_SESSION['nickname']}'";
     mysqli_query($conn, $remove);
     mysqli_query($conn, $remove2);
+    $_SESSION['nickname'] = null;
 };
 ?>
 <meta http-equiv="Refresh" content="0; url='index.php'" />
