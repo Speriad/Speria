@@ -25,8 +25,12 @@
         $resultwritten = mysqli_query($conn, $writtendb);
         $rowwritten = mysqli_fetch_array($resultwritten);
 
+        $sql2 = "SELECT * from registration where nickname = '{$_SESSION['nickname']}'";
+        $result2 = mysqli_query($conn, $sql2);
+        $row2 = mysqli_fetch_array($result2);
+
         if(isset($_SESSION['nickname'])){
-          if($_SESSION['nickname'] == $rowwritten[3]){
+          if($_SESSION['nickname'] == $rowwritten[3] or $row2[3] == 'y'){
             $deletefromdb = "DELETE from com where id=".$_SESSION['id'];
             $deletefromdb2 = "DELETE from com where method='r' and title={$_SESSION['id']}";
             mysqli_query($conn,$deletefromdb);

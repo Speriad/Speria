@@ -17,7 +17,7 @@
 $updatefromdb = "UPDATE com set title='{$_POST['title']}', say='{$_POST['say']}' where id={$_SESSION['id']} and method='{$_POST['method']}'";
   mysqli_query($conn, $updatefromdb);  
 
-  echo '<script>alert("Success fully updated")</script>';
+  echo '<script>alert("성공적으로 수정되었습니다")</script>';
 
 
 

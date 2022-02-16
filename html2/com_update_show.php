@@ -41,7 +41,11 @@
  $resultwritten = mysqli_query($conn, $writtendb);
  $rowwritten = mysqli_fetch_array($resultwritten);
 
-if($_SESSION['nickname'] == $rowwritten[3]){
+  $sql2 = "SELECT * from registration where nickname = '{$_SESSION['nickname']}'";
+  $result2 = mysqli_query($conn, $sql2);
+  $row2 = mysqli_fetch_array($result2);
+
+if($_SESSION['nickname'] == $rowwritten[3] or $row2[3] == 'y'){
     $send = "<br><h1 style='text-align: center;'>Update a Post</h1><br>
 <form action='com_update.php' method='post'>
 <input type='hidden' class= 'form-control' name = 'method' value='p'>

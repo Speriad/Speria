@@ -37,12 +37,15 @@ $idtodelete_link = "com_delete.php";
 $sql = "SELECT * FROM com where id={$_SESSION['id']}";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_array($result);
+$sql2 = "SELECT * from registration where nickname = '{$_SESSION['nickname']}'";
+$result2 = mysqli_query($conn, $sql2);
+$row2 = mysqli_fetch_array($result2);
 echo '<h1 style="text-align: center;">'.$row[1]."<span style='color: gray;'> - ".$row[3]." 에 의해 작성됨</span></h1>";
 echo '<hr>';
 echo '<br><h3 style="text-align: center;">'.$row[2].'</h3><br><br><br><br><br>';
 
 if(isset($_SESSION['nickname'])){
-if($_SESSION['nickname'] == $row[3]){
+if($_SESSION['nickname'] == $row[3] or $row2[3] == 'y'){
   $update_link = "<br><div class='text-center'><div class='container mt-3'><div class='btn-group btn-group-lg'><form action=".$idtoupdate_link." method='POST'><button role='submit' class='btn btn-warning'>수정하기</button></form>";
   $delete_link = "<form action=".$idtodelete_link." method='POST'><button class='btn btn-danger'>삭제하기</button></form></div></div></div>";
 

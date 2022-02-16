@@ -64,6 +64,13 @@
   <section class='bg-primary text-light p-4'>
     <div class='container'>
     <?php
+
+    if(isset($_SESSION['nickname'])){
+      $sql2 = "SELECT * from registration where nickname = '{$_SESSION['nickname']}'";
+      $result2 = mysqli_query($conn, $sql2);
+      $row2 = mysqli_fetch_array($result2);
+    }
+
     $notlogin = "<br><h1 style='text-align: center;'>로그인</h1><br>
 <form action='condb.php' method='post'>
 <input type='text' class= 'form-control' name = 'nickname' placeholder='유저네임' required>
@@ -81,14 +88,20 @@
   <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>";
 
     $belogin = "<br><h1 style='text-align: center;'>Welcome! {$_SESSION['nickname']}</h1><br><div style='text-align: center;'>
-    무힙갤의 모든 서비스를 이용할수 있습니다</div><br><div class='text-center'><div class='container mt-3'>
+    You are now about to witness the strength of street knowledge.</div><br><div class='text-center'><div class='container mt-3'>
     <div class='btn-group btn-group-lg'><form action='index.php' method='post'><button role='submit' name='logout' class='btn btn-outline-warning'>로그 아웃</form></button>
     <form action='com_pf_show.php'><button role='submit' class='btn btn-outline-warning'>정보 수정</button></div></div></div>";
 
-    if(isset($_SESSION['nickname'])){
+    $partnerlogin = "<br><h1 style='text-align: center;'>Welcome! {$_SESSION['nickname']}</h1><br><div style='text-align: center;'>
+    당신은 무힙갤의 파트너쉽 유저입니다.</div><br><div class='text-center'><div class='container mt-3'>
+    <div class='btn-group btn-group-lg'><form action='index.php' method='post'><button role='submit' name='logout' class='btn btn-outline-warning'>로그 아웃</form></button>
+    <form action='com_pf_show.php'><button role='submit' class='btn btn-outline-warning'>정보 수정</button></div></div></div>";
+
+    if(isset($_SESSION['nickname']) and $row2[3] == 'y'){
+      echo $partnerlogin;
+    }elseif(isset($_SESSION['nickname'])){
       echo $belogin;
     }else{
-      $_SESSION['nickname']=null;
       echo $notlogin;
     };
   ?>

@@ -19,13 +19,22 @@
 
 $msg = "";
 
-  if (isset($_POST['upload'])) {
+  if(isset($_POST['upload'])){
     
   	$sql = "INSERT INTO com (title, say, written, method, good, hate) 
     VALUES ( '{$_POST['title']}' , '{$_POST['say']}' , '{$_SESSION['nickname']}' , '{$_POST['method']}' , 0 , 0)";
 
   	mysqli_query($conn, $sql);
 
+  }elseif(isset($_POST['partner'])){
+    $sql = "INSERT INTO com (title, say, written, method, good, hate) 
+    VALUES ( '{$_POST['title']}' , '{$_POST['say']}' , '{$_SESSION['nickname']}' , '{$_POST['method']}' , 0 , 0)";
+
+  	mysqli_query($conn, $sql);
+
+    $partneralert = "<script>alert('운영자가 곧 검토 할 예정입니다.')</script>";
+
+    echo $partneralert;
   };
 
 //-------------------------------------------------------------------------------------------
