@@ -1,7 +1,15 @@
 <!doctype html>
 
 <head>
-  <?php include 'connvar.php'; 
+  <?php 
+    include 'connvar.php'; 
+
+    if(isset($_SESSION['nickname'])){
+      $sql2 = "SELECT * from registration where nickname = '{$_SESSION['nickname']}'";
+      $result2 = mysqli_query($conn, $sql2);
+      $row2 = mysqli_fetch_array($result2);
+    }
+
     if(isset($_POST['logout'])){
       $_SESSION['nickname'] = null;
     };
@@ -67,12 +75,6 @@
   <section class='bg-primary text-light p-4'>
     <div class='container'>
     <?php
-
-    if(isset($_SESSION['nickname'])){
-      $sql2 = "SELECT * from registration where nickname = '{$_SESSION['nickname']}'";
-      $result2 = mysqli_query($conn, $sql2);
-      $row2 = mysqli_fetch_array($result2);
-    }
 
     $notlogin = "<br><h1 style='text-align: center;'>로그인</h1><br>
 <form action='condb.php' method='post'>
