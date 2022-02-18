@@ -58,11 +58,11 @@ $row2 = mysqli_fetch_array($result2);
 			elseif(isset($_SESSION['nickname']) and $row2[3] == 'y'){
 				echo "<h2>{$_SESSION['nickname']}, 환영합니다!</h2><br>";
 				$buttonforpartner = "<div class='text-right'>
-        <form action='community.php' method='post'><button role='submit' class='btn btn-outline-warning'>글 쓰기</button></form><form action='community.php' method='post'><button role='submit' class='btn btn-outline-warning' name='list'>내가 작성한 글</button></form>
+        <form action='com_con.php' method='post'><button role='submit' class='btn btn-outline-warning'>글 쓰기</button></form><form action='community.php' method='post'><button role='submit' class='btn btn-outline-warning' name='list'>내가 작성한 글</button></form>
         <form action='community.php' method='post'><button role='submit' class='btn btn-outline-warning' name='partner'>파트너쉽 신청 내역 보기</button></form></div>";
 			echo $buttonforpartner;
 			}elseif(isset($_SESSION['nickname'])){
-        $buttonforuser = "<form action='community.php' method='post'><button role='submit' class='btn btn-outline-warning'>글 쓰기</button></form>
+        $buttonforuser = "<form action='com_con.php' method='post'><button role='submit' class='btn btn-outline-warning'>글 쓰기</button></form>
         <form action='community.php' method='post'><button role='submit' class='btn btn-outline-warning' name='list'>내가 작성한 글</button></form></div>";
         echo $buttonforuser;
       }else{
