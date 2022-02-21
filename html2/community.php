@@ -55,7 +55,7 @@ $row2 = mysqli_fetch_array($result2);
       }elseif(isset($_POST['list'])){
 				echo "<h2>{$_SESSION['nickname']}, 환영합니다!</h2>썼던 글들이 아래에 나타납니다<br><br><form action='community.php'><button role='submit' class='btn btn-outline-warning'>커뮤니티로 돌아가기</button></form><br><br>";
 			}elseif(isset($_POST['account'])){
-        echo "<h2>{$_SESSION['nickname']}, 환영합니다!</h2>유저들의 계정을 관리할 수 있습니다<br><br><form action='community.php'><button role='submit' class='btn btn-outline-warning'>커뮤니티로 돌아가기</button></form><br><br>";
+        echo "<h2>{$_SESSION['nickname']}, 환영합니다!</h2>유저들의 계정을 관리할 수 있습니다. 다른 파트너의 파트너쉽을 무단으로 해지할 시 처벌을 받을 수 있습니다.<br><br><form action='community.php'><button role='submit' class='btn btn-outline-warning'>커뮤니티로 돌아가기</button></form><br><br>";
       }elseif(isset($_SESSION['nickname']) and $row2[3] == 'y'){
 				echo "<h2>{$_SESSION['nickname']}, 환영합니다!</h2><br>";
 				$buttonforpartner = "<div class='text-right'>
@@ -102,11 +102,16 @@ if(isset($_POST['partner'])){
     };
   }elseif(isset($_POST['account'])){
     while($row4 = mysqli_fetch_array($result4)){
-      echo "{$row4[1]}<br><hr><span>
-      <form action='community.php' method='post'><input type='hidden' name='userpartner' value='{$row4[3]}'><input type='hidden' name='userid' value='{$row4[1]}'>
+      if($row4[3] == 'y'){
+      echo "{$row4[1]}<br><span><form action='community.php' method='post'><input type='hidden' name='userpartner' value='{$row4[3]}'><input type='hidden' name='userid' value='{$row4[1]}'>
+      <button role='submit' class='btn btn-primary' name='upgradepartner'>파트너쉽 해지</button>
+      <button role='submit' class='btn btn-danger' name='accountdelete'>계정 삭제</button></form></span><hr>";
+      }else{
+      echo "{$row4[1]}<br><span><form action='community.php' method='post'><input type='hidden' name='userpartner' value='{$row4[3]}'><input type='hidden' name='userid' value='{$row4[1]}'>
       <button role='submit' class='btn btn-primary' name='upgradepartner'>파트너쉽 부여</button>
-      <button role='submit' class='btn btn-danger' name='accountdelete'>계정 삭제</button></form></span>";
+      <button role='submit' class='btn btn-danger' name='accountdelete'>계정 삭제</button></form></span><hr>";
       };
+    };
   }else{
     while($row = mysqli_fetch_array($result)){
       echo "<a href='com_show.php?id={$row[0]}'>{$row[1]}<span style='color: gray;'> ( $row[4] / $row[5] ) - {$row[3]} 에 의해 작성됨</span></a><br><hr>";
