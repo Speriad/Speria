@@ -45,7 +45,11 @@ echo '<hr>';
 echo '<br><h3 style="text-align: center;">'.$row[2].'</h3><br><br><br><br><br>';
 
 if(isset($_SESSION['nickname'])){
-if($_SESSION['nickname'] == $row[3] or $row2[3] == 'y'){
+if($row2[3] == 'y'){
+  $delete_link = "<form action=".$idtodelete_link." method='POST'><button class='btn btn-danger'>삭제하기</button></form></div></div></div>";
+
+  echo $delete_link;
+}elseif($_SESSION['nickname'] == $row[3]){
   $update_link = "<br><div class='text-center'><div class='container mt-3'><div class='btn-group btn-group-lg'><form action=".$idtoupdate_link." method='POST'><button role='submit' class='btn btn-warning'>수정하기</button></form>";
   $delete_link = "<form action=".$idtodelete_link." method='POST'><button class='btn btn-danger'>삭제하기</button></form></div></div></div>";
 
