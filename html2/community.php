@@ -135,7 +135,9 @@ if(isset($_POST['partner'])){
   echo '<script>alert("성공적으로 수정되었습니다")</script>';
   }elseif(isset($_POST['accountdelete'])){
     $updatefromdb = "DELETE from registration where nickname='{$_POST['userid']}'";
+    $updatefromdb2 = "DELETE from com where written='{$_POST['userid']}'";
   mysqli_query($conn, $updatefromdb);
+  mysqli_query($conn, $updatefromdb2);
   echo "<meta http-equiv='Refresh' content='0; url='community.php'' />";
   };
     
