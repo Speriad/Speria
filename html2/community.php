@@ -104,7 +104,7 @@ if(isset($_POST['partner'])){
     while($row4 = mysqli_fetch_array($result4)){
       echo "{$row4[1]}<br><hr><span>
       <form action='community.php' method='post'><input type='hidden' name='userpartner' value='{$row4[3]}'><input type='hidden' name='userid' value='{$row4[1]}'>
-      <button role='submit' class='btn btn-primary' name='upgradepartner'>파트너쉽 부여 / 해제</button>
+      <button role='submit' class='btn btn-primary' name='upgradepartner'>파트너쉽 부여</button>
       <button role='submit' class='btn btn-danger' name='accountdelete'>계정 삭제</button></form></span>";
       };
   }else{

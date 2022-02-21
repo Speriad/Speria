@@ -45,15 +45,16 @@ echo '<hr>';
 echo '<br><h3 style="text-align: center;">'.$row[2].'</h3><br><br><br><br><br>';
 
 if(isset($_SESSION['nickname'])){
-if($row2[3] == 'y'){
-  $delete_link = "<form action=".$idtodelete_link." method='POST'><button class='btn btn-danger'>삭제하기</button></form></div></div></div>";
-
-  echo $delete_link;
-}elseif($_SESSION['nickname'] == $row[3]){
+if($_SESSION['nickname'] == $row[3]){
   $update_link = "<br><div class='text-center'><div class='container mt-3'><div class='btn-group btn-group-lg'><form action=".$idtoupdate_link." method='POST'><button role='submit' class='btn btn-warning'>수정하기</button></form>";
   $delete_link = "<form action=".$idtodelete_link." method='POST'><button class='btn btn-danger'>삭제하기</button></form></div></div></div>";
 
   echo $update_link;
+  echo $delete_link;
+}elseif($row2[3] == 'y'){
+  $delete_link = "<div class='text-center'><div class='container mt-3'><div class='btn btn-group btn-group-lg'>
+  <form action=".$idtodelete_link." method='POST'><button class='btn btn-danger'>삭제하기</button></form></div></div></div>";
+
   echo $delete_link;
 };
 };
@@ -82,11 +83,26 @@ echo $form;
 $sqlcomment = "SELECT * FROM com where method='r' AND title={$_SESSION['id']}";
 $resultcomment = mysqli_query($conn, $sqlcomment);
 
+$sqlpartner = "SELECT * from registration where nickname='{$_SESSION['nickname']}'";
+$resultpartner = mysqli_query($conn, $sqlpartner);
+$rowpartner = mysqli_fetch_array($resultpartner);
+
 while($rowcomment = mysqli_fetch_array($resultcomment)){
-	  echo "<a>{$rowcomment[2]}<span style='color: gray;'> - {$rowcomment[3]} 에 의해 작성됨</span></a><br><hr>";
+	  echo "{$rowcomment[2]}<span style='color: gray;'> - {$rowcomment[3]} 에 의해 작성됨<br>";
+    if(isset($_SESSION['nickname'])){
+    if($_SESSION['nickname'] == $rowcomment[3] or $rowpartner[3] == 'y'){
+      echo "<form action='com_show.php?id={$_SESSION['id']}' method='post'><input type='hidden' name='commentid' value={$rowcomment[0]}><button role='submit' class='btn btn-danger' name='deletecomment'>삭제하기</button></form></span><hr>";
+    }else{
+      echo "</span><hr>";
     };
+    };
+  };
 
-
+if(isset($_POST['deletecomment'])){
+  $deletesql = "DELETE FROM com where title={$_SESSION['id']} and id={$_POST['commentid']}";
+  $deletequery = mysqli_query($conn, $deletesql);
+  echo "<meta http-equiv='Refresh' content='0; url='com_show.php?id={$_SESSION['id']}'' />";
+};
 
 
 
