@@ -2,6 +2,11 @@
 
 <head>
 <?php include 'connvar.php'; 
+
+$sql5 = "SELECT * from registration where nickname = '{$_SESSION['nickname']}'";
+$result5 = mysqli_query($conn, $sql5);
+$row5 = mysqli_fetch_array($result5);
+
 ?>
 	<style type='text/css'>
 		ul{
@@ -51,7 +56,7 @@
 				echo "<h2>{$_SESSION['nickname']}, 환영합니다!</h2>썼던 글들이 아래에 나타납니다<br><br><form action='community.php'><button role='submit' class='btn btn-outline-warning'>커뮤니티로 돌아가기</button></form><br><br>";
 			}elseif(isset($_POST['account'])){
         echo "<h2>{$_SESSION['nickname']}, 환영합니다!</h2>유저들의 계정을 관리할 수 있습니다. 다른 파트너의 파트너쉽을 무단으로 해지할 시 처벌을 받을 수 있습니다.<br><br><form action='community.php'><button role='submit' class='btn btn-outline-warning'>커뮤니티로 돌아가기</button></form><br><br>";
-      }elseif(isset($_SESSION['nickname']) and $row2[3] == 'y'){
+      }elseif(isset($_SESSION['nickname']) and $row5[3] == 'y'){
 				echo "<h2>{$_SESSION['nickname']}, 환영합니다!</h2><br>";
 				$buttonforpartner = "<div class='text-right'>
         <form action='com_create.php' method='post'><button role='submit' class='btn btn-outline-warning'>글 쓰기</button></form>
@@ -86,10 +91,6 @@ $result3 = mysqli_query($conn, $sql3);
 
 $sql4 = "SELECT * FROM registration";
 $result4 = mysqli_query($conn, $sql4);
-
-$sql5 = "SELECT * from registration where nickname = '{$_SESSION['nickname']}'";
-$result5 = mysqli_query($conn, $sql5);
-$row5 = mysqli_fetch_array($result5);
 
 if(isset($_POST['partner'])){
   if($row5[3] == 'y'){
