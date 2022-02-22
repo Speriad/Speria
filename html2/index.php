@@ -99,10 +99,7 @@
     <div class='btn-group btn-group-lg'><form action='index.php' method='post'><button role='submit' name='logout' class='btn btn-outline-warning'>로그 아웃</form></button>
     <form action='com_pf_show.php'><button role='submit' class='btn btn-outline-warning'>정보 수정</button></div></div></div>";
 
-    if($row2[0] = null){
-      $_SESSION['nickname'] = null;
-    }
-    elseif(isset($_SESSION['nickname']) and $row2[3] == 'y'){
+    if(isset($_SESSION['nickname']) and $row2[3] == 'y'){
       echo $partnerlogin;
     }elseif(isset($_SESSION['nickname'])){
       echo $belogin;

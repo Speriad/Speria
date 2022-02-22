@@ -2,11 +2,6 @@
 
 <head>
 <?php include 'connvar.php'; 
-
-$sql2 = "SELECT * from registration where nickname = '{$_SESSION['nickname']}'";
-$result2 = mysqli_query($conn, $sql2);
-$row2 = mysqli_fetch_array($result2);
-
 ?>
 	<style type='text/css'>
 		ul{
@@ -92,15 +87,22 @@ $result3 = mysqli_query($conn, $sql3);
 $sql4 = "SELECT * FROM registration";
 $result4 = mysqli_query($conn, $sql4);
 
+$sql5 = "SELECT * from registration where nickname = '{$_SESSION['nickname']}'";
+$result5 = mysqli_query($conn, $sql5);
+$row5 = mysqli_fetch_array($result5);
+
 if(isset($_POST['partner'])){
+  if($row5[3] == 'y'){
   while($row2 = mysqli_fetch_array($result2)){
 	  echo "<a href='com_show.php?id={$row2[0]}'>{$row2[1]}<span style='color: gray;'> ( $row2[4] / $row2[5] ) - {$row2[3]} 에 의해 작성됨</span></a><br><hr>";
     };
+  };
 }elseif(isset($_POST['list'])){  
   while($row3 = mysqli_fetch_array($result3)){
 	  echo "<a href='com_show.php?id={$row3[0]}'>{$row3[1]}<span style='color: gray;'> ( $row3[4] / $row3[5] ) - {$row3[3]} 에 의해 작성됨</span></a><br><hr>";
     };
   }elseif(isset($_POST['account'])){
+    if($row5[3] == 'y'){
     while($row4 = mysqli_fetch_array($result4)){
       if($row4[3] == 'y'){
       echo "{$row4[1]}<br><span><form action='community.php' method='post'><input type='hidden' name='userpartner' value='{$row4[3]}'><input type='hidden' name='userid' value='{$row4[1]}'>
@@ -112,6 +114,7 @@ if(isset($_POST['partner'])){
       <button role='submit' class='btn btn-danger' name='accountdelete'>계정 삭제</button></form></span><hr>";
       };
     };
+  };
   }else{
     while($row = mysqli_fetch_array($result)){
       echo "<a href='com_show.php?id={$row[0]}'>{$row[1]}<span style='color: gray;'> ( $row[4] / $row[5] ) - {$row[3]} 에 의해 작성됨</span></a><br><hr>";
@@ -119,8 +122,8 @@ if(isset($_POST['partner'])){
   };
 
   if(isset($_POST['upgradepartner'])){
+    if($row5[3] == 'y'){
     if($_POST['userpartner'] == 'n'){
-
     $updatefromdb = "UPDATE registration set partner= 'y' where nickname='{$_POST['userid']}'";
   mysqli_query($conn, $updatefromdb);  
   echo "<meta http-equiv='Refresh' content='0; url='community.php'' />";
@@ -133,13 +136,17 @@ if(isset($_POST['partner'])){
 
     };
   echo '<script>alert("성공적으로 수정되었습니다")</script>';
+    };
+
   }elseif(isset($_POST['accountdelete'])){
+    if($row5[3] == 'y'){
     $updatefromdb = "DELETE from registration where nickname='{$_POST['userid']}'";
     $updatefromdb2 = "DELETE from com where written='{$_POST['userid']}'";
   mysqli_query($conn, $updatefromdb);
   mysqli_query($conn, $updatefromdb2);
   echo "<meta http-equiv='Refresh' content='0; url='community.php'' />";
-  };
+  }
+};
     
   ?>
 </ul>
