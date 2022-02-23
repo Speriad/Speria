@@ -78,12 +78,12 @@
 <input type='text' class= 'form-control' name = 'nickname' placeholder='유저네임' required>
 <br><input type='password' class= 'form-control' name = 'pw' placeholder='비밀번호' required>
 <br><button role='submit' class='btn btn-outline-warning'>로그인</button> 
-</form>
+</form> 
 <form action=regi_show.php method='post'>
 <button role='submit' class='btn btn-outline-warning'>회원가입</button>
   </form>
     </div>
-  </section>
+  </section> 
   <section>
   <div class='alert alert-warning alert-dismissible fade show' role='alert'>
   모든 유저의 정보는 안전하게 저장됩니다.
