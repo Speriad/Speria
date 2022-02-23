@@ -41,6 +41,7 @@ $sql2 = "SELECT * from registration where nickname = '{$_SESSION['nickname']}'";
 $result2 = mysqli_query($conn, $sql2);
 $row2 = mysqli_fetch_array($result2);
 echo '<h1 style="text-align: center;">'.$row[1]."<span style='color: gray;'> - ".$row[3]." 에 의해 작성됨</span></h1>";
+echo "<div style='color: gray; text-align: center;'>{$row[7]}</div>";
 echo '<hr>';
 echo '<br><h3 style="text-align: center;">'.nl2br($row[2]).'</h3><br><br><br><br><br>';
 
@@ -64,7 +65,11 @@ echo "<br><div class='text-center'><div class='container mt-3'><div class='btn b
 <form action='com_hate.php' method='post'><button role='submit' class='btn btn-primary'><i class='bi bi-hand-thumbs-down-fill'></i> {$row[5]}</button></form>
 </div></div></div>";
 
-echo "<br><br><h3>댓글</h3><hr>";
+$sqlcomment = "SELECT * FROM com where method='r' AND title={$_SESSION['id']}";
+$resultcomment = mysqli_query($conn, $sqlcomment);
+$commentn = mysqli_num_rows($resultcomment);
+
+echo "<br><br><h3>댓글<span style='color: gray;'> - {$commentn}</span></h3><hr>";
 if(isset($_SESSION['nickname'])){
 
 $form = "<form action='com_re.php' method='post'>
@@ -77,9 +82,7 @@ $form = "<form action='com_re.php' method='post'>
 echo $form;
 };
 
-?>
-<ul style='text-align: center;'>
-<?php
+echo "<ul style='text-align: center;'>";
 $sqlcomment = "SELECT * FROM com where method='r' AND title={$_SESSION['id']}";
 $resultcomment = mysqli_query($conn, $sqlcomment);
 
@@ -88,7 +91,7 @@ $resultpartner = mysqli_query($conn, $sqlpartner);
 $rowpartner = mysqli_fetch_array($resultpartner);
 
 while($rowcomment = mysqli_fetch_array($resultcomment)){
-	  echo "{$rowcomment[2]}<span style='color: gray;'> - {$rowcomment[3]} 에 의해 작성됨<br>";
+	  echo "{$rowcomment[2]}<span style='color: gray;'> - {$rowcomment[3]} 에 의해 작성됨 - {$rowcomment[7]}</span><br>";
     if(isset($_SESSION['nickname'])){
     if($_SESSION['nickname'] == $rowcomment[3] or $rowpartner[3] == 'y'){
       echo "<form action='com_show.php?id={$_SESSION['id']}' method='post'><input type='hidden' name='commentid' value={$rowcomment[0]}><button role='submit' class='btn btn-danger' name='deletecomment'>삭제하기</button></form></span><hr>";
