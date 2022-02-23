@@ -49,8 +49,8 @@ if($_SESSION['nickname'] == $rowwritten[3] or $row2[3] == 'y'){
     $send = "<br><h1 style='text-align: center;'>Update a Post</h1><br>
 <form action='com_update.php' method='post'>
 <input type='hidden' class= 'form-control' name = 'method' value='p'>
-<input type='text' class= 'form-control' name = 'title' placeholder='수정할 제목' required>
-<br><br><textarea class= 'form-control' rows='5' name='say' placeholder='수정할 내용' required></textarea><br><br><button role='submit' class='btn btn-warning'>글 수정하기</button> 
+<textarea class='form-control' name = 'title' placeholder='수정할 제목' rows='2' required>{$rowwritten[1]}</textarea>
+<br><br><textarea class= 'form-control' rows='5' name='say' placeholder='수정할 내용' required>{$rowwritten[2]}</textarea><br><br><button role='submit' class='btn btn-warning'>글 수정하기</button> 
 </form><br>";
 echo $send;
     $back = "<br><div><form action='community.php' method='post'><button role='submit' class='btn btn-warning'>커뮤니티로 돌아가기</button></form></div>";

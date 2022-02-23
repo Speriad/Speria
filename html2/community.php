@@ -80,13 +80,13 @@ $row5 = mysqli_fetch_array($result5);
   </section>
   <ul style='text-align:center;'>
     <?php
-$sql = "SELECT * FROM com where method='p'";
+$sql = "SELECT * FROM com where method='p' ORDER BY id DESC";
 $result = mysqli_query($conn, $sql);
 
 $sql2 = "SELECT * FROM com where method='partner'";
 $result2 = mysqli_query($conn, $sql2);
 
-$sql3 = "SELECT * FROM com where method='p' and written='{$_SESSION['nickname']}'";
+$sql3 = "SELECT * FROM com where method='p' and written='{$_SESSION['nickname']}' ORDER BY id DESC";
 $result3 = mysqli_query($conn, $sql3);
 
 $sql4 = "SELECT * FROM registration";
