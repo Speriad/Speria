@@ -96,7 +96,7 @@ $result4 = mysqli_query($conn, $sql4);
 if(isset($_POST['partner'])){
   if($row5[3] == 'y'){
   while($row2 = mysqli_fetch_array($result2)){
-	  echo "<a href='com_show.php?id={$row2[0]}'>{$row2[3]}</a><br><hr>";
+	  echo "<a href='com_show.php?id={$row2[0]}'>{$row2[3]}<span style='color: gray;'> - {$row2[7]}</span></a><br><hr>";
     };
   };
 }elseif(isset($_POST['list'])){  
