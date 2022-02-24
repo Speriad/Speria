@@ -15,19 +15,10 @@
 </head>
 <body>
     <?php
-    $button = "<form action='#' method='post'><input class='form-control' type='image' name='image'><button class='btn btn-primary' role='submit' name='submit'>SUBMIT</button></form>";
+    $button = "<br><br><form action='upload-image.php' method='post' enctype='multipart/form-data'>
+    <input class='form-control' type='file' name='userfile'>
+    <br><button class='btn btn-primary' role='submit' name='submit'>SUBMIT</button></form>";
     echo $button;
-
-    if($_POST['submit']){
-
-    };
-
-    $sql = "SELECT * from image";
-    $result = mysqli_query($conn, $sql);
-    
-    while($row = mysqli_fetch_array($result)){
-        echo "<img src='{$row}'>";
-    };
     ?>
 </body>
 </html>

@@ -20,12 +20,17 @@
 $msg = "";
 
   if(isset($_POST['upload'])){
-    
-  	$sql = "INSERT INTO com (title, say, written, method, good, hate) 
-    VALUES ( '{$_POST['title']}' , '{$_POST['say']}' , '{$_SESSION['nickname']}' , '{$_POST['method']}' , 0 , 0)";
+    if(isset($_POST['imgurl'])){
+  	$sql = "INSERT INTO com (title, say, written, method, good, hate, imgurl) 
+    VALUES ( '{$_POST['title']}' , '{$_POST['say']}' , '{$_SESSION['nickname']}' , '{$_POST['method']}' , 0 , 0, '{$_POST['imgurl']}')";
 
   	mysqli_query($conn, $sql);
+    }else{
+      $sql = "INSERT INTO com (title, say, written, method, good, hate) 
+      VALUES ( '{$_POST['title']}' , '{$_POST['say']}' , '{$_SESSION['nickname']}' , '{$_POST['method']}' , 0 , 0)";
 
+  	  mysqli_query($conn, $sql);
+    };
   }elseif(isset($_POST['partner'])){
     $sql = "INSERT INTO com (title, say, written, method, good, hate) 
     VALUES ( '{$_POST['title']}' , '{$_POST['say']}' , '{$_SESSION['nickname']}' , '{$_POST['method']}' , 0 , 0)";

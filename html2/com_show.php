@@ -43,6 +43,9 @@ $row2 = mysqli_fetch_array($result2);
 echo '<h1 style="text-align: center;">'.$row[1]."<span style='color: gray;'> - ".$row[3]." 에 의해 작성됨</span></h1>";
 echo "<div style='color: gray; text-align: center;'>{$row[7]}</div>";
 echo '<hr>';
+if(isset($row[8])){
+  echo "<img src='{$row[8]}' class='rounded mx-auto d-block'>";
+};
 echo '<br><h3 style="text-align: center;">'.nl2br($row[2]).'</h3><br><br><br><br><br>';
 
 if(isset($_SESSION['nickname'])){
