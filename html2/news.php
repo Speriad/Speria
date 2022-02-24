@@ -33,15 +33,15 @@
     <div class='container'>
       <div class='row align-items-center justify-content-center'>
       <div class='col-md'>
-          <a href='https://www.youtube.com/channel/UCqf-kTp9ERV5T1rPayno7LA'><img src='https://w.namu.la/s/6db1d90fa623d8b54f4e2c93877b35a42ef64039030d2eb6432b6f9d8d007b18ab23af987134de8f3cec1a36206c69bbe977e0ec74b3d1fe646767bb1ca8e07660c15a04795ec2f6e679aba91515ede6fa4bf2fafd4e0bc869ed8b22fd2e5d99' class='img-fluid' alt=''></a>
+          <a href='https://www.youtube.com/channel/UCDDx4lwzZk5uZBwTunBI2CA'><img src='https://w.namu.la/s/4bf835fa487ebb109a8a1fec0f66bfa685b989ecc6ab2c4ebf87cc9721299d54fcda3e6991e7fed801bb4a86621b13658f5ddbf6ba21e7ee285c84604c4e2d2399403961ec91cc734d753f5099b13e2af837411f8bb382d60fbae910a4cda810' class='img-fluid' alt=''></a>
         </div>
         <div class='col-md p-5'>
           <h1>오늘의 아티스트</h1>
           <h2 class='lead'>
-            프랭크 오션
+            빈스 스테이플스
           </h2>
           <br><p class='lead'>
-            가장 위대한 아티스트, 프랭크 오션
+            가장 위대한 아티스트, 빈스 스테이플스
           </p>
         </div>
       </div>
