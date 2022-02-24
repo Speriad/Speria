@@ -33,7 +33,7 @@
     <div class='container'>
       <div class='row align-items-center justify-content-center'>
       <div class='col-md'>
-          <a href='https://www.youtube.com/channel/UCDDx4lwzZk5uZBwTunBI2CA'><img src='https://w.namu.la/s/4bf835fa487ebb109a8a1fec0f66bfa685b989ecc6ab2c4ebf87cc9721299d54fcda3e6991e7fed801bb4a86621b13658f5ddbf6ba21e7ee285c84604c4e2d2399403961ec91cc734d753f5099b13e2af837411f8bb382d60fbae910a4cda810' class='img-fluid' alt=''></a>
+          <a href='https://lh3.googleusercontent.com/yoyUkkrNpExm7vHZtBMAeqmWzIRv6KX1u2R2OqbiBPKwMkTBvk9UP5eA6n8i7Y5hewA-JCftl2vej4Y=w544-h544-l90-rj'><img src='https://w.namu.la/s/4bf835fa487ebb109a8a1fec0f66bfa685b989ecc6ab2c4ebf87cc9721299d54fcda3e6991e7fed801bb4a86621b13658f5ddbf6ba21e7ee285c84604c4e2d2399403961ec91cc734d753f5099b13e2af837411f8bb382d60fbae910a4cda810' class='img-fluid' alt=''></a>
         </div>
         <div class='col-md p-5'>
           <h1>오늘의 아티스트</h1>
