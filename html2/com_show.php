@@ -94,7 +94,7 @@ $resultpartner = mysqli_query($conn, $sqlpartner);
 $rowpartner = mysqli_fetch_array($resultpartner);
 
 while($rowcomment = mysqli_fetch_array($resultcomment)){
-	  echo "{$rowcomment[2]}<span style='color: gray;'> - {$rowcomment[3]} 에 의해 작성됨 - {$rowcomment[7]}</span><br>";
+	  echo nl2br({$rowcomment[2]})."<span style='color: gray;'> - {$rowcomment[3]} 에 의해 작성됨 - {$rowcomment[7]}</span><br>";
     if(isset($_SESSION['nickname'])){
     if($_SESSION['nickname'] == $rowcomment[3] or $rowpartner[3] == 'y'){
       echo "<form action='com_show.php?id={$_SESSION['id']}' method='post'><input type='hidden' name='commentid' value={$rowcomment[0]}><button role='submit' class='btn btn-danger' name='deletecomment'>삭제하기</button></form></span><hr>";
