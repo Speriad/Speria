@@ -83,7 +83,7 @@ $row5 = mysqli_fetch_array($result5);
   <div class='alert alert-warning alert-dismissible fade show' role='alert'>
   이미지 업로드는 https://imgbb.com 에서 업로드 후 링크를 복사해서 첨부 후 가능합니다.
   <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button></div>
-  <ul style='text-align:center;'>
+  <div style='text-align:center;'>
     <?php
 $sql = "SELECT * FROM com where method='p' ORDER BY id DESC";
 $result = mysqli_query($conn, $sql);
@@ -157,7 +157,7 @@ if(isset($_POST['partner'])){
 };
     
   ?>
-</ul>
+</div>
 
     
     
