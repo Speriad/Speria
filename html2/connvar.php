@@ -10,6 +10,7 @@ $head = "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
 <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We'
  crossorigin='anonymous'>
 <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css'>
+<meta name='title' content='MooHipGal'>
 <meta property='og:title' content='무힙갤'>
 <meta property='og:description' content='Everything of HipHop'>
 <meta property='og:image' content='https://lh3.googleusercontent.com/TWBi2M7D8gIwoo3NmhGfoVKI-PuzDunLVYpmLCbeP8Uw2YWpnjttlxmVvpVaO8uSjmLPjHgy6iGXxlPF=w544-h544-l90-rj'>
