@@ -63,7 +63,7 @@
           <a class="btn btn-danger btn-lg" href="https://www.youtube.com/playlist?list=PLzoqV_VvWIwGzYTcm3r1JwqgQOBXTvKyd" role="button">유튜브에서 감상하기</a>
           <p class='lead my-3' style='color: grey;'>2022/02/16 업데이트 됨</p>
         </div>
-        <a href='https://www.youtube.com/playlist?list=PLzoqV_VvWIwGzYTcm3r1JwqgQOBXTvKyd'><img class='img-fluid d-none d-sm-block' src='https://lh3.googleusercontent.com/TWBi2M7D8gIwoo3NmhGfoVKI-PuzDunLVYpmLCbeP8Uw2YWpnjttlxmVvpVaO8uSjmLPjHgy6iGXxlPF=w544-h544-l90-rj' alt='' /></a>
+        <a href='https://www.youtube.com/playlist?list=PLzoqV_VvWIwGzYTcm3r1JwqgQOBXTvKyd'><img class='img-fluid d-none d-sm-block mb-5' src='https://lh3.googleusercontent.com/TWBi2M7D8gIwoo3NmhGfoVKI-PuzDunLVYpmLCbeP8Uw2YWpnjttlxmVvpVaO8uSjmLPjHgy6iGXxlPF=w544-h544-l90-rj' alt='' /></a>
       </div>
     </div>
   </section>
@@ -242,7 +242,7 @@
       <div class="accordion" id="questions">
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button btn-secondary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+      <button class="accordion-button btn-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
         커뮤니티에 글은 어떻게 쓰나요?
       </button>
     </h2>
@@ -254,7 +254,7 @@
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button btn-secondary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+      <button class="accordion-button btn-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
         타입비트를 사용하려면 돈을 내야하나요?
       </button>
     </h2>
@@ -266,7 +266,7 @@
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button btn-secondary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      <button class="accordion-button btn-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
         무힙갤에 정보 수정 기능이 있나요?
       </button>
     </h2>
@@ -280,7 +280,7 @@
 <div class="accordion" id="questions">
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingFour">
-      <button class="accordion-button btn-secondary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+      <button class="accordion-button btn-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
       뉴스 에서는 뭘 볼수 있나요?
       </button>
     </h2>

@@ -33,7 +33,8 @@
     <div class='container'>
       <div class='row align-items-center justify-content-center'>
       <div class='col-md'>
-          <a href='https://lh3.googleusercontent.com/yoyUkkrNpExm7vHZtBMAeqmWzIRv6KX1u2R2OqbiBPKwMkTBvk9UP5eA6n8i7Y5hewA-JCftl2vej4Y=w544-h544-l90-rj'><img src='https://w.namu.la/s/4bf835fa487ebb109a8a1fec0f66bfa685b989ecc6ab2c4ebf87cc9721299d54fcda3e6991e7fed801bb4a86621b13658f5ddbf6ba21e7ee285c84604c4e2d2399403961ec91cc734d753f5099b13e2af837411f8bb382d60fbae910a4cda810' class='img-fluid' alt=''></a>
+          <a href='https://www.youtube.com/channel/UCDDx4lwzZk5uZBwTunBI2CA'>
+            <img src='https://i2.wp.com/www.passionweiss.com/wp-content/uploads/2016/11/vince-1.jpg?ssl=1' class='img-fluid w-50' alt=''></a>
         </div>
         <div class='col-md p-5'>
           <h1>오늘의 아티스트</h1>
@@ -51,7 +52,8 @@
     <div class='container'>
       <div class='row align-items-center justify-content-center'>
       <div class='col-md'>
-          <a href='https://www.youtube.com/playlist?list=PLzoqV_VvWIwGzYTcm3r1JwqgQOBXTvKyd'><img src='https://lh3.googleusercontent.com/TWBi2M7D8gIwoo3NmhGfoVKI-PuzDunLVYpmLCbeP8Uw2YWpnjttlxmVvpVaO8uSjmLPjHgy6iGXxlPF=w544-h544-l90-rj' class='img-fluid' alt=''></a>
+          <a href='https://www.youtube.com/playlist?list=PLzoqV_VvWIwGzYTcm3r1JwqgQOBXTvKyd'>
+            <img src='https://lh3.googleusercontent.com/TWBi2M7D8gIwoo3NmhGfoVKI-PuzDunLVYpmLCbeP8Uw2YWpnjttlxmVvpVaO8uSjmLPjHgy6iGXxlPF=w544-h544-l90-rj' class='img-fluid w-50' alt=''></a>
         </div>
         <div class='col-md p-5 text-white'>
           <h1>오늘의 앨범</h1>
@@ -69,15 +71,16 @@
     <div class='container'>
       <div class='row align-items-center justify-content-center'>
       <div class='col-md'>
-          <a href='https://www.youtube.com/watch?v=q2F4IqbszEg'><img src='https://lh3.googleusercontent.com/QqPmw-qkbfqfrgM15OIA4t8KVkaKmxUxgEkpI4ZdfPjTkvpgjv8tJrCa5sfQed2XqsZUXjTes2rpX7Su-Q=w544-h544-l90-rj' class='img-fluid' alt=''></a>
+          <a href='https://www.youtube.com/watch?v=FCbWLSZrZfw&list=OLAK5uy_kETXpmWoHk-uZYTfEGWBpTBtQ-W6Pjb8M&index=6'>
+            <img src='https://lh3.googleusercontent.com/zFImc9_bGj5JEM6J6JWsELuWwhhpv5-5dnkdSmlUDfDUTy7H2UKRUPgjPG3k2XO3rpuczv10dw1ih5q8ng=w544-h544-s-l90-rj' class='img-fluid w-50' alt=''></a>
         </div>
         <div class='col-md p-5'>
           <h1>오늘의 곡</h1>
           <h2 class='lead'>
-            HANDSOMER by 러스
+            Chum by 얼 스웻셔츠
           </h2>
           <br><p class='lead'>
-            가장 위대한 곡, HANDSOMER by 러스
+            가장 위대한 곡, Chum by 얼 스웻셔츠
           </p>
         </div>
       </div>

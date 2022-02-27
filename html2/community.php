@@ -3,10 +3,11 @@
 <head>
 <?php include 'connvar.php'; 
 
+if(isset($_SESSION['nickname'])){
 $sql5 = "SELECT * from registration where nickname = '{$_SESSION['nickname']}'";
 $result5 = mysqli_query($conn, $sql5);
 $row5 = mysqli_fetch_array($result5);
-
+};
 ?>
 	<style type='text/css'>
 		ul{
@@ -90,8 +91,10 @@ $result = mysqli_query($conn, $sql);
 $sql2 = "SELECT * FROM com where method='partner'";
 $result2 = mysqli_query($conn, $sql2);
 
+if(isset($_SESSION['nickname'])){
 $sql3 = "SELECT * FROM com where method='p' and written='{$_SESSION['nickname']}' ORDER BY id DESC";
 $result3 = mysqli_query($conn, $sql3);
+};
 
 $sql4 = "SELECT * FROM registration";
 $result4 = mysqli_query($conn, $sql4);
