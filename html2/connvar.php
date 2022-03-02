@@ -27,12 +27,9 @@ if(isset($_SESSION['nickname'])){
 	$resulttest = mysqli_query($conn, $sqltest);
 	$rowtest = mysqli_fetch_array($resulttest);
 
-	if(isset($rowtest[0])){
-		
-	}else{
+	if(!isset($rowtest[0])){
 		$_SESSION['nickname'] = null;
 	};
-};
 
 
 ?>
