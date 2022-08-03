@@ -171,8 +171,6 @@ if(isset($_POST['partner'])){
 
 
 
-
-
 </body>
 
 </html>
