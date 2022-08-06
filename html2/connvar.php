@@ -30,6 +30,7 @@ if(isset($_SESSION['nickname'])){
 	if(!isset($rowtest[0])){
 		$_SESSION['nickname'] = null;
 	};
+};
 
 
 ?>
