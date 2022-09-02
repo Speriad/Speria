@@ -108,7 +108,7 @@ while($rowcomment = mysqli_fetch_array($resultcomment)){
 if(isset($_POST['deletecomment'])){
   $deletesql = "DELETE FROM com where title={$_SESSION['id']} and id={$_POST['commentid']}";
   $deletequery = mysqli_query($conn, $deletesql);
-  echo "<meta http-equiv='Refresh' content='0; url='com_show.php?id={$_SESSION['id']}'' />";
+  echo "<meta http-equiv='Refresh' content='0; url='com_show.php?id={$_SESSION['id']}'' />"; 
 };
 
 
