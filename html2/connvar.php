@@ -12,7 +12,7 @@ $head = "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
 <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css'>
 <meta name='title' content='MooHipGal'>
 <meta property='og:title' content='무힙갤'>
-<meta property='og:description' content='Everything of HipHop'>
+<meta property='og:description' content='Everything about HipHop'>
 <meta property='og:image' content='https://lh3.googleusercontent.com/TWBi2M7D8gIwoo3NmhGfoVKI-PuzDunLVYpmLCbeP8Uw2YWpnjttlxmVvpVaO8uSjmLPjHgy6iGXxlPF=w544-h544-l90-rj'>
 <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js' integrity='sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj'
 	 crossorigin='anonymous'>
