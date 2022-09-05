@@ -55,38 +55,53 @@
 
   <!-- Showcase 구현 -->
 
-  <section class='bg-dark text-dark p-5 p-lg-0 pt-lg-5 text-center text-sm-start'>
+  <section class='bg-dark text-dark p-5 p-lg-0 pt-lg-5 text-center text-sm-center'>
     <div class='container'>
       <div class='d-sm-flex align-items-center justify-content-center'>
         <div>
 
           <div class="row mb-5">
 
-            <div class="col-sm-6">
-              <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div id="carouselExampleCaptions" class="carousel slide w-80" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://api.time.com/wp-content/uploads/2000/04/kanye-west-time-100-2015-titans.jpg?quality=85&w=1012" class="d-inline w-50" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>오늘의 아티스트</h4>
+                    <h5>Kanye West</h5>
+                    <p>칸예 웨스트는 현존하는 최고의 아티스트 중 하나로 꼽힙니다.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://www.sleek-mag.com/wp-content/uploads/2016/08/AlbumCovers_Blonde-1200x1200.jpg" class="d-inline w-50" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>오늘의 앨범</h4>
+                    <h5>Blonde</h5>
+                    <p>Frank Ocean 의 Blonde 는 힙합씬에 큰 영향을 끼쳤습니다.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://m.media-amazon.com/images/I/81pf4NjVhfL._SL1500_.jpg" class="d-inline w-50" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>오늘의 곡</h4>
+                    <h5>SLOW DANCING IN THE DARK</h5>
+                    <p>Joji 의 가장 유명한 곡, 비오는 날씨에 듣기 좋습니다.</p>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div class="col-sm-6">
-              <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6">
-              <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
 
           </div>
@@ -97,7 +112,7 @@
   </section>
 
   <!-- Newsletter 구현 -->
-  <section class='bg-primary text-light p-4'>
+  <section class='bg-secondary text-light p-4'>
     <div class='container'>
       <?php
 
