@@ -8,4 +8,4 @@ def onetoa(a):
     print(i)
     i = i + 1
 
-onetoa(300)
+onetoa(10)

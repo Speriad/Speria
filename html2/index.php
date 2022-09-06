@@ -70,7 +70,8 @@
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="https://api.time.com/wp-content/uploads/2000/04/kanye-west-time-100-2015-titans.jpg?quality=85&w=1012" class="d-inline w-50" alt="...">
+                  <a href='https://www.youtube.com/channel/UCs6eXM7s8Vl5WcECcRHc2qQ' target='_blank'>
+                    <img src="https://api.time.com/wp-content/uploads/2000/04/kanye-west-time-100-2015-titans.jpg?quality=85&w=1012" class="d-inline w-50" alt="..."></a>
                   <div class="carousel-caption d-none d-md-block">
                     <h4>오늘의 아티스트</h4>
                     <h5>Kanye West</h5>
@@ -78,7 +79,8 @@
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img src="https://www.sleek-mag.com/wp-content/uploads/2016/08/AlbumCovers_Blonde-1200x1200.jpg" class="d-inline w-50" alt="...">
+                  <a href='https://www.youtube.com/playlist?list=PLzoqV_VvWIwGzYTcm3r1JwqgQOBXTvKyd' target='_blank'>
+                    <img src="https://www.sleek-mag.com/wp-content/uploads/2016/08/AlbumCovers_Blonde-1200x1200.jpg" class="d-inline w-50" alt="..."></a>
                   <div class="carousel-caption d-none d-md-block">
                     <h4>오늘의 앨범</h4>
                     <h5>Blonde</h5>
@@ -86,7 +88,8 @@
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img src="https://m.media-amazon.com/images/I/81pf4NjVhfL._SL1500_.jpg" class="d-inline w-50" alt="...">
+                  <a href='https://www.youtube.com/watch?v=vzjUs5yR68o' target='_blank'>
+                    <img src="https://m.media-amazon.com/images/I/81pf4NjVhfL._SL1500_.jpg" class="d-inline w-50" alt="..."></a>
                   <div class="carousel-caption d-none d-md-block">
                     <h4>오늘의 곡</h4>
                     <h5>SLOW DANCING IN THE DARK</h5>
