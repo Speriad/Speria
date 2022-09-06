@@ -62,7 +62,7 @@
 
           <div class="row mb-5">
 
-            <div id="carouselExampleCaptions" class="carousel slide w-80" data-bs-ride="carousel">
+            <div id="carouselExampleCaptions" class="carousel slide w-70" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -289,36 +289,36 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button btn-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-              커뮤니티에 글은 어떻게 쓰나요?
+              질문 1
             </button>
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>로그인이 필요합니다</strong><br><br>로그인을 한 후 커뮤니티로 들어가 글쓰기 기능을 이용하면 됩니다
+              <strong>대답 1</strong><br><br>설명 1
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
             <button class="accordion-button btn-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              타입비트를 사용하려면 돈을 내야하나요?
+              질문 2
             </button>
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>사용하는데 돈이 들지 않습니다</strong><br><br>무힙갤에 올리는 모든 비트는 무료 비트로 제공해야 하고 비트를 사용하는 사람은 무료로 사용할 수 있습니다
+              <strong>대답 2</strong><br><br>설명 2
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
             <button class="accordion-button btn-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              무힙갤에 정보 수정 기능이 있나요?
+              질문 3
             </button>
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>로비 페이지에서 정보를 수정할 수 있습니다</strong><br><br>닉네임과 비밀번호를 수정할수 있으며 곧 이메일과 자세한 회원정보를 추가할 것 입니다
+              <strong>대답 3</strong><br><br>설명 3
             </div>
           </div>
         </div>
@@ -327,12 +327,12 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingFour">
             <button class="accordion-button btn-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-              뉴스 에서는 뭘 볼수 있나요?
+              질문 4
             </button>
           </h2>
           <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>외국 힙합과 관련된 내용을 볼수 있습니다</strong><br><br>무힙갤에서 외국 힙합의 최신소식을 접해보세요
+              <strong>대답 4</strong><br><br>질문 넣은거 디자인 때문임
             </div>
           </div>
         </div>
