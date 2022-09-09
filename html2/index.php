@@ -60,7 +60,7 @@
       <div class='d-sm-flex align-items-center justify-content-center'>
         <div>
 
-          <div class="row mb-5">
+          <div class="row mb-3">
 
             <div id="carouselExampleCaptions" class="carousel slide w-70" data-bs-ride="carousel">
               <div class="carousel-indicators">
@@ -70,30 +70,30 @@
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <a href='https://www.youtube.com/channel/UCs6eXM7s8Vl5WcECcRHc2qQ' target='_blank'>
-                    <img src="https://api.time.com/wp-content/uploads/2000/04/kanye-west-time-100-2015-titans.jpg?quality=85&w=1012" class="d-inline w-50" alt="..."></a>
+                  <a href='https://www.youtube.com/channel/UCqf-kTp9ERV5T1rPayno7LA' target='_blank'>
+                    <img src="https://i.guim.co.uk/img/media/54d9f7ef0a866d9ef9d7698c396722195d1c9e38/1398_1896_3515_2107/master/3515.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=2047c5afc892048e845dccc29c2b5a09" class="d-inline w-50" alt="..."></a>
                   <div class="carousel-caption d-none d-md-block">
                     <h4>오늘의 아티스트</h4>
-                    <h5>Kanye West</h5>
-                    <p>칸예 웨스트는 현존하는 최고의 아티스트 중 하나로 꼽힙니다.</p>
+                    <h5>Frank Ocean</h5>
+                    <p>프랭크 오션은 어클레임드 뮤직 선정 2010년대 최고의 아티스트 3위에 오르기도 했습니다.</p>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <a href='https://www.youtube.com/playlist?list=PLzoqV_VvWIwGzYTcm3r1JwqgQOBXTvKyd' target='_blank'>
-                    <img src="https://www.sleek-mag.com/wp-content/uploads/2016/08/AlbumCovers_Blonde-1200x1200.jpg" class="d-inline w-50" alt="..."></a>
+                  <a href='https://www.youtube.com/playlist?list=OLAK5uy_mRFuqe0IIrexXkU7JOxo4rOb0WLEcwuz8' target='_blank'>
+                    <img src="https://image.aladin.co.kr/product/818/77/cover500/8678246847_1.jpg" class="d-inline" alt="..."></a>
                   <div class="carousel-caption d-none d-md-block">
                     <h4>오늘의 앨범</h4>
-                    <h5>Blonde</h5>
-                    <p>Frank Ocean 의 Blonde 는 힙합씬에 큰 영향을 끼쳤습니다.</p>
+                    <h5>My Beautiful Dark Twisted Fantasy</h5>
+                    <p>Kanye West 의 최고 명반이자, 힙합의 역사에서 가장 중요한 앨범 중 하나.</p>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <a href='https://www.youtube.com/watch?v=vzjUs5yR68o' target='_blank'>
-                    <img src="https://m.media-amazon.com/images/I/81pf4NjVhfL._SL1500_.jpg" class="d-inline w-50" alt="..."></a>
+                  <a href='https://www.youtube.com/watch?v=wrxxfrzJY6k' target='_blank'>
+                    <img src="https://media.pitchfork.com/photos/5929ad7ac0084474cd0c1720/1:1/w_600/6283beab.jpg" class="d-inline" alt="..."></a>
                   <div class="carousel-caption d-none d-md-block">
                     <h4>오늘의 곡</h4>
-                    <h5>SLOW DANCING IN THE DARK</h5>
-                    <p>Joji 의 가장 유명한 곡, 비오는 날씨에 듣기 좋습니다.</p>
+                    <h5>Off Top</h5>
+                    <p>하드코어 익스페리멘탈 힙합의 정석 같은 곡.</p>
                   </div>
                 </div>
               </div>
