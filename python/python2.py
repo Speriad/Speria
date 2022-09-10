@@ -23,6 +23,14 @@ def sampler():
   lottery.sort()
   print(lottery)
 
+def formatinput():
+  formatinputask = input('Type First Word :  ')
+  formatinputask2 = input('Type Second Word :  ')
+  formatinputask3 = input('Type Third Word :  ')
+
+  print('First : {0}, Second : {1}, Third : {2}'.format(formatinputask, formatinputask2, formatinputask3))
+  
+
 askwhatisa()
 sampler()
-
+formatinput()
