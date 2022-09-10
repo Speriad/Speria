@@ -60,53 +60,46 @@
       <div class='d-sm-flex align-items-center justify-content-center'>
         <div>
 
-          <div class="row mb-3">
-
-            <div id="carouselExampleCaptions" class="carousel slide w-70" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <a href='https://www.youtube.com/channel/UCqf-kTp9ERV5T1rPayno7LA' target='_blank'>
-                    <img src="https://i.guim.co.uk/img/media/54d9f7ef0a866d9ef9d7698c396722195d1c9e38/1398_1896_3515_2107/master/3515.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=2047c5afc892048e845dccc29c2b5a09" class="d-inline w-50" alt="..."></a>
-                  <div class="carousel-caption d-none d-md-block">
-                    <h4>오늘의 아티스트</h4>
-                    <h5>Frank Ocean</h5>
-                    <p>프랭크 오션은 어클레임드 뮤직 선정 2010년대 최고의 아티스트 3위에 오르기도 했습니다.</p>
-                  </div>
+          <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://media.them.us/photos/5fc928ea70effa015448c2f6/3:4/w_619,h_825,c_limit/frank-lilnas-tyler.jpg" class="card-img-top" alt="Today's artist">
+                <div class="card-body">
+                  <h3>오늘의 아티스트</h3>
+                  <h5 class="card-title">Tyler, The Creator</h5>
+                  <p class="card-text">솔직히 별론데 IGOR 만 조금 좋음</p>
                 </div>
-                <div class="carousel-item">
-                  <a href='https://www.youtube.com/playlist?list=OLAK5uy_mRFuqe0IIrexXkU7JOxo4rOb0WLEcwuz8' target='_blank'>
-                    <img src="https://image.aladin.co.kr/product/818/77/cover500/8678246847_1.jpg" class="d-inline" alt="..."></a>
-                  <div class="carousel-caption d-none d-md-block">
-                    <h4>오늘의 앨범</h4>
-                    <h5>My Beautiful Dark Twisted Fantasy</h5>
-                    <p>Kanye West 의 최고 명반이자, 힙합의 역사에서 가장 중요한 앨범 중 하나.</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <a href='https://www.youtube.com/watch?v=wrxxfrzJY6k' target='_blank'>
-                    <img src="https://media.pitchfork.com/photos/5929ad7ac0084474cd0c1720/1:1/w_600/6283beab.jpg" class="d-inline" alt="..."></a>
-                  <div class="carousel-caption d-none d-md-block">
-                    <h4>오늘의 곡</h4>
-                    <h5>Off Top</h5>
-                    <p>하드코어 익스페리멘탈 힙합의 정석 같은 곡.</p>
-                  </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated : 2022-9-10 20:00</small>
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">이전</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">다음</span>
-              </button>
             </div>
-
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://i.scdn.co/image/ab67616d0000b2737aede4855f6d0d738012e2e5" class="card-img-top" alt="Today's album">
+                <div class="card-body">
+                  <h3>오늘의 앨범</h3>
+                  <h5 class="card-title">CHANNEL ORNAGE</h5>
+                  <p class="card-text">프랭크 오션의 1집, 평론가들의 많은 찬사를 받았습니다.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated : 2022-9-10 20:00</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://w.namu.la/s/f79269295e3150f7c1ccf988f51f8912a08aad9fee68f6fd7ffe4d119d8ac6f90c4037a5a1748b2ee73ecfbda5d011e2824075cb7652001e30f8a684257d247eb009129f287b94df709b680a3b6f4c8dd0818a9842b357aefa208f894589d1a3c0a02dee472d9fae899ac9d7f6bdba94" class="card-img-top" alt="Today's song">
+                <div class="card-body">
+                  <h3>오늘의 곡</h3>
+                  <h5 class="card-title">C.R.E.A.M.</h5>
+                  <p class="card-text">전설적인 힙합 그룹 Wu-Tang Clan 의 대표곡이자 힙합 최고의 명곡 중 하나.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated : 2022-9-10 20:00</small>
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>
