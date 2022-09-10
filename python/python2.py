@@ -1,21 +1,22 @@
 import os
 import random
 
-print('Hello World')
-
 def askwhatisa():
-  a = input('몇까지 숫자를 셀지 입력해주세요 :  ')
-  if a == 'true':    #I don't know how to check whether a is true or not.
-    def onetoa(a):
+  a = int(input('몇까지 숫자를 셀지 입력해주세요 :  '))
+  
+  if a >= 1:
+      def onetoa(a):
 
-      i = 1
+        i = 1
 
-      while i<a+1:
-        print(i)
-        i = i + 1
+        while i<a+1:
+          print(i)
+          i = i + 1
+        
+      onetoa(a)
   else:
-    print('1 보다 큰 숫자를 입력하셔야합니다.')
-    askwhatisa()
+      print('1 이상의 자연수를 입력해주세요.')
+      askwhatisa()
 
 def sampler():
   lottery = random.sample(range(1,46),6)

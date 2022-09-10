@@ -22,10 +22,6 @@
       color: black;
       text-decoration: none;
     }
-
-    hr {
-      margin: 7px;
-    }
   </style>
 </head>
 
@@ -107,12 +103,12 @@
     if (isset($_POST['partner'])) {
       if ($row5[3] == 'y') {
         while ($row2 = mysqli_fetch_array($result2)) {
-          echo "<a href='com_show.php?id={$row2[0]}'>{$row2[3]}<span style='color: gray;'> - {$row2[7]}</span></a><br><hr>";
+          echo "<a href='com_show.php?id={$row2[0]}'>{$row2[3]}<span style='color: gray;'> - {$row2[7]}</span></a><br><hr my-2>";
         };
       };
     } elseif (isset($_POST['list'])) {
       while ($row3 = mysqli_fetch_array($result3)) {
-        echo "<a href='com_show.php?id={$row3[0]}'>{$row3[1]}<span style='color: gray;'> ( $row3[4] / $row3[5] ) - {$row3[3]} 에 의해 작성됨</span></a><br><hr>";
+        echo "<a href='com_show.php?id={$row3[0]}'>{$row3[1]}<span style='color: gray;'> ( $row3[4] / $row3[5] ) - {$row3[3]} 에 의해 작성됨</span></a><br><hr my-2>";
       };
     } elseif (isset($_POST['account'])) {
       if ($row5[3] == 'y') {
@@ -124,13 +120,13 @@
           } else {
             echo "{$row4[1]}<br><span><form action='community.php' method='post'><input type='hidden' name='userpartner' value='{$row4[3]}'><input type='hidden' name='userid' value='{$row4[1]}'>
       <button role='submit' class='btn btn-primary' name='upgradepartner'>파트너쉽 부여</button>
-      <button role='submit' class='btn btn-danger' name='accountdelete'>계정 삭제</button></form></span><hr>";
+      <button role='submit' class='btn btn-danger' name='accountdelete'>계정 삭제</button></form></span><hr my-2>";
           };
         };
       };
     } else {
       while ($row = mysqli_fetch_array($result)) {
-        echo "<a href='com_show.php?id={$row[0]}'>{$row[1]}<span style='color: gray;'> ( $row[4] / $row[5] ) - {$row[3]} 에 의해 작성됨</span></a><br><hr>";
+        echo "<a href='com_show.php?id={$row[0]}'>{$row[1]}<span style='color: gray;'> ( $row[4] / $row[5] ) - {$row[3]} 에 의해 작성됨</span></a><br><hr my-5>";
       };
     };
 
