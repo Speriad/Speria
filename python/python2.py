@@ -29,7 +29,6 @@ def formatinput():
   formatinputask3 = input('Type Third Word :  ')
 
   print('First : {0}, Second : {1}, Third : {2}'.format(formatinputask, formatinputask2, formatinputask3))
-  
 
 askwhatisa()
 sampler()
