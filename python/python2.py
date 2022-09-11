@@ -19,7 +19,7 @@ def askwhatisa():
       print('1 이상의 자연수를 입력해주세요.')
       askwhatisa()
 
-ab=''
+ab = ''
 def sampler(ab):
   ab = int(input('몇 개의 로또 번호를 뽑을지 입력해주세요 :  '))
 
