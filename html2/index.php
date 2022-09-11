@@ -62,40 +62,40 @@
           <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
             <div class="col">
               <div class="card h-100">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/191125_Lil_Nas_X_at_the_2019_American_Music_Awards.png/250px-191125_Lil_Nas_X_at_the_2019_American_Music_Awards.png" alt="Today's artist">
+                <img src="https://w.namu.la/s/56357cf988086419eecea7a3bc94a7ed0ee34e850a2041cbb375bacd14182e49159764691480018d9b2fa9c1294a26db50c5eb582700b5053aa983f2f7187d00311efb7b5566ea287961dc46e73a87279b02d46e60002b78a06db6b1ac5d9fbe05f3f44c0b57707b95db5d2ca1243f33" alt="Today's artist">
                 <div class="card-body">
                   <h3>오늘의 아티스트</h3>
                   <h5 class="card-title">Tyler, The Creator</h5>
-                  <p class="card-text">솔직히 별론데 IGOR 만 조금 좋음</p>
+                  <p class="card-text">솔직히 별론데 은수 꼴받으라고 넣은거임 ㅇㅇ</p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated : 2022-9-10 20:00</small>
+                  <small class="text-muted">Last updated : 2022-9-11 23:00</small>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
-                <img src="https://i.scdn.co/image/ab67616d0000b2737aede4855f6d0d738012e2e5" class="card-img-top" alt="Today's album">
+                <img src="https://i9.ytimg.com/s_p/OLAK5uy_kpnXtWauesEgVIWmv9So8swX3K1p54kkk/sddefault.jpg?sqp=CLTR95gGir7X7AMGCIbn2JgG&rs=AOn4CLDY0Jz7COpp4T3FhZb3ne1eCCPQXQ&v=1662399366" class="card-img-top" alt="Today's album">
                 <div class="card-body">
                   <h3>오늘의 앨범</h3>
-                  <h5 class="card-title">CHANNEL ORNAGE</h5>
-                  <p class="card-text">프랭크 오션의 1집, 평론가들의 많은 찬사를 받았습니다.</p>
+                  <h5 class="card-title">Straight Outta Compton</h5>
+                  <p class="card-text">갱스터 랩의 성경과도 같은 앨범이자, 힙합 최고 명반 중 하나.</p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated : 2022-9-10 20:00</small>
+                  <small class="text-muted">Last updated : 2022-9-11 23:00</small>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
-                <img src="https://w.namu.la/s/f79269295e3150f7c1ccf988f51f8912a08aad9fee68f6fd7ffe4d119d8ac6f90c4037a5a1748b2ee73ecfbda5d011e2824075cb7652001e30f8a684257d247eb009129f287b94df709b680a3b6f4c8dd0818a9842b357aefa208f894589d1a3c0a02dee472d9fae899ac9d7f6bdba94" class="card-img-top" alt="Today's song">
+                <img src="https://i9.ytimg.com/s_p/OLAK5uy_kbCBdWv7l9yZ6v5fGuA5zN0JOMwf_XyCw/sddefault.jpg?sqp=CODT95gGir7X7AMGCI_j85gG&rs=AOn4CLAb1iS7ONuJt7-vorlNL7aVffP-xw&v=1662841231" class="card-img-top" alt="Today's song">
                 <div class="card-body">
                   <h3>오늘의 곡</h3>
-                  <h5 class="card-title">C.R.E.A.M.</h5>
-                  <p class="card-text">전설적인 힙합 그룹 Wu-Tang Clan 의 대표곡이자 힙합 최고의 명곡 중 하나.</p>
+                  <h5 class="card-title">Oldie</h5>
+                  <p class="card-text">힙합 그룹 Odd Future 의 대표곡이자 Earl Sweatshirt 의 벌스가 인상깊은 곡.</p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated : 2022-9-10 20:00</small>
+                  <small class="text-muted">Last updated : 2022-9-11 23:00</small>
                 </div>
               </div>
             </div>
