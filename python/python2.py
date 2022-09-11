@@ -14,14 +14,24 @@ def askwhatisa():
           i = i + 1
         
       onetoa(a)
+      start()
   else:
       print('1 이상의 자연수를 입력해주세요.')
       askwhatisa()
 
-def sampler():
-  lottery = random.sample(range(1,46),6)
-  lottery.sort()
-  print(lottery)
+ab=''
+def sampler(ab):
+  ab = int(input('몇 개의 로또 번호를 뽑을지 입력해주세요 :  '))
+
+  if ab >= 1:
+
+    lottery = random.sample(range(1,46), ab)
+    lottery.sort()
+    print(lottery)
+    start()
+  else:
+    print('1 이상의 자연수를 입력해주세요.')
+    sampler(ab)
 
 def formatinput():
   formatinputask = input('Type First Word :  ')
@@ -29,7 +39,23 @@ def formatinput():
   formatinputask3 = input('Type Third Word :  ')
 
   print('First : {0}, Second : {1}, Third : {2}'.format(formatinputask, formatinputask2, formatinputask3))
+  start()
 
-askwhatisa()
-sampler()
-formatinput()
+def start():
+  print('')
+  print('1. Number Counting Program')
+  print('2. Lottery Program')
+  print('3. Format Word Program')
+  print('')
+  startn = int(input('시작하고 싶은 프로그램의 번호를 입력해주세요 :  '))
+  
+  if startn == 1:
+    askwhatisa()
+  elif startn == 2:
+    sampler(ab)
+  elif startn == 3:
+    formatinput()
+  else:
+    start()
+
+start()
