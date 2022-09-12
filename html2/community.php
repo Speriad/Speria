@@ -88,10 +88,6 @@
       </div>
     </div>
   </section>
-  <div class='alert alert-warning alert-dismissible fade show' role='alert'>
-    이미지 업로드는 https://imgbb.com 에서 업로드 후 링크를 복사해서 첨부 후 가능합니다.
-    <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
-  </div>
   <div style='text-align:center;'>
     <?php
     $sql = "SELECT * FROM com where method='p' ORDER BY id DESC";
@@ -117,38 +113,38 @@
     if (isset($_POST['partner'])) {
       if ($row5[3] == 'y') {
         while ($row2 = mysqli_fetch_array($result2)) {
-          echo "<a href='com_show.php?id={$row2[0]}'>{$row2[3]}<span style='color: gray;'> - {$row2[7]}</span></a><br><hr my-2>";
+          echo "<div class='border d-flex align-items-center p-2 justify-content-center''><a href='com_show.php?id={$row2[0]}'>{$row2[3]}<span style='color: gray;'> - {$row2[7]}</span></a><br></div>";
         };
       };
     } elseif (isset($_POST['list'])) {
       while ($row3 = mysqli_fetch_array($result3)) {
-        echo "<a href='com_show.php?id={$row3[0]}'>{$row3[1]}<span style='color: gray;'> ( $row3[4] / $row3[5] ) - {$row3[3]} 에 의해 작성됨</span></a><br><hr my-2>";
+        echo "<div class='border d-flex align-items-center p-2 justify-content-center''><a href='com_show.php?id={$row3[0]}'>{$row3[1]}<span style='color: gray;'> ( $row3[4] / $row3[5] ) - {$row3[3]} 에 의해 작성됨</span></a><br></div>";
       };
     } elseif (isset($_POST['account'])) {
       if ($row5[3] == 'y') {
         while ($row4 = mysqli_fetch_array($result4)) {
           if ($row4[3] == 'y') {
-            echo "{$row4[1]}<br><span><form action='community.php' method='post'><input type='hidden' name='userpartner' value='{$row4[3]}'><input type='hidden' name='userid' value='{$row4[1]}'>
+            echo "<div class='border d-flex align-items-center p-2 justify-content-center''>{$row4[1]}<br><span><form action='community.php' method='post'><input type='hidden' name='userpartner' value='{$row4[3]}'><input type='hidden' name='userid' value='{$row4[1]}'>
       <button role='submit' class='btn btn-primary' name='upgradepartner'>파트너쉽 해지</button>
-      <button role='submit' class='btn btn-danger' name='accountdelete'>계정 삭제</button></form></span><hr my-2>";
+      <button role='submit' class='btn btn-danger' name='accountdelete'>계정 삭제</button></form></span></div>";
           } else {
-            echo "{$row4[1]}<br><span><form action='community.php' method='post'><input type='hidden' name='userpartner' value='{$row4[3]}'><input type='hidden' name='userid' value='{$row4[1]}'>
+            echo "<div class='border d-flex align-items-center p-2 justify-content-center''>{$row4[1]}<br><span><form action='community.php' method='post'><input type='hidden' name='userpartner' value='{$row4[3]}'><input type='hidden' name='userid' value='{$row4[1]}'>
       <button role='submit' class='btn btn-primary' name='upgradepartner'>파트너쉽 부여</button>
-      <button role='submit' class='btn btn-danger' name='accountdelete'>계정 삭제</button></form></span><hr my-2>";
+      <button role='submit' class='btn btn-danger' name='accountdelete'>계정 삭제</button></form></span></div>";
           };
         };
       };
     } elseif (isset($_POST['likelist'])) {
       while ($rowlike = mysqli_fetch_array($result6)) {
-        echo "<a href='com_show.php?id={$rowlike[2]}'>{$rowlike[4]}<span style='color: gray;'> - {$rowlike[5]} 에 의해 작성됨</span></a><br><hr my-2>";
+        echo "<div class='border d-flex align-items-center p-2 justify-content-center''><a href='com_show.php?id={$rowlike[2]}'>{$rowlike[4]}<span style='color: gray;'> - {$rowlike[5]} 에 의해 작성됨</span></a><br></div>";
       }
     } elseif (isset($_POST['hatelist'])) {
       while ($rowhate = mysqli_fetch_array($result7)) {
-        echo "<a href='com_show.php?id={$rowhate[2]}'>{$rowhate[4]}<span style='color: gray;'> - {$rowhate[5]} 에 의해 작성됨</span></a><br><hr my-2>";
+        echo "<div class='border d-flex align-items-center p-2 justify-content-center''><a href='com_show.php?id={$rowhate[2]}'>{$rowhate[4]}<span style='color: gray;'> - {$rowhate[5]} 에 의해 작성됨</span></a><br></div>";
       }
     } else {
       while ($row = mysqli_fetch_array($result)) {
-        echo "<a href='com_show.php?id={$row[0]}'>{$row[1]}<span style='color: gray;'> ( $row[4] / $row[5] ) - {$row[3]} 에 의해 작성됨</span></a><br><hr my-3>";
+        echo "<div class='border d-flex align-items-center p-2 justify-content-center''><a href='com_show.php?id={$row[0]}'>{$row[1]}<span style='color: gray;'> ( $row[4] / $row[5] ) - {$row[3]} 에 의해 작성됨</span></a></div>";
       };
     };
 

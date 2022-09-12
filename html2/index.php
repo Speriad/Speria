@@ -69,33 +69,33 @@
                   <p class="card-text">솔직히 별론데 은수 꼴받으라고 넣은거임 ㅇㅇ</p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated : 2022-9-11 23:00</small>
+                  <small class="text-muted">Last updated : 2022-9-12 16:00</small>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
-                <img src="https://w.namu.la/s/60c7448691ec44fc2ec317ba7f27ad6ec7c7d960a2a341c457f010b950728d49a7985e25b5372e4fd1b2d714b43006f6e9f553c00952e7863948fa6f0f7c7020ada0bf3f12274d94e33903a5022f28183bcb450700e864abfef8591f0220f2461d6be9cdd6948aa10e1d2a2f1390b64f" class="card-img-top" alt="Today's album">
+                <img src="https://w.namu.la/s/0df8695276faafe3d91384ee3fd088b219dc39203edc927c63d9cbc91fcdd2bae3390327ee5c112c00e2d98198ee518d7e2907338c37e1387bbce68343b60bc80d41237898f5b808e337dec3015977a44322b4f4569499326f19addc62c5830f" class="card-img-top" alt="Today's album">
                 <div class="card-body">
                   <h3>오늘의 앨범</h3>
-                  <h5 class="card-title">Straight Outta Compton</h5>
-                  <p class="card-text">갱스터 랩의 성경과도 같은 앨범이자, 힙합 최고 명반 중 하나.</p>
+                  <h5 class="card-title">My Beautiful Dark Twisted Fantasy</h5>
+                  <p class="card-text">칸예 웨스트의 최고 명반이자, 가장 훌륭한 2010년대 힙합 앨범.</p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated : 2022-9-11 23:00</small>
+                  <small class="text-muted">Last updated : 2022-9-12 16:00</small>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
-                <img src="https://w.namu.la/s/6f25677aa29c6fc73680f737728c004930d71fb3887a0c13d499625a8d4a872a0fcfdbc98c8464d387157321a87d38e065212d2290d20e4386bd7abed9b0dd7446558f52eeb5856de16b5e3235f2110c3daaf48d0fb03fe8ddc5b2c983a314911c0d7aa1324fc2e75d6a19c5a0674152" class="card-img-top" alt="Today's song">
+                <img src="https://w.namu.la/s/a6136ea65afe3f38b9b26b130544f400e78c80bd7cf8e238f6c1b4a18a70d7b9d81e1a9828782a8de0c68144af4cb5a62de17e058a52888c8af73572bce8e90e6259dbbba45704dcd6d8442c8d31522ed1c720b7a384a5c7296530a4cfc44b5b" class="card-img-top" alt="Today's song">
                 <div class="card-body">
                   <h3>오늘의 곡</h3>
-                  <h5 class="card-title">Oldie</h5>
-                  <p class="card-text">힙합 그룹 Odd Future 의 대표곡이자 Earl Sweatshirt 의 벌스가 인상깊은 곡.</p>
+                  <h5 class="card-title">Home</h5>
+                  <p class="card-text">스파이더맨 : 뉴 유니버스의 OST 로 실린 Vince Staples 의 곡.</p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated : 2022-9-11 23:00</small>
+                  <small class="text-muted">Last updated : 2022-9-12 16:00</small>
                 </div>
               </div>
             </div>
