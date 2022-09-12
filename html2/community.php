@@ -83,7 +83,7 @@
           };
           ?>
           <br><br>
-          <div class='text-light'>너희는 지금부터 길거리 지식의 힘을 느끼게 될거다<br>- 닥터 드레</div><br>
+          <div class='text-light'>THE BEST COMMUNITY FOR HIP-HOP FANS<br> - 박은수</div><br>
         </div>
       </div>
     </div>
