@@ -62,7 +62,7 @@
           <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
             <div class="col">
               <div class="card h-100">
-                <img src="https://media.distractify.com/brand-img/wLhVjJTyd/487x500/lil-nas-x-1621708997828.png" alt="Today's artist">
+                <img src="https://media.distractify.com/brand-img/wLhVjJTyd/487x500/lil-nas-x-1621708997828.png" class='card-img-top' alt="Today's artist">
                 <div class="card-body">
                   <h3>오늘의 아티스트</h3>
                   <h5 class="card-title">Tyler, The Creator</h5>
