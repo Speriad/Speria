@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 
 <head>
-  <?php include 'connvar.php'; ?>
+  <?php 
+  include 'connvar.php'; 
+  $_SESSION['id'] = $_GET['id'];
+  $sql = "SELECT * FROM com where id={$_SESSION['id']}";
+  $result = mysqli_query($conn, $sql);
+  $row = mysqli_fetch_array($result);
+  ?>
   <style>
     body {
       background-color: white;
@@ -12,6 +18,7 @@
       color: yellow;
     }
   </style>
+  
 </head>
 
 <body>
@@ -33,12 +40,8 @@
   <br>
   <?php
 
-  $_SESSION['id'] = $_GET['id'];
   $idtoupdate_link = "com_update_show.php";
   $idtodelete_link = "com_delete.php";
-  $sql = "SELECT * FROM com where id={$_SESSION['id']}";
-  $result = mysqli_query($conn, $sql);
-  $row = mysqli_fetch_array($result);
   $sql2 = "SELECT * from registration where nickname = '{$_SESSION['nickname']}'";
   $result2 = mysqli_query($conn, $sql2);
   $row2 = mysqli_fetch_array($result2);
