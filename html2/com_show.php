@@ -68,15 +68,18 @@
     $sqllikebutton = "SELECT * from likebutton where postid = {$_SESSION['id']} and nickname = '{$_SESSION['nickname']}'";
     $resultlikebutton = mysqli_query($conn, $sqllikebutton);
     $rowlikebutton = mysqli_fetch_array($resultlikebutton);
-    if ($rowlikebutton[3] == null) {
+
+    if (isset($rowlikebutton[3])) {
+      if ($rowlikebutton[3] == 'like') {
+        $thumbstyle = "primary";
+        $downstyle = "outline-danger";
+      } elseif ($rowlikebutton[3] == 'hate') {
+        $thumbstyle = 'outline-primary';
+        $downstyle = 'danger';
+      };
+    } else {
       $thumbstyle = 'outline-primary';
       $downstyle = 'outline-danger';
-    } elseif ($rowlikebutton[3] == 'like') {
-      $thumbstyle = "primary";
-      $downstyle = "outline-danger";
-    } elseif ($rowlikebutton[3] == 'hate') {
-      $thumbstyle = 'outline-primary';
-      $downstyle = 'danger';
     };
   } else {
     $thumbstyle = 'outline-primary';
