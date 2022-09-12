@@ -41,7 +41,7 @@
     </div>
   </nav>
 
-  <div class="border d-flex align-items-center justify-content-center text-secondary" style="height: 630px;">
+  <div class="border d-flex align-items-center justify-content-center text-secondary" style="height: 90vh;">
     타입 비트 페이지는 곧 업데이트 될 예정입니다.
   </div>
 
