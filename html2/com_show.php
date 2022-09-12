@@ -64,10 +64,27 @@
       echo $delete_link;
     };
   };
-
+  if (isset($_SESSION['nickname'])) {
+    $sqllikebutton = "SELECT * from likebutton where postid = {$_SESSION['id']} and nickname = '{$_SESSION['nickname']}'";
+    $resultlikebutton = mysqli_query($conn, $sqllikebutton);
+    $rowlikebutton = mysqli_fetch_array($resultlikebutton);
+    if ($rowlikebutton[3] == null) {
+      $thumbstyle = 'outline-primary';
+      $downstyle = 'outline-danger';
+    } elseif ($rowlikebutton[3] == 'like') {
+      $thumbstyle = "primary";
+      $downstyle = "outline-danger";
+    } elseif ($rowlikebutton[3] == 'hate') {
+      $thumbstyle = 'outline-primary';
+      $downstyle = 'danger';
+    };
+  } else {
+    $thumbstyle = 'outline-primary';
+    $downstyle = 'outline-danger';
+  }
   echo "<br><div class='text-center'><div class='container mt-3'><div class='btn btn-group btn-group-lg'>
-<form action='com_like.php' method='post'><button role='submit' class='btn btn-primary'><i class='bi bi-hand-thumbs-up-fill'></i> {$row[4]}</button></form>
-<form action='com_hate.php' method='post'><button role='submit' class='btn btn-primary'><i class='bi bi-hand-thumbs-down-fill'></i> {$row[5]}</button></form>
+<form action='com_like.php' method='post'><button role='submit' class='btn btn-{$thumbstyle}'><i class='bi bi-hand-thumbs-up-fill'></i> {$row[4]}</button></form>
+<form action='com_hate.php' method='post'><button role='submit' class='btn btn-{$downstyle}'><i class='bi bi-hand-thumbs-down-fill'></i> {$row[5]}</button></form>
 </div></div></div>";
 
   $sqlcomment = "SELECT * FROM com where method='r' AND title={$_SESSION['id']}";

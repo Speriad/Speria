@@ -62,7 +62,7 @@
           <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
             <div class="col">
               <div class="card h-100">
-                <img src="https://w.namu.la/s/56357cf988086419eecea7a3bc94a7ed0ee34e850a2041cbb375bacd14182e49159764691480018d9b2fa9c1294a26db50c5eb582700b5053aa983f2f7187d00311efb7b5566ea287961dc46e73a87279b02d46e60002b78a06db6b1ac5d9fbe05f3f44c0b57707b95db5d2ca1243f33" alt="Today's artist">
+                <img src="https://media.distractify.com/brand-img/wLhVjJTyd/487x500/lil-nas-x-1621708997828.png" alt="Today's artist">
                 <div class="card-body">
                   <h3>오늘의 아티스트</h3>
                   <h5 class="card-title">Tyler, The Creator</h5>
@@ -75,7 +75,7 @@
             </div>
             <div class="col">
               <div class="card h-100">
-                <img src="https://i9.ytimg.com/s_p/OLAK5uy_kpnXtWauesEgVIWmv9So8swX3K1p54kkk/sddefault.jpg?sqp=CLTR95gGir7X7AMGCIbn2JgG&rs=AOn4CLDY0Jz7COpp4T3FhZb3ne1eCCPQXQ&v=1662399366" class="card-img-top" alt="Today's album">
+                <img src="https://w.namu.la/s/60c7448691ec44fc2ec317ba7f27ad6ec7c7d960a2a341c457f010b950728d49a7985e25b5372e4fd1b2d714b43006f6e9f553c00952e7863948fa6f0f7c7020ada0bf3f12274d94e33903a5022f28183bcb450700e864abfef8591f0220f2461d6be9cdd6948aa10e1d2a2f1390b64f" class="card-img-top" alt="Today's album">
                 <div class="card-body">
                   <h3>오늘의 앨범</h3>
                   <h5 class="card-title">Straight Outta Compton</h5>
@@ -88,7 +88,7 @@
             </div>
             <div class="col">
               <div class="card h-100">
-                <img src="https://i9.ytimg.com/s_p/OLAK5uy_kbCBdWv7l9yZ6v5fGuA5zN0JOMwf_XyCw/sddefault.jpg?sqp=CODT95gGir7X7AMGCI_j85gG&rs=AOn4CLAb1iS7ONuJt7-vorlNL7aVffP-xw&v=1662841231" class="card-img-top" alt="Today's song">
+                <img src="https://w.namu.la/s/6f25677aa29c6fc73680f737728c004930d71fb3887a0c13d499625a8d4a872a0fcfdbc98c8464d387157321a87d38e065212d2290d20e4386bd7abed9b0dd7446558f52eeb5856de16b5e3235f2110c3daaf48d0fb03fe8ddc5b2c983a314911c0d7aa1324fc2e75d6a19c5a0674152" class="card-img-top" alt="Today's song">
                 <div class="card-body">
                   <h3>오늘의 곡</h3>
                   <h5 class="card-title">Oldie</h5>
@@ -233,7 +233,7 @@
     <div class='container'>
       <div class='row align-items-center justify-content-center'>
         <div class='col-md'>
-          <img src='https://i.pinimg.com/originals/7e/3b/50/7e3b5074bfb8f14f0d68d6851b56447b.jpg' class='img-fluid' alt=''>
+          <img src='https://cdni.iconscout.com/illustration/premium/thumb/boy-listening-music-2527775-2114678.png' class='img-fluid' alt=''>
         </div>
         <div class='col-md p-5 text-white'>
           <h2>당신의 음악과 맞는 타입 비트를 얻어보세요!</h2>
@@ -255,7 +255,7 @@
     <div class='container'>
       <div class='row align-items-center justify-content-center'>
         <div class='col-md'>
-          <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_B_fuU2qhoWCCgblAuozsKAdVZashFLfbinvp1GuZ-j9gGR2xY9NXDPHM1l7vfPQygjc&usqp=CAU' class='img-fluid' alt=''>
+          <img src='https://static.vecteezy.com/system/resources/previews/000/518/161/non_2x/news-internet-news-concept-illustration-in-flat-style-people-working-on-website-vector.jpg' class='img-fluid' alt=''>
         </div>
         <div class='col-md p-5 text-black'>
           <h2>최신 외국힙합에 관한 소식을 접해보세요!</h2>
@@ -265,7 +265,7 @@
           <p class='lead text-black'>
             매일 매일 업데이트 됩니다.
           </p>
-          <a href='news.php' class='btn btn-dark mt-3'>
+          <a href='index.php' class='btn btn-dark mt-3'>
             <i class='bi bi-chevron-right'>뉴스로 들어가기</i>
           </a>
         </div>
