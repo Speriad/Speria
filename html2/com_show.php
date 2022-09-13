@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 
 <head>
-  <?php 
-  include 'connvar.php'; 
+  <?php
+  include 'connvar.php';
   $_SESSION['id'] = $_GET['id'];
   $sql = "SELECT * FROM com where id={$_SESSION['id']}";
   $result = mysqli_query($conn, $sql);
   $row = mysqli_fetch_array($result);
+
+  $viewplusone = "UPDATE com SET view = view + 1 where id={$_SESSION['id']}";
+  mysqli_query($conn, $viewplusone);
   ?>
   <style>
     body {
@@ -18,7 +21,7 @@
       color: yellow;
     }
   </style>
-  
+
 </head>
 
 <body>
@@ -47,6 +50,7 @@
   $row2 = mysqli_fetch_array($result2);
   echo '<h1 style="text-align: center;">' . $row[1] . "<span style='color: gray;'> - " . $row[3] . " 에 의해 작성됨</span></h1>";
   echo "<div style='color: gray; text-align: center;'>{$row[7]}</div>";
+  echo "<div style='color: gray; text-align: center;'>조회수 : {$row[9]}회</div>";
   echo '<hr>';
   if (isset($row[8])) {
     echo "<img src='{$row[8]}' class='rounded mx-auto d-block'>";

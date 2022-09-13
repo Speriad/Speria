@@ -104,10 +104,10 @@
     $sql4 = "SELECT * FROM registration";
     $result4 = mysqli_query($conn, $sql4);
 
-    $sql6 = "SELECT * from likebutton where nickname='{$_SESSION['nickname']}' and type='like'";
+    $sql6 = "SELECT * from likebutton where nickname='{$_SESSION['nickname']}' and type='like' ORDER BY id DESC";
     $result6 = mysqli_query($conn, $sql6);
 
-    $sql7 = "SELECT * from likebutton where nickname='{$_SESSION['nickname']}' and type='hate'";
+    $sql7 = "SELECT * from likebutton where nickname='{$_SESSION['nickname']}' and type='hate' ORDER BY id DESC";
     $result7 = mysqli_query($conn, $sql7);
 
     if (isset($_POST['partner'])) {
@@ -118,7 +118,7 @@
       };
     } elseif (isset($_POST['list'])) {
       while ($row3 = mysqli_fetch_array($result3)) {
-        echo "<div class='border d-flex align-items-center p-2 justify-content-center''><a href='com_show.php?id={$row3[0]}'>{$row3[1]}<span style='color: gray;'> ( $row3[4] / $row3[5] ) - {$row3[3]} 에 의해 작성됨</span></a><br></div>";
+        echo "<div class='border d-flex align-items-center p-2 justify-content-center''><a href='com_show.php?id={$row3[0]}'>{$row3[1]}<span style='color: gray;'> ( $row3[4] / $row3[5] ) ($row3[9]) - {$row3[3]} 에 의해 작성됨</span></a><br></div>";
       };
     } elseif (isset($_POST['account'])) {
       if ($row5[3] == 'y') {
@@ -136,15 +136,21 @@
       };
     } elseif (isset($_POST['likelist'])) {
       while ($rowlike = mysqli_fetch_array($result6)) {
-        echo "<div class='border d-flex align-items-center p-2 justify-content-center''><a href='com_show.php?id={$rowlike[2]}'>{$rowlike[4]}<span style='color: gray;'> - {$rowlike[5]} 에 의해 작성됨</span></a><br></div>";
+        $findview = "SELECT * from com where id={$rowlike[2]}";
+        $findviewresult = mysqli_query($conn, $findview);
+        $findviewrow = mysqli_fetch_array($findviewresult);
+        echo "<div class='border d-flex align-items-center p-2 justify-content-center''><a href='com_show.php?id={$rowlike[2]}'>{$rowlike[4]}<span style='color: gray;'>($findviewrow[4] / $findviewrow[5]) ($findviewrow[9]) - {$rowlike[5]} 에 의해 작성됨</span></a><br></div>";
       }
     } elseif (isset($_POST['hatelist'])) {
       while ($rowhate = mysqli_fetch_array($result7)) {
-        echo "<div class='border d-flex align-items-center p-2 justify-content-center''><a href='com_show.php?id={$rowhate[2]}'>{$rowhate[4]}<span style='color: gray;'> - {$rowhate[5]} 에 의해 작성됨</span></a><br></div>";
+        $findview = "SELECT * from com where id={$rowhate[2]}";
+        $findviewresult = mysqli_query($conn, $findview);
+        $findviewrow = mysqli_fetch_array($findviewresult);
+        echo "<div class='border d-flex align-items-center p-2 justify-content-center''><a href='com_show.php?id={$rowhate[2]}'>{$rowhate[4]}<span style='color: gray;'>($findviewrow[4] / $findviewrow[5]) ($findviewrow[9]) - {$rowhate[5]} 에 의해 작성됨</span></a><br></div>";
       }
     } else {
       while ($row = mysqli_fetch_array($result)) {
-        echo "<div class='border d-flex align-items-center p-2 justify-content-center''><a href='com_show.php?id={$row[0]}'>{$row[1]}<span style='color: gray;'> ( $row[4] / $row[5] ) - {$row[3]} 에 의해 작성됨</span></a></div>";
+        echo "<div class='border d-flex align-items-center p-2 justify-content-center''><a href='com_show.php?id={$row[0]}'>{$row[1]}<span style='color: gray;'> ( $row[4] / $row[5] ) ($row[9]) - {$row[3]} 에 의해 작성됨</span></a></div>";
       };
     };
 
