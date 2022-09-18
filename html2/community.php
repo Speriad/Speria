@@ -83,7 +83,7 @@
           };
           ?>
           <br><br>
-          <div class='text-light'>THE BEST COMMUNITY FOR HIP-HOP FANS<br> - 박은수</div><br>
+          <div class='text-light'>I miss the old MooHipGal.<br> - 박은수</div><br>
         </div>
       </div>
     </div>
