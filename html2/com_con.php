@@ -22,9 +22,20 @@
   $msg = "";
 
   if (isset($_POST['upload'])) {
-    if (isset($_POST['imgurl'])) {
+    if (isset($_FILES["imgurl"]) && !empty($_FILES["imgurl"]["name"])) {
+      $filename = uniqid($_FILES["imgurl"]["name"]);
+      $tempname = $_FILES["imgurl"]["tmp_name"];
+      $folder = "./image/" . $filename;
+
+      // Now let's move the uploaded image into the folder: image
+      if (move_uploaded_file($tempname, $folder)) {
+        echo "<h3></h3>";
+      } else {
+        echo "<h3></h3>";
+      };
+
       $sql = "INSERT INTO com (title, say, written, method, good, hate, imgurl, view) 
-    VALUES ( '{$_POST['title']}' , '{$_POST['say']}' , '{$_SESSION['nickname']}' , '{$_POST['method']}' , 0 , 0, '{$_POST['imgurl']}', 0)";
+    VALUES ( '{$_POST['title']}' , '{$_POST['say']}' , '{$_SESSION['nickname']}' , '{$_POST['method']}' , 0 , 0, '$filename', 0)";
 
       mysqli_query($conn, $sql);
     } else {

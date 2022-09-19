@@ -53,7 +53,8 @@
   echo "<div style='color: gray; text-align: center;'>조회수 : {$row[9]}회</div>";
   echo '<hr>';
   if (isset($row[8])) {
-    echo "<img src='{$row[8]}' class='rounded mx-auto d-block'>";
+    $imageurl = 'image/' . $row[8];
+    echo "<img src='{$imageurl}' class='rounded mx-auto d-block' style='width: 40%;'>";
   };
   echo '<br><h3 style="text-align: center;">' . nl2br($row[2]) . '</h3><br><br><br><br><br>';
 

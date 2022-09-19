@@ -49,8 +49,7 @@ include 'connvar.php';
 <textarea rows='2' class= 'form-control' name = 'title' placeholder='제목' required></textarea>
 <input type='hidden' class= 'form-control' name = 'method' value='p'>
 <br><br><textarea class= 'form-control' rows='5' name='say' placeholder='내용을 작성해주세요' required></textarea>
-<br><input type='text' class='form-control' name='imgurl' placeholder='이미지 URL 을 복사해주세요'>
-<span style='color: gray;'>https://imgbb.com 에서 URL 을 얻을 수 있습니다.</span>
+<br><input type='file' class='form-control' name='imgurl' placeholder='이미지를 업로드 해주세요.'>
 <br><br><button role='submit' name='upload' class='btn btn-warning'>글 올리기</button> 
 </form><br><br><div><form action='community.php' method='post'><button role='submit' class='btn btn-warning'>커뮤니티로 돌아가기</button></form></div>";
 

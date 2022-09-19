@@ -66,17 +66,14 @@
         <form action='com_create.php' method='post'><button role='submit' class='btn btn-outline-warning'>글 쓰기</button></form>
         <form action='community.php' method='post'><button role='submit' class='btn btn-outline-warning' name='list'>내가 작성한 글</button></form>
         <form action='community.php' method='post'><button role='submit' class='btn btn-outline-warning' name='likelist'>내가 좋아하는 글</button></form>
-        <form action='community.php' method='post'><button role='submit' class='btn btn-outline-warning' name='hatelist'>내가 싫어하는 글</button></form>
-        <form action='community.php' method='post'><button role='submit' class='btn btn-outline-warning' name='partner'>파트너쉽 신청 내역 보기</button></form>
-        <form action='community.php' method='post'><button role='submit' class='btn btn-outline-warning' name='account'>계정 관리하기</button></form></div>";
+        <form action='community.php' method='post'><button role='submit' class='btn btn-outline-warning' name='hatelist'>내가 싫어하는 글</button></form></div>";
             echo $buttonforpartner;
           } elseif (isset($_SESSION['nickname'])) {
             echo "<h2>{$_SESSION['nickname']}, 환영합니다!</h2><br>";
             $buttonforuser = "<div class='text-right'><form action='com_create.php' method='post'><button role='submit' class='btn btn-outline-warning'>글 쓰기</button></form>
         <form action='community.php' method='post'><button role='submit' class='btn btn-outline-warning' name='list'>내가 작성한 글</button></form>
         <form action='community.php' method='post'><button role='submit' class='btn btn-outline-warning' name='likelist'>내가 좋아하는 글</button></form>
-        <form action='community.php' method='post'><button role='submit' class='btn btn-outline-warning' name='hatelist'>내가 싫어하는 글</button></form>
-        <form action='com_create.php' method='post'><button role='submit' class='btn btn-outline-primary' name='partner'>파트너쉽 신청하기</button></form></div>";
+        <form action='community.php' method='post'><button role='submit' class='btn btn-outline-warning' name='hatelist'>내가 싫어하는 글</button></form></div>";
             echo $buttonforuser;
           } else {
             echo '<h2>당신은 게스트 상태입니다. 글을 보는것만 가능합니다</h2>';
