@@ -62,11 +62,11 @@
           <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
             <div class="col">
               <div class="card h-100">
-                <img src="https://media.distractify.com/brand-img/wLhVjJTyd/487x500/lil-nas-x-1621708997828.png" class='card-img-top' alt="Today's artist">
+                <img src="https://i.scdn.co/image/ab6761610000e5ebfbc3faec4a370d8393bee7f1" class='card-img-top' alt="Today's artist">
                 <div class="card-body">
                   <h3>오늘의 아티스트</h3>
-                  <h5 class="card-title">Tyler, The Creator</h5>
-                  <p class="card-text">솔직히 별론데 은수 꼴받으라고 넣은거임 ㅇㅇ</p>
+                  <h5 class="card-title">Frank Ocean</h5>
+                  <p class="card-text">힙합씬에 가장 큰 영향을 미친 아티스트 중 한명으로 꼽힙니다.</p>
                 </div>
                 <div class="card-footer">
                   <small class="text-muted">Last updated : 2022-9-12 16:00</small>
