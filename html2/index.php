@@ -75,7 +75,7 @@
             </div>
             <div class="col">
               <div class="card h-100">
-                <img src="https://w.namu.la/s/0df8695276faafe3d91384ee3fd088b219dc39203edc927c63d9cbc91fcdd2bae3390327ee5c112c00e2d98198ee518d7e2907338c37e1387bbce68343b60bc80d41237898f5b808e337dec3015977a44322b4f4569499326f19addc62c5830f" class="card-img-top" alt="Today's album">
+                <img src="https://www.musickorea.asia/storage/woo680821U0/www//product/2021/20/O/product.26806.162132379985393.jpg" class="card-img-top" alt="Today's album">
                 <div class="card-body">
                   <h3>오늘의 앨범</h3>
                   <h5 class="card-title">My Beautiful Dark Twisted Fantasy</h5>
@@ -88,7 +88,7 @@
             </div>
             <div class="col">
               <div class="card h-100">
-                <img src="https://w.namu.la/s/a6136ea65afe3f38b9b26b130544f400e78c80bd7cf8e238f6c1b4a18a70d7b9d81e1a9828782a8de0c68144af4cb5a62de17e058a52888c8af73572bce8e90e6259dbbba45704dcd6d8442c8d31522ed1c720b7a384a5c7296530a4cfc44b5b" class="card-img-top" alt="Today's song">
+                <img src="https://i.scdn.co/image/ab67616d0000b273e2e352d89826aef6dbd5ff8f" class="card-img-top" alt="Today's song">
                 <div class="card-body">
                   <h3>오늘의 곡</h3>
                   <h5 class="card-title">Home</h5>

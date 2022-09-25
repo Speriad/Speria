@@ -41,9 +41,34 @@
     </div>
   </nav>
 
-  <div class="border d-flex align-items-center justify-content-center text-secondary" style="height: 90vh;">
-    타입 비트 페이지는 곧 업데이트 될 예정입니다.
-  </div>
+  <section class='bg-dark text-white p-5 p-lg-0 pt-lg-5 text-center text-sm-start'>
+    <div class='container'>
+      <div class='d-sm-flex align-items-center justify-content-between'>
+        <?php
+        if (isset($_SESSION['nickname'])) {
+          echo "<div class='py-4'><form action='com_create.php' method='post'><button role='submit' class='btn btn-outline-warning' name='typebeatcreate'>비트 업로드</button></form></div>";
+        };
+        ?>
+      </div>
+    </div>
+  </section>
+
+  <?php
+  $sql = "SELECT * from com where method='typebeat'";
+  $result = mysqli_query($conn, $sql);
+  while ($row = mysqli_fetch_array($result)) {
+    $url = 'typebeat/' . $row[8];
+    echo
+    "<div class='border-0 d-flex align-items-center p-2 justify-content-center text-secondary'>
+    <span class='px-5'>{$row[1]}</span>
+    <audio controls>
+  <source src='{$url}' type='audio/mpeg'>
+</audio>
+<span class='px-5'>by {$row[3]}</span>
+    </div>";
+  };
+
+  ?>
 
 
 

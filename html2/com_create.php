@@ -53,15 +53,15 @@ include 'connvar.php';
 <br><br><button role='submit' name='upload' class='btn btn-warning'>글 올리기</button> 
 </form><br><br><div><form action='community.php' method='post'><button role='submit' class='btn btn-warning'>커뮤니티로 돌아가기</button></form></div>";
 
-  $send2 = "<br><h1 style='text-align: center;'>파트너쉽 신청</h1><br>
-<form action='com_con.php' method='POST' enctype='multipart/form-data'>
-<input type='hidden' class= 'form-control' name = 'title' value='PartnerShip Registration'>
-<input type='hidden' class= 'form-control' name = 'method' value='partner'>
-<br><br><textarea class= 'form-control' rows='5' name='say' placeholder='왜 당신이 파트너가 되기에 적합하다고 생각하시나요?' required></textarea>
-<br><br><button role='submit' name='partner' class='btn btn-warning'>파트너쉽 검토받기</button> 
-</form><br><br><div><form action='community.php' method='post'><button role='submit' class='btn btn-warning'>커뮤니티로 돌아가기</button></form></div>";
+  $send2 = "<br><h1 style='text-align: center;'>타입비트 업로드</h1><br>
+  <form action='com_con.php' method='POST' enctype='multipart/form-data'>
+  <textarea rows='2' class= 'form-control' name = 'title' placeholder='제목' required></textarea>
+  <input type='hidden' class= 'form-control' name = 'method' value='typebeat'>
+  <br><input type='file' class='form-control' name='typebeat' placeholder='비트를 업로드 해주세요.' required>
+  <br><br><button role='submit' name='typebeatupload' class='btn btn-warning'>비트 올리기</button> 
+  </form><br><br><div><form action='community.php' method='post'><button role='submit' class='btn btn-warning'>커뮤니티로 돌아가기</button></form></div>";
 
-  if (isset($_POST['partner'])) {
+  if (isset($_POST['typebeatcreate'])) {
     echo $send2;
   } else {
     echo $send;

@@ -115,7 +115,7 @@
       };
     } elseif (isset($_POST['list'])) {
       while ($row3 = mysqli_fetch_array($result3)) {
-        echo "<div class='border d-flex align-items-center p-2 justify-content-center''><a href='com_show.php?id={$row3[0]}'>{$row3[1]}<span style='color: gray;'> ( $row3[4] / $row3[5] ) ($row3[9]) - {$row3[3]} 에 의해 작성됨</span></a><br></div>";
+        echo "<div class='border d-flex align-items-center p-2 justify-content-center'><a href='com_show.php?id={$row3[0]}'>{$row3[1]}<span style='color: gray;'> ( $row3[4] / $row3[5] ) ($row3[9]) - {$row3[3]} 에 의해 작성됨</span></a><br></div>";
       };
     } elseif (isset($_POST['account'])) {
       if ($row5[3] == 'y') {
