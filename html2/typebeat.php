@@ -54,7 +54,7 @@
   </section>
 
   <?php
-  $sql = "SELECT * from com where method='typebeat'";
+  $sql = "SELECT * from com where method='typebeat' order by id desc";
   $result = mysqli_query($conn, $sql);
   while ($row = mysqli_fetch_array($result)) {
     $url = 'typebeat/' . $row[8];
