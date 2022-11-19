@@ -10,7 +10,7 @@ include 'connvar.php';
       list-style: none;
     }
 
-    body {
+    body{
       background-color: white;
       color: black;
     }
