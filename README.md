@@ -1,2 +1,2 @@
 # Speria
-REPOSITORY
+http://hiphop.great-site.net
