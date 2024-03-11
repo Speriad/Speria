@@ -80,7 +80,7 @@
           };
           ?>
           <br><br>
-          <div class='text-light'>I miss the old MooHipGal.<br> - 박은수</div><br>
+          <div class='text-light'>Breathe in the Air.<br>- Pink Floyd</div><br>
         </div>
       </div>
     </div>

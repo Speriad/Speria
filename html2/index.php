@@ -66,36 +66,36 @@
                 <div class="card-body">
                   <h3>오늘의 아티스트</h3>
                   <h5 class="card-title">Frank Ocean</h5>
-                  <p class="card-text">힙합씬에 가장 큰 영향을 미친 아티스트 중 한명으로 꼽힙니다.</p>
+                  <p class="card-text">힙합에 가장 큰 영향을 미친 아티스트 중 한명으로 꼽힙니다.</p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated : 2022-9-12 16:00</small>
+                  <small class="text-muted">Last updated : 2024-3-11 18:00</small>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
-                <img src="https://www.musickorea.asia/storage/woo680821U0/www//product/2021/20/O/product.26806.162132379985393.jpg" class="card-img-top" alt="Today's album">
+                <img src="https://upload.wikimedia.org/wikipedia/en/6/64/BurialUntrue.jpg" class="card-img-top" alt="Today's album">
                 <div class="card-body">
                   <h3>오늘의 앨범</h3>
-                  <h5 class="card-title">My Beautiful Dark Twisted Fantasy</h5>
-                  <p class="card-text">칸예 웨스트의 최고 명반이자, 가장 훌륭한 2010년대 힙합 앨범.</p>
+                  <h5 class="card-title">Untrue</h5>
+                  <p class="card-text">Burial 이 발매한 앰비언트 명반.</p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated : 2022-9-12 16:00</small>
+                  <small class="text-muted">Last updated : 2024-3-11 18:00</small>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
-                <img src="https://i.scdn.co/image/ab67616d0000b273e2e352d89826aef6dbd5ff8f" class="card-img-top" alt="Today's song">
+                <img src="https://i.namu.wiki/i/SA3DfLA7LFG-vJ-ogR_NoCHJc6C5m08CzdnZJt7rDUSVfKiAf-rb6oYt9e86tqrhTiRsEfciBlAJ2mf9Dc9n97juQaGmGlKU4Xbk-hGGo_lS_HkpviuGo9fJuR-o9hG_BCUN6kS5wRgObH0qFzVXog.webp" class="card-img-top" alt="Today's song">
                 <div class="card-body">
                   <h3>오늘의 곡</h3>
-                  <h5 class="card-title">Home</h5>
-                  <p class="card-text">스파이더맨 : 뉴 유니버스의 OST 로 실린 Vince Staples 의 곡.</p>
+                  <h5 class="card-title">Wish You Were Here</h5>
+                  <p class="card-text">음악 역사에 기록 될 명곡들 중 하나.</p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated : 2022-9-12 16:00</small>
+                  <small class="text-muted">Last updated : 2024-3-11 18:00</small>
                 </div>
               </div>
             </div>
