@@ -25,9 +25,9 @@ def get_response(url):
 async def find_websites_with_class():
     existing_websites = []
     website_ids = [
-        f"{str(first_four_digits).zfill(2)}{str(last_three_digits).zfill(2)}"
-        for first_four_digits in range(0, 2)
-        for last_three_digits in range(1, 100)
+        f"{str(first_four_digits).zfill(4)}{str(last_three_digits).zfill(3)}"
+        for first_four_digits in range(1, 9999)
+        for last_three_digits in range(1, 32)
     ]
     tasks = [fetch_and_parse(website_id) for website_id in website_ids]
     existing_websites = await asyncio.gather(*tasks)

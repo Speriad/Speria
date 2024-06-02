@@ -3,7 +3,8 @@ import http.client
 from bs4 import BeautifulSoup
 
 async def fetch_and_parse(website_id_str):
-    url = f"https://www.scooling.co.kr/mobile_student/direct.php?ec=ec_20240601{website_id_str}&sc=0457016"
+    url = f"https://www.scooling.co.kr/mobile_student/direct.php?ec=ec_20240518{website_id_str}&sc=0457016"
+    #예섬은 0457016 시대인재는 4972010
     loop = asyncio.get_event_loop()
     response = await loop.run_in_executor(None, get_response, url)
     if response and response.status == 200:
