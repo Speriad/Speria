@@ -66,10 +66,10 @@
                 <div class="card-body">
                   <h3>오늘의 아티스트</h3>
                   <h5 class="card-title">Frank Ocean</h5>
-                  <p class="card-text">힙합에 가장 큰 영향을 미친 아티스트 중 한명으로 꼽힙니다.</p>
+                  <p class="card-text">.</p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated : 2024-3-11 18:00</small>
+                  <small class="text-muted">2024-3-11 18:00</small>
                 </div>
               </div>
             </div>
@@ -79,23 +79,23 @@
                 <div class="card-body">
                   <h3>오늘의 앨범</h3>
                   <h5 class="card-title">Untrue</h5>
-                  <p class="card-text">Burial 이 발매한 앰비언트 명반.</p>
+                  <p class="card-text">by Burial</p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated : 2024-3-11 18:00</small>
+                  <small class="text-muted">2024-3-11 18:00</small>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
-                <img src="https://i.namu.wiki/i/SA3DfLA7LFG-vJ-ogR_NoCHJc6C5m08CzdnZJt7rDUSVfKiAf-rb6oYt9e86tqrhTiRsEfciBlAJ2mf9Dc9n97juQaGmGlKU4Xbk-hGGo_lS_HkpviuGo9fJuR-o9hG_BCUN6kS5wRgObH0qFzVXog.webp" class="card-img-top" alt="Today's song">
+                <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Trout_Mask_Replica.png" class="card-img-top" alt="Today's song">
                 <div class="card-body">
                   <h3>오늘의 곡</h3>
-                  <h5 class="card-title">Wish You Were Here</h5>
-                  <p class="card-text">음악 역사에 기록 될 명곡들 중 하나.</p>
+                  <h5 class="card-title">Frownland</h5>
+                  <p class="card-text">by Captain Beefheart</p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated : 2024-3-11 18:00</small>
+                  <small class="text-muted">2024-3-11 18:00</small>
                 </div>
               </div>
             </div>
