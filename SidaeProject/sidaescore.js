@@ -1,5 +1,8 @@
-const axios = require('axios');
-const cheerio = require('cheerio');
+import axios from 'axios';
+import cheerio from 'cheerio';
+import pLimit from 'p-limit';
+
+const limit = pLimit(50); // Adjust the concurrency limit as needed
 
 async function fetchUrl(url) {
     try {
@@ -58,8 +61,9 @@ async function main() {
     }
 
     const existingWebsites = [];
-    for (const id of websiteIds) {
-        const result = await fetchAndParse(id);
+    const tasks = websiteIds.map(id => limit(() => fetchAndParse(id)));
+    
+    for (const result of await Promise.all(tasks)) {
         if (result) {
             existingWebsites.push(result);
         }
