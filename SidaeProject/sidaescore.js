@@ -2,7 +2,7 @@ import axios from 'axios';
 import cheerio from 'cheerio';
 import pLimit from 'p-limit';
 
-const limit = pLimit(70); // Adjust the concurrency limit as needed
+const limit = pLimit(20); // Reduce concurrency limit for stability
 const maxRetries = 3; // Number of retries for failed requests
 
 async function fetchUrl(url, retries = 0) {
@@ -19,7 +19,7 @@ async function fetchUrl(url, retries = 0) {
             console.warn(`Retrying URL: ${url}, attempt: ${retries + 1}`);
             return fetchUrl(url, retries + 1);
         }
-        console.error(`Error fetching URL after ${maxRetries} retries: ${url}`, error);
+        console.error(`Error fetching URL after ${maxRetries} retries: ${url}`, error.message);
         return null;
     }
 }
@@ -58,6 +58,10 @@ async function fetchAndParse(websiteId) {
     return null;
 }
 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 async function main() {
     const websiteIds = [];
     for (let i = 1; i <= 9999; i++) {
@@ -67,7 +71,12 @@ async function main() {
     }
 
     const existingWebsites = [];
-    const tasks = websiteIds.map(id => limit(() => fetchAndParse(id)));
+    const tasks = websiteIds.map((id, index) => limit(async () => {
+        if (index % 10 === 0) {
+            await sleep(Math.random() * 1000); // Add random delay
+        }
+        return fetchAndParse(id);
+    }));
 
     const results = await Promise.allSettled(tasks);
 
