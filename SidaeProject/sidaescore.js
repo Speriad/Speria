@@ -2,18 +2,24 @@ import axios from 'axios';
 import cheerio from 'cheerio';
 import pLimit from 'p-limit';
 
-const limit = pLimit(50); // Adjust the concurrency limit as needed
+const limit = pLimit(70); // Adjust the concurrency limit as needed
+const maxRetries = 3; // Number of retries for failed requests
 
-async function fetchUrl(url) {
+async function fetchUrl(url, retries = 0) {
     try {
         const response = await axios.get(url, {
             headers: {
                 'User-Agent': 'Mozilla/5.0'
-            }
+            },
+            timeout: 10000 // 10 seconds timeout
         });
         return response.data;
     } catch (error) {
-        console.error(`Error fetching URL: ${url}`, error);
+        if (retries < maxRetries) {
+            console.warn(`Retrying URL: ${url}, attempt: ${retries + 1}`);
+            return fetchUrl(url, retries + 1);
+        }
+        console.error(`Error fetching URL after ${maxRetries} retries: ${url}`, error);
         return null;
     }
 }
@@ -62,12 +68,14 @@ async function main() {
 
     const existingWebsites = [];
     const tasks = websiteIds.map(id => limit(() => fetchAndParse(id)));
-    
-    for (const result of await Promise.all(tasks)) {
-        if (result) {
-            existingWebsites.push(result);
+
+    const results = await Promise.allSettled(tasks);
+
+    results.forEach(result => {
+        if (result.status === 'fulfilled' && result.value) {
+            existingWebsites.push(result.value);
         }
-    }
+    });
 
     if (existingWebsites.length > 0) {
         console.log("Websites with class 'Mpush_grade' exist with IDs and matched text:");
