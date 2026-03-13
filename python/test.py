@@ -1,3 +1,4 @@
-print('hello world')
+def func():
+    print('fuck you')
 
-# why the fuck this isnt working
+func()
